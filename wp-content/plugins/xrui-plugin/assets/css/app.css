@@ -1,0 +1,51 @@
+    .weui_search_bar:after {
+        border: 0;
+    }
+
+    .weui-popup-container, .weui-popup-overlay {
+        height: 90%;
+        bottom: 60px;
+    }
+
+    .weui_cells:before {
+        border: 0;
+    }
+
+    .sch-box {
+        padding: 10px 5px;
+        padding-left: 9px;
+        margin-bottom: 10px;
+    }
+
+    .sch-box .sch-input {
+        height: 40px;
+        padding: 0;
+        width: 100%;
+        padding-left: 29px;
+        box-sizing: border-box;
+        border: 0px;
+        background-image: url("http://xs01.meituan.net/waimai_i/img/address/search.b3926f47.png");
+        background-size: 14px 14px;
+        background-repeat: no-repeat;
+        background-position: 8px;
+        font-size: 15px;
+    }
+
+    .sch-input-cont {
+        margin-right: 59px;
+    }
+
+    .sch-box .sch-submit {
+        height: 40px;
+        width: 50px;
+        background-color: #ffffff;
+        color: #fa9700;
+        text-align: center;
+        font-size: 16px;
+        border: 0;
+        -webkit-appearance: none;
+        cursor: pointer;
+        line-height: 40px;
+        padding: 0px;
+        float: right;
+    }

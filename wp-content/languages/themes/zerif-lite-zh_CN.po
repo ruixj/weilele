@@ -1,0 +1,1921 @@
+# Translation of Zerif Lite in Chinese (China)
+# This file is distributed under the same license as the Zerif Lite package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-04-05 13:26:44+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.1.0-alpha\n"
+"Project-Id-Version: Zerif Lite\n"
+
+#. Theme Name of the plugin/theme
+msgid "Zerif Lite"
+msgstr "Zerif Lite"
+
+#. Description of the plugin/theme
+msgid "Zerif LITE is a free one page Wordpress theme. It's perfect for web agency business,corporate business,personal and parallax business portfolio, photography sites and freelancer.Is built on BootStrap with parallax support, is responsive, clean, modern, flat and minimal. Zerif Lite is ecommerce (WooCommerce) Compatible, WPML, RTL, Retina-Ready, SEO Friendly and with parallax, full screen image is one of the best business themes."
+msgstr "Zerif Lite是一个免费的单页WordPress主题。它非常适合网页代理商业务、公司业务、个人和视差业务组合、照片网站和自由职业者。它建立在支持视差的BootStrap上，响应快速、整洁、现代、简单和小巧。Zerif Lite兼容电子商务（WooCommerce），支持WPML、RTL，可在视网膜屏显示，SEO友好并具有视差功能，全屏图像是最佳商务主题之一。"
+
+#: inc/customizer.php:105
+msgid "Use safe font?"
+msgstr "想要使用适用于任何用户电脑的字体吗？"
+
+#: inc/customizer.php:178
+msgid "Change the template to Full width for all the pages?"
+msgstr "想要将所有页面模板改为全宽度模板吗？"
+
+#. Template Name of the plugin/theme
+msgid "Full width with no title template"
+msgstr "无标题模板的全宽"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:48
+msgid "Build a landing page with a drag-and-drop content builder"
+msgstr "使用拖放页面生成器创建一个登陆页面"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:49
+msgid "In the below documentation you will find an easy way to build a great looking landing page using a drag-and-drop content builder plugin."
+msgstr "根据下面的参考资料，你将会发现一个使用拖放页面生成器插件创建好看登陆页面的简单方法。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:149
+msgid "Page Builder by SiteOrigin"
+msgstr "SiteOrigin页面生成器"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:150
+msgid "Build responsive page layouts using the widgets you know and love using this simple drag and drop page builder."
+msgstr "使用您了解并偏爱的微件、简单的拖放页面创建去搭建响应灵敏的页面布局。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:160
+msgid "Install Page Builder by SiteOrigin"
+msgstr "安装SiteOrigin页面生成器"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:234
+msgid "Easy Content Types"
+msgstr "Easy Content Types"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:235
+msgid "Custom Post Types, Taxonomies and Metaboxes in Minutes"
+msgstr "自定义文章类型，分类和功能模块"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:245
+msgid "Download Easy Content Types"
+msgstr "下载Easy Content Types"
+
+#: inc/admin/welcome-screen/sections/github.php:9
+msgid "How can I contribute?"
+msgstr "我该如何投稿？"
+
+#: inc/admin/welcome-screen/sections/github.php:14
+msgid "Found a bug? Want to contribute with a fix or create a new feature?"
+msgstr "发现一个错误？想要修改它或创建新的内容？"
+
+#: inc/admin/welcome-screen/sections/github.php:25
+msgid "Are you a polyglot? Want to translate Zerif Lite into your own language?"
+msgstr "您是通晓多种语言的人吗？是否希望将Zerif Lite 翻译成您自己的语言？"
+
+#: inc/admin/welcome-screen/sections/github.php:27
+msgid "Get involved at WordPress.org."
+msgstr "加入WordPress.org吧"
+
+#: content-large.php:66 content.php:63 sections/latest_news.php:99
+#: sections/latest_news.php:134
+msgid "[...]"
+msgstr "[...]"
+
+#: content-large.php:66 content.php:63 sections/latest_news.php:99
+#: sections/latest_news.php:134
+msgid "about "
+msgstr "关于"
+
+#: inc/customizer.php:166 inc/customizer.php:400
+msgid "Footer Copyright"
+msgstr "页脚版权"
+
+#: inc/customizer.php:184
+msgid "Footer Social Icons"
+msgstr "页脚社交图标"
+
+#: inc/customizer.php:254 inc/customizer.php:461
+msgid "Instagram link"
+msgstr "Instagram链接"
+
+#: inc/customizer.php:260
+msgid "Footer Content"
+msgstr "页脚内容"
+
+#: functions.php:154
+msgid "Footer area %d"
+msgstr "页脚区域%d"
+
+#: functions.php:99
+msgid "Get the one page template"
+msgstr "获取单页面模板"
+
+#: functions.php:100
+msgid "If you just installed Zerif Lite, and are not able to see the one page template, you need to go to Settings -> Reading , Front page displays and select \"Your latest posts\"."
+msgstr "如果您安装完成Zerif Lite 但却无法看到单页面模板，请打开设置 -> 阅读，首页显示，选择“您的最新文章” "
+
+#: inc/admin/welcome-screen/sections/getting-started.php:254
+msgid "Revive Old Post"
+msgstr "Revive Old Post"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:255
+msgid "A plugin to share about your old posts on twitter, facebook, linkedin to get more hits for them and keep them alive."
+msgstr "这个插件可以将您过去发表的文章分享到twitter，facebook，linkedin，去获得更多点击量，同时让它们重新发挥作用。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:265
+msgid "Install Revive Old Post"
+msgstr "安装 Revive Old Post"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:35
+msgid "Get now"
+msgstr "现在开始吧"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:109
+#: inc/admin/welcome-screen/sections/child-themes.php:111
+msgid "ResponsiveBoat"
+msgstr "ResponsiveBoat"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:118
+msgid "Get %s now"
+msgstr "获取%s，就是现在"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:124
+msgid "ResponsiveBoat - Current theme"
+msgstr "ResponsiveBoat - 当前主题"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:72
+msgid "Add a search bar in the top menu"
+msgstr "在菜单顶端添加一个搜索栏"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:73
+msgid "Find out how to add a search bar in the top menu bar, in an easy way be following the link below."
+msgstr "点击下方链接，您可以找到一个更容易的在菜单栏顶端添加搜索栏的方法。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:122
+msgid "30 Experts Share: The Top *Non-Obvious* WordPress Plugins That'll Make You a Better Blogger"
+msgstr "三十位专家分享：最好的*Non-Obvious* WordPress 插件。这会帮助您成为一个更好的博客作家。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:123
+msgid " At the address below you will find a cool set of original WordPress plugins that can give you great benefits despite being a little lesser known out there."
+msgstr "进入下方地址，您将会找到一套非常酷的WordPress最初插件，现在可能较不为人所知，但您可以从中获益。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:124
+msgid "Read more"
+msgstr "阅读更多"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:55
+msgid "In the below documentation you will find an easy way to translate Zerif Lite into your native language or any other language you need for you site."
+msgstr "根据下方的文字资料，您将会找到一个容易的方法，把Zerif Lite翻译成您的母语或者是其他任何一种您的网站所需要的语言。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:116
+msgid "Configure the portfolio"
+msgstr "设置代表作"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:117
+msgid "Set up your portfolio section in an easy way be following the link below."
+msgstr "点击下方链接，寻找一种更简单的方法建立您的代表作模块。"
+
+#: inc/customizer.php:1562 inc/customizer.php:1620
+msgid "Use pinterest layout?"
+msgstr "您想要使用pinterest布局吗？"
+
+#: inc/customizer.php:1887
+msgid "For more advanced settings please go to Settings -> Pirate Forms"
+msgstr "如果您需要更高级设置，请打开设置->Pirate Forms"
+
+#: inc/customizer.php:2057
+msgid "View Documentation"
+msgstr "查看文字资料"
+
+#: inc/admin/welcome-screen/sections/github.php:19
+msgid "Zerif Lite on GitHub"
+msgstr "位于GitHub 的Zerif Lite"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:54
+#: inc/admin/welcome-screen/sections/github.php:30
+msgid "Translate Zerif Lite"
+msgstr "翻译Zerif Lite"
+
+#: inc/admin/welcome-screen/sections/github.php:36
+msgid "Are you enjoying Zerif Lite?"
+msgstr "您喜欢Zerif Lite吗？"
+
+#: inc/admin/welcome-screen/sections/github.php:38
+msgid "Rate our theme on %sWordPress.org%s. We'd really appreciate it!"
+msgstr "请在%sWordPress.org%s上评价我们的网站。非常感谢！"
+
+#: inc/admin/welcome-screen/welcome-screen.php:66
+msgid "Welcome! Thank you for choosing Zerif Lite! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s."
+msgstr "欢迎！感谢您选择Zerif Lite！为了确保您充分利用我们的主题提供的服务，请进入我们的网站%swelcome page%s。"
+
+#: inc/admin/welcome-screen/welcome-screen.php:67
+msgid "Get started with Zerif Lite"
+msgstr "开始使用Zerif Lite"
+
+#: inc/admin/welcome-screen/welcome-screen.php:142
+msgid "View Theme Info"
+msgstr "查看主题信息"
+
+#: inc/admin/welcome-screen/welcome-screen.php:211
+msgid "Actions required"
+msgstr "必要行为"
+
+#: inc/admin/welcome-screen/welcome-screen.php:212
+msgid "Child themes"
+msgstr "子主题"
+
+#: inc/admin/welcome-screen/welcome-screen.php:213
+msgid "Contribute"
+msgstr "投稿"
+
+#: inc/admin/welcome-screen/welcome-screen.php:214
+msgid "Changelog"
+msgstr "更新记录"
+
+#: inc/admin/welcome-screen/welcome-screen.php:215
+msgid "Free VS PRO"
+msgstr "免费版与专业版"
+
+#: inc/customizer.php:44
+msgid "Check out the <a href=\"http://themeisle.com/themes/zerif-pro-one-page-wordpress-theme/\">PRO version</a> to add a nice looking background video!"
+msgstr "查看<a href=\"http://themeisle.com/themes/zerif-pro-one-page-wordpress-theme/\">专业版</a> 添加一个精美的背景视频！"
+
+#: inc/customizer.php:154 inc/customizer.php:388
+msgid "Enable accessibility?"
+msgstr "启动无障碍？"
+
+#: inc/customizer.php:615
+msgid "Green button label"
+msgstr "绿色按钮标签"
+
+#: inc/customizer.php:649 inc/customizer.php:796
+msgid "Use parallax effect?"
+msgstr "您想要使用parallax 效果吗？"
+
+#: inc/customizer.php:661 inc/customizer.php:808
+msgid "Image 1"
+msgstr "图片1"
+
+#: inc/customizer.php:674 inc/customizer.php:821
+msgid "Image 2"
+msgstr "图片2"
+
+#: inc/customizer.php:685 inc/customizer.php:832
+msgid "Video background"
+msgstr "视频背景"
+
+#: inc/customizer.php:859 inc/customizer.php:1433
+msgid "Content"
+msgstr "正文"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:42
+msgid "Create a child theme"
+msgstr "创建子主题"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:43
+msgid "If you want to make changes to the theme's files, those changes are likely to be overwritten when you next update the theme. In order to prevent that from happening, you need to create a child theme. For this, please follow the documentation below."
+msgstr "如果您改写主题文件，当您再次更新主题时，这些改写内容可能会被覆盖。为了避免这种情况发生，您需要创建一个子主题。请按照下方的文字说明去做。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:44
+#: inc/admin/welcome-screen/sections/getting-started.php:50
+#: inc/admin/welcome-screen/sections/getting-started.php:56
+#: inc/admin/welcome-screen/sections/getting-started.php:62
+#: inc/admin/welcome-screen/sections/getting-started.php:68
+#: inc/admin/welcome-screen/sections/getting-started.php:74
+#: inc/admin/welcome-screen/sections/getting-started.php:80
+#: inc/admin/welcome-screen/sections/getting-started.php:88
+#: inc/admin/welcome-screen/sections/getting-started.php:94
+#: inc/admin/welcome-screen/sections/getting-started.php:100
+#: inc/admin/welcome-screen/sections/getting-started.php:106
+#: inc/admin/welcome-screen/sections/getting-started.php:112
+#: inc/admin/welcome-screen/sections/getting-started.php:118
+msgid "View how to do this"
+msgstr "查看如何去做"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:78
+msgid "Slider in big title section"
+msgstr "幻灯片形式展示大标题区段"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:79
+msgid "If you are in the position where you want to change the default appearance of the big title section, you may want to replace it with a nice looking slider. This can be accomplished by following the documention below."
+msgstr "如果您想要更换大标题区段的默认外观，您可能需要一个精美的幻灯片。您可以通过参考下方的文字说明来完成。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:60
+msgid "Change dimensions for footer social icons"
+msgstr "更改页脚社交图标的尺寸"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:61
+msgid "In the below documentation you will find an easy way to change the default dimensions for you social icons."
+msgstr "参考下方的文字说明，您将会发现一个更简单的方法去修改社交图标的默认大小。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:66
+msgid "Turn off the animations"
+msgstr "关闭动画"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:67
+msgid "You can turn off the animation effects you see when Zerif Lite loads a section in an easy way with just few changes. Check the documentation below."
+msgstr "您可以关闭您所看到的动画效果，Zerif Lite有更简单的加载该模块的方法。详情请查看下方的文字资料。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:86
+msgid "Speed up your site"
+msgstr "加速您的网站"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:87
+msgid "If you find yourself in the situation where everything on your site is running very slow, you might consider having a look at the below documentation where you will find the most common issues causing this and possible solutions for each of the issues."
+msgstr "如果您发现您的网站处理速度特别慢，您可能需要看一看下方的文字资料，其中列出了出现这种情况的常见原因以及相对应的解决方法。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:92
+msgid "Link Menu to sections"
+msgstr "将菜单链接到区段"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:93
+msgid "Linking the frontpage sections with the top menu is very simple, all you need to do is assign section anchors to the menu. In the below documentation you will find a nice tutorial about this."
+msgstr "将首页区段与顶端菜单链接非常容易，您所需要做的就是分配区段锚点给菜单。下方的文字资料给您提供了一个详细的教程。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:98
+msgid "Change anchors"
+msgstr "改变锚点"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:99
+msgid "To better suit your site's needs, you can change each section's anchor to what you want. The entire process is described below."
+msgstr "为了更好地适应您的网站的需求，您可以根据需要改变每一个区段的锚点。整个过程描述如下。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:104
+msgid "Change the page template"
+msgstr "更换页面模板"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:105
+msgid "Zerif Lite has three page templates available, two for the blog and one for full width pages. To make sure you take full advantage of those page templates, make sure you read the documentation."
+msgstr "Zerif Lite有三个可更换的页面模板，两个适用于博客页面，一个适用于全宽度页面。为了确保您充分利用这些页面模板，请您阅读下方文字说明。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:110
+msgid "Remove the opacity"
+msgstr "移除不透明效果"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:111
+msgid "You don't like the way Zerif Lite looks with its background opacity? No problem. Just remove it using the steps below."
+msgstr "您不喜欢Zerif Lite背景不透明的样子吗？如果您不喜欢，请根据下方的步骤移除这一效果。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:134
+msgid "View full documentation"
+msgstr "查看全文"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:135
+msgid "Need more details? Please check our full documentation for detailed information on how to use Zerif Lite."
+msgstr "需要更多信息吗？请查看全文去了解更多有关如何使用Zerif Lite 的信息。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:136
+msgid "Read full documentation"
+msgstr "阅读全文"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:143
+msgid "Recommended plugins"
+msgstr "推荐插件"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:170
+msgid "WP Product Review"
+msgstr "WP产品评估"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:171
+msgid "Easily turn your basic posts into in-depth reviews with ratings, pros and cons, affiliate links, rich snippets and user reviews."
+msgstr "将您的基础性文章变成带有评价、褒贬、相关链接、丰富摘要和使用者评论的深度评论非常容易。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:154
+#: inc/admin/welcome-screen/sections/getting-started.php:175
+#: inc/admin/welcome-screen/sections/getting-started.php:196
+#: inc/admin/welcome-screen/sections/getting-started.php:219
+#: inc/admin/welcome-screen/sections/getting-started.php:239
+#: inc/admin/welcome-screen/sections/getting-started.php:259
+msgid "Already activated"
+msgstr "已激活"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:181
+msgid "Install WP Product Review"
+msgstr "安装WP产品评论"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:191
+msgid "Custom Login Customizer"
+msgstr "Custom Login Customizer"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:192
+msgid "Login Customizer plugin allows you to easily customize your login page straight from your WordPress Customizer! You can preview your changes before you save them!"
+msgstr "自定义登录插件可以让您直接通过您的WordPress Customizer，轻松个性化您的登录界面。您还可以在保存前先预览。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:202
+msgid "Install Custom Login Customizer"
+msgstr "安装Custom Login Customizer"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:214
+msgid "Visualizer: Charts and Graphs"
+msgstr "Visualizer：图表和图形"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:215
+msgid "A simple, easy to use and quite powerful chart tool to create, manage and embed interactive charts into your WordPress posts and pages."
+msgstr "一个简单、易于使用而又功能强大的图表工具，可以帮助您创建、管理和嵌入交互式图表到您的WordPress文章和页面中。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:225
+msgid "Install Visualizer"
+msgstr "安装Visualizer"
+
+#: inc/admin/welcome-screen/sections/github.php:16
+msgid "GitHub is the place to go!"
+msgstr "到GitHub去吧！"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:102
+msgid "You will benefit of our full support for any issues you have with the theme."
+msgstr "您将受益于我们对您关于该主题出现的任何问题的充分支持。"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:109
+msgid "Packages/Subscribe sections"
+msgstr "包装/订阅模块"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:110
+msgid "Add pricing tables for your products and use newsletter forms to attract the clients."
+msgstr "给您的产品添加价格单并使用定时推送的方式吸引客户。"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:117
+msgid "Change labels for the Contact Us section"
+msgstr "更换联系我们区段标签"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:118
+msgid "Write an original text in each Contact us section field."
+msgstr "在每一个联系我们区段写一份原始信息。"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:125
+msgid "No credit footer link"
+msgstr "页脚没有信用卡链接"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:126
+msgid "Remove \"Zerif Lite powered by WordPress\" copyright from the footer."
+msgstr "从页脚移除“由WordPress 提供的Zerif Lite”的授权声明"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:134
+msgid "Get Zerif PRO now!"
+msgstr "获取Zerif PRO，就是现在！"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:15
+msgid "Our most popular free one page WordPress theme, Zerif Lite!"
+msgstr "我们最受欢迎的免费单页面WordPress主题，Zerif Lite！"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:16
+msgid "We want to make sure you have the best experience using Zerif Lite and that is why we gathered here all the necessary informations for you. We hope you will enjoy using Zerif Lite, as much as we enjoy creating great products."
+msgstr "我们希望确保您在使用Zerif Lite时拥有最佳体验，所以我们在这里为您搜集了所有必要信息。我们希望您喜欢Zerif Lite，就像我们喜欢创造优异的产品一样。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:24
+#: inc/admin/welcome-screen/welcome-screen.php:210
+msgid "Getting started"
+msgstr "入门指南"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:26
+msgid "Customize everything in a single place."
+msgstr "自定义单页面的内容及格式。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:27
+msgid "Using the WordPress Customizer you can easily customize every aspect of the theme."
+msgstr "使用WordPress Customizer，您可以轻易地个性化这个主题的各个方面。"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:28
+msgid "Go to Customizer"
+msgstr "开始使用Customizer吧"
+
+#: inc/admin/welcome-screen/sections/getting-started.php:36
+msgid "FAQ"
+msgstr "常见问题回答(FAQ)"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:78
+msgid "Showcase your best projects in the portfolio section."
+msgstr "请在代表作区段展示您最好的作品。"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:85
+msgid "Sections order"
+msgstr "区段顺序"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:86
+msgid "Arrange the sections by your priorities."
+msgstr "根据您的喜好排列区段顺序。"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:93
+msgid "Background slider/video"
+msgstr "背景幻灯片/视频"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:94
+msgid "Apart from static images, you can use videos or sliders on the background."
+msgstr "除了静态图像，您可以在背景上使用视频或幻灯片。"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:101
+msgid "Support"
+msgstr "支援"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:68
+msgid "OnePirate - Current theme"
+msgstr "OnePirate -当前主题"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:136
+msgid "Zerius Child Theme"
+msgstr "Zerius 子主题"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:138
+msgid "Zerius"
+msgstr "Zerius"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:151
+msgid "Zerius - Current theme"
+msgstr "Zerius - 当前主题"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:80
+msgid "Zifer Child Theme"
+msgstr "Zifer 子主题"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:82
+msgid "Zifer"
+msgstr "Zifer"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:95
+msgid "Zifer Child - Current theme"
+msgstr "Zifer 子主题-当前主题"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:21 inc/customizer.php:637
+#: inc/customizer.php:785
+msgid "Parallax effect"
+msgstr "Parallax效果"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:22
+msgid "Smooth, catchy and easy scrolling experience."
+msgstr "流畅、易使用且文字展示效果良好。"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:29
+msgid "Mobile friendly"
+msgstr "适用于移动端"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:30
+msgid "Responsive layout. Works on every device."
+msgstr "页面相应灵敏。适用于任何设备。"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:37
+msgid "WooCommerce Compatible"
+msgstr "与WooCommerce相兼容"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:38
+msgid "Ready for e-commerce. You can build an online store here."
+msgstr "适用于电子商务，您可以在这里创建一个网上商店。"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:45
+msgid "Frontpage sections"
+msgstr "首页区段"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:46
+msgid "Big title, Our focus, About us, Our team, Testimonials, Ribbons, Latest news, Contat us"
+msgstr "大标题，我们的关注点，关于我们，我们的团队，证明，绶带，最新消息，联系我们"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:53
+msgid "Background image"
+msgstr "背景图像"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:54
+msgid "You can use any background image you want."
+msgstr "您可以使用任何您想要的背景图片。"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:61
+msgid "Unlimited color option"
+msgstr "没有颜色选择限制"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:62
+msgid "You can change the colors of each section. You have unlimited options."
+msgstr "您可以更换任一区段的颜色。您的选择不受限制。"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:69
+msgid "Google map section"
+msgstr "Google map区段"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:70
+msgid "Embed your current location to your website by using a Google map."
+msgstr "使用Google map在您的网站上定位您所在的位置。"
+
+#: inc/admin/welcome-screen/sections/free_pro.php:77
+msgid "Portfolio"
+msgstr "文件夹"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:53
+msgid "OnePirate Child Theme"
+msgstr "OnePirate子主题"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:55
+msgid "OnePirate"
+msgstr "OnePirate"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:62
+#: inc/admin/welcome-screen/sections/child-themes.php:89
+#: inc/admin/welcome-screen/sections/child-themes.php:145
+msgid "Install %s now"
+msgstr "现在安装%s"
+
+#: inc/admin/welcome-screen/sections/actions-required.php:9
+msgid "Keep up with Zerif Lite's latest news"
+msgstr "持续接收Zerif Lite的最新消息"
+
+#: inc/admin/welcome-screen/sections/actions-required.php:60
+#: inc/admin/welcome-screen/welcome-screen.php:105
+msgid "Hooray! There are no required actions for you right now."
+msgstr "太棒了！当前没有您必须要做的了。"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:14
+msgid "Get a whole new look for your site"
+msgstr "看一看您的网站现在的样子吧"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:16
+msgid "Below you will find a selection of Zerif Lite child themes that will totally transform the look of your site."
+msgstr "在下方，您将看到可供选择的Zerif Lite子主题，这将完全改变您的网站现在的样子。"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:26
+msgid "ZBlackBeard Child Theme"
+msgstr "ZBlackBeard子主题"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:28
+msgid "ZBlackBeard"
+msgstr "ZBlackBeard"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:41
+msgid "Zblackbeard - Current theme"
+msgstr "ZBlackBeard - 当前主题"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:42
+#: inc/admin/welcome-screen/sections/child-themes.php:69
+#: inc/admin/welcome-screen/sections/child-themes.php:96
+#: inc/admin/welcome-screen/sections/child-themes.php:125
+#: inc/admin/welcome-screen/sections/child-themes.php:152
+msgid "Customize"
+msgstr "定制"
+
+#: functions.php:105
+msgid "Install Pirate Forms"
+msgstr "安装 Pirate Forms"
+
+#: functions.php:106
+msgid "In the next updates, Zerif Lite's default contact form will be removed. Please make sure you install the Pirate Forms plugin to keep your site updated, and experience a smooth transition to the latest version."
+msgstr "下一次更新时，Zerif Lite的无效连接将会被移除。请确保您安装了Pirate Forms插件，使您的网站得以静默升级。"
+
+#: functions.php:112
+msgid "Check the contact form after installing Pirate Forms"
+msgstr "请在安装Pirate Forms后检查连接方式"
+
+#: functions.php:113
+msgid "After installing the Pirate Forms plugin, please make sure you check your frontpage contact form is working fine. Also, if you use Zerif Lite in other language(s) please make sure the translation is ok. If not, please translate the contact form again."
+msgstr "安装Pirate Forms插件后，请确保您的首页连接方式工作良好。同样，如果您使用的是其他语言的Zerif Lite，请确保翻译正常。如果情况相反，请重新翻译连接方式。"
+
+#: functions.php:390
+msgid "Our focus section widgets"
+msgstr "我们的关注点区段微件"
+
+#: functions.php:394
+msgid "Testimonials section widgets"
+msgstr "证明书区段微件"
+
+#: functions.php:398
+msgid "Our team section widgets"
+msgstr "我们的团队区段微件"
+
+#: functions.php:577
+msgid "Zerif - Our focus widget"
+msgstr "Zerif - 我们的关注点微件"
+
+#: functions.php:684 functions.php:774 functions.php:785 functions.php:841
+#: functions.php:940 functions.php:995 functions.php:1007 functions.php:1160
+msgid "Uploaded image"
+msgstr "上传图片"
+
+#: functions.php:720
+msgid "Zerif - Testimonial widget"
+msgstr "Zerif - 证明书微件"
+
+#: functions.php:879
+msgid "Zerif - Clients widget"
+msgstr "Zerif - 客户微件"
+
+#: functions.php:895 functions.php:902
+msgid "Client"
+msgstr "客户"
+
+#: functions.php:975
+msgid "Zerif - Team member widget"
+msgstr "Zerif - 团队成员微件"
+
+#: functions.php:1151
+msgid "Open links in new window?"
+msgstr "在新窗口打开链接？"
+
+#: header.php:125
+msgid "Skip to content"
+msgstr "跳至内容"
+
+#. translators: %s: Name of current post
+#: content-page-no-title.php:14 content-page.php:20
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "继续阅读%s <span class=\"meta-nav\">&rarr;</span>"
+
+#: front-page.php:364 front-page.php:365
+msgid "Your Message"
+msgstr "您的信息"
+
+#: front-page.php:354 front-page.php:355
+msgid "Your Email"
+msgstr "您的邮箱"
+
+#: front-page.php:349 front-page.php:350
+msgid "Your Name"
+msgstr "您的名字"
+
+#: front-page.php:359 front-page.php:360
+msgid "Subject"
+msgstr "主题"
+
+#: class-tgm-plugin-activation.php:3362
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "正在升级 %1$s 插件（%2$d/%3$d）"
+
+#: class-tgm-plugin-activation.php:2788
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "未选中插件激活。无动作进行。"
+
+#: class-tgm-plugin-activation.php:2683
+msgid "No plugins are available to be updated at this time."
+msgstr "现在没有需要更新的插件。"
+
+#: class-tgm-plugin-activation.php:2645
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "未选中插件更新。无动作进行。"
+
+#: class-tgm-plugin-activation.php:2643
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "未选中插件安装。无动作进行。"
+
+#: class-tgm-plugin-activation.php:2609
+msgid "Update"
+msgstr "更新"
+
+#: class-tgm-plugin-activation.php:2570
+msgid "Upgrade message from the plugin author:"
+msgstr "来自插件制作者的升级信息。"
+
+#: class-tgm-plugin-activation.php:2495
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Update %2$s"
+msgstr "更新%2$s"
+
+#: class-tgm-plugin-activation.php:2500
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Activate %2$s"
+msgstr "激活%2$s"
+
+#: class-tgm-plugin-activation.php:2491
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Install %2$s"
+msgstr "安装%2$s"
+
+#: class-tgm-plugin-activation.php:2442
+msgid "Version"
+msgstr "版本"
+
+#: class-tgm-plugin-activation.php:2422
+msgid "No plugins to install, update or activate. <a href=\"%1$s\">Return to the Dashboard</a>"
+msgstr "无插件更新，安装或激活。<a href=\"%1$s\">返回主控页面</a>"
+
+#: class-tgm-plugin-activation.php:2399
+msgid "Available version:"
+msgstr "可获得版本："
+
+#: class-tgm-plugin-activation.php:2289
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "激活<span class=\"count\">(%s)</span>"
+
+#: class-tgm-plugin-activation.php:2371
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "未知"
+
+#: class-tgm-plugin-activation.php:2379
+msgid "Installed version:"
+msgstr "已安装版本"
+
+#: class-tgm-plugin-activation.php:2387
+msgid "Minimum required version:"
+msgstr "最低需要版本："
+
+#: class-tgm-plugin-activation.php:2283
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "安装 <span class=\"count\">(%s)</span>"
+
+#: class-tgm-plugin-activation.php:2286
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "可供更新 <span class=\"count\">(%s)</span>"
+
+#: class-tgm-plugin-activation.php:2221
+msgid "Required Update not Available"
+msgstr "未获得所需更新"
+
+#: class-tgm-plugin-activation.php:2224
+msgid "Requires Update"
+msgstr "需要更新"
+
+#: class-tgm-plugin-activation.php:2227
+msgid "Update recommended"
+msgstr "更新推荐"
+
+#: class-tgm-plugin-activation.php:2235
+msgctxt "%1$s = install status, %2$s = update status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#: class-tgm-plugin-activation.php:2280
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "全部 <span class=\"count\">(%s)</span>"
+
+#: class-tgm-plugin-activation.php:377
+msgid "Sorry, but you do not have the correct permissions to activate the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %1$s plugins."
+msgstr[0] "抱歉，但是您不具有激活%1$s 插件的许可。"
+
+#: class-tgm-plugin-activation.php:362
+msgid "Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %1$s plugins."
+msgstr[0] "抱歉，您不具备更新该插件%1$s的许可。"
+
+#: class-tgm-plugin-activation.php:357
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] "这里有一个可获得更新：%1$s"
+
+#: class-tgm-plugin-activation.php:347
+msgid "Sorry, but you do not have the correct permissions to install the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %1$s plugins."
+msgstr[0] "抱歉，您不具有安装该插件%1$s的许可。"
+
+#: class-tgm-plugin-activation.php:387
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "开始更新插件"
+
+#: class-tgm-plugin-activation.php:401
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "无动作进行。插件%1$s已激活。"
+
+#: class-tgm-plugin-activation.php:402
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr "插件未激活。本主题需要更高版本的%s。请更新插件。 "
+
+#: class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr "请联系本网站管理员寻求帮助。"
+
+#: class-tgm-plugin-activation.php:520
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "该插件需要更新，以便与您的主题相兼容。"
+
+#: class-tgm-plugin-activation.php:521
+msgid "Update Required"
+msgstr "必需更新"
+
+#: class-tgm-plugin-activation.php:635
+msgid "Set the parent_slug config variable instead."
+msgstr "设置parent_slug配置变量替换。"
+
+#: class-tgm-plugin-activation.php:935
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr "远程插件安装包中未包含所需slug的文件，重命名无效。"
+
+#: class-tgm-plugin-activation.php:935 class-tgm-plugin-activation.php:938
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr "请联系该插件提供者，请他们根据WordPress指导打包插件。"
+
+#: class-tgm-plugin-activation.php:938
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr "远程插件安装包中含有多个文件，这些文件不在一个文件夹中。"
+
+#: class-tgm-plugin-activation.php:1116 class-tgm-plugin-activation.php:2828
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "和"
+
+#: class-tgm-plugin-activation.php:1881
+msgctxt "%s = version number"
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: class-tgm-plugin-activation.php:2189
+msgid "External Source"
+msgstr "外部源"
+
+#: class-tgm-plugin-activation.php:2215
+msgid "Active"
+msgstr "活跃"
+
+#. Template Name of the plugin/theme
+msgid "Full Width Page"
+msgstr "全宽页面"
+
+#. Template Name of the plugin/theme
+msgid "Blog template with large images"
+msgstr "多图片博客模板"
+
+#. Template Name of the plugin/theme
+msgid "Blog"
+msgstr "日志"
+
+#: sidebar.php:28
+msgid "Meta"
+msgstr "功能"
+
+#: sections/latest_news.php:167
+msgid "Next"
+msgstr "继续"
+
+#: sections/about_us.php:307
+msgid "OUR HAPPY CLIENTS"
+msgstr "满意的客户"
+
+#: sections/latest_news.php:26
+msgid "Latest news"
+msgstr "最新消息"
+
+#: sections/latest_news.php:163
+msgid "Previous"
+msgstr "上一"
+
+#: search.php:25
+msgid "Search Results for: %s"
+msgstr "%s的搜索结果"
+
+#: inc/template-tags.php:123
+msgid "<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
+msgstr "<span class=\"posted-on\">发表于%1$s </ SPAN> <span class=\"byline\">由%2$s </ SPAN>"
+
+#: inc/template-tags.php:79
+msgctxt "Next post link"
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:77
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr "<span class=\"meta-nav\">&larr;</span> %title"
+
+#: inc/template-tags.php:71
+msgid "Post navigation"
+msgstr "文章导航"
+
+#: inc/template-tags.php:33
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "较新文章 <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:27
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> 早期文章"
+
+#: inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr "文章导航"
+
+#: inc/extras.php:89
+msgid "Page %s"
+msgstr "第%s页"
+
+#: inc/customizer.php:2058
+msgid "View PRO version"
+msgstr "查看专业版"
+
+#: inc/customizer.php:1965
+msgid "Hide reCaptcha?"
+msgstr "想要隐藏reCaptcha吗？"
+
+#: inc/customizer.php:1977
+msgid "Site key"
+msgstr "网站关键"
+
+#: inc/customizer.php:1978
+msgid "Create an account here"
+msgstr "创建账户"
+
+#: inc/customizer.php:1989
+msgid "Secret key"
+msgstr "密钥"
+
+#: inc/customizer.php:1999
+msgid "Google maps section"
+msgstr "Google地图区段"
+
+#: inc/customizer.php:2016
+msgid "Pricing section"
+msgstr "价格区段"
+
+#: front-page.php:369 inc/customizer.php:1948
+msgid "Send Message"
+msgstr "发送信息"
+
+#: inc/customizer.php:1004 inc/customizer.php:1242 sections/about_us.php:27
+msgid "Use this section to showcase important details about your business."
+msgstr "使用这个区段展示您业务的重要信息"
+
+#: inc/customizer.php:1009 inc/customizer.php:1247
+msgid "Subtitle"
+msgstr "副标题"
+
+#: inc/customizer.php:1017 inc/customizer.php:1255 sections/about_us.php:54
+msgid "Everything you see here is responsive and mobile-friendly."
+msgstr "您在这里看到的所有都响应灵敏且适用于移动端。"
+
+#: inc/customizer.php:1021 inc/customizer.php:1259
+msgid "Big left side title"
+msgstr "左边大标题"
+
+#: inc/customizer.php:1029 inc/customizer.php:1267
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros. <br><br>Mauris vel nunc at ipsum fermentum pellentesque quis ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas non adipiscing massa. Sed ut fringilla sapien. Cras sollicitudin, lectus sed tincidunt cursus, magna lectus vehicula augue, a lobortis dui orci et est."
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros. <br><br>Mauris vel nunc at ipsum fermentum pellentesque quis ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas non adipiscing massa. Sed ut fringilla sapien. Cras sollicitudin, lectus sed tincidunt cursus, magna lectus vehicula augue, a lobortis dui orci et est.(仅用于填充版面的无意义文字)"
+
+#: inc/customizer.php:1039
+msgid "Feature no#1"
+msgstr "特色no#1"
+
+#: inc/customizer.php:1047 inc/customizer.php:1279 sections/about_us.php:57
+msgid "YOUR SKILL #1"
+msgstr "您的技能#1"
+
+#: inc/customizer.php:1052 inc/customizer.php:1284
+msgid "Feature no1 title"
+msgstr "特色no1标题"
+
+#: inc/customizer.php:1063 inc/customizer.php:1295
+msgid "Feature no1 text"
+msgstr "特色no1文本"
+
+#: inc/customizer.php:1075 inc/customizer.php:1307
+msgid "Feature no1 percentage"
+msgstr "特色no1百分比"
+
+#: inc/customizer.php:1081
+msgid "Feature no#2"
+msgstr "特色no#2"
+
+#: inc/customizer.php:1089 inc/customizer.php:1315 sections/about_us.php:60
+msgid "YOUR SKILL #2"
+msgstr "您的技能#2"
+
+#: inc/customizer.php:1094 inc/customizer.php:1320
+msgid "Feature no2 title"
+msgstr "特色no2标题"
+
+#: inc/customizer.php:1105 inc/customizer.php:1331
+msgid "Feature no2 text"
+msgstr "特色no2内容"
+
+#: inc/customizer.php:1117 inc/customizer.php:1342
+msgid "Feature no2 percentage"
+msgstr "特色no2百分比"
+
+#: inc/customizer.php:1123
+msgid "Feature no#3"
+msgstr "特色no#3"
+
+#: inc/customizer.php:1131 inc/customizer.php:1350 sections/about_us.php:63
+msgid "YOUR SKILL #3"
+msgstr "您的技能#3"
+
+#: inc/customizer.php:1136 inc/customizer.php:1355
+msgid "Feature no3 title"
+msgstr "特色 no3 标题"
+
+#: inc/customizer.php:1147 inc/customizer.php:1366
+msgid "Feature no3 text"
+msgstr "特色no3内容"
+
+#: inc/customizer.php:1159 inc/customizer.php:1378
+msgid "Feature no3 percentage"
+msgstr "特色no3百分比"
+
+#: inc/customizer.php:1165
+msgid "Feature no#4"
+msgstr "特色no#4"
+
+#: inc/customizer.php:1173 inc/customizer.php:1386 sections/about_us.php:66
+msgid "YOUR SKILL #4"
+msgstr "您的技能#4"
+
+#: inc/customizer.php:1178 inc/customizer.php:1391
+msgid "Feature no4 title"
+msgstr "特色no4标题"
+
+#: inc/customizer.php:1189 inc/customizer.php:1402
+msgid "Feature no4 text"
+msgstr "特色no4内容"
+
+#: inc/customizer.php:1201 inc/customizer.php:1414
+msgid "Feature no4 percentage"
+msgstr "特色no4百分比"
+
+#: inc/customizer.php:1481
+msgid "The main content of this section is customizable in: Dashboard -> Appearance -> Widgets -> Our team section. There you must add the \"Zerif - Team member widget\""
+msgstr "这个区段的主要内容是自定义：主控面板-> 外观 ->微件 ->我们的团队区段。在这里您必须添加 \"Zerif - 团队成员微件\""
+
+#: inc/customizer.php:1446 inc/customizer.php:1492
+msgid "Hide our team section?"
+msgstr "想要隐藏我们的团队区段吗？"
+
+#: inc/customizer.php:1454 inc/customizer.php:1500 sections/our_team.php:10
+msgid "YOUR TEAM"
+msgstr "您的团队"
+
+#: inc/customizer.php:1467 inc/customizer.php:1513 sections/our_team.php:18
+msgid "Prove that you have real people working for you, with some nice looking profile pictures and links to social media."
+msgstr "请证明您的团队成员是真实存在的人，请提供他们好看的简历照片以及社交媒体链接。"
+
+#: inc/customizer.php:1471 inc/customizer.php:1518
+msgid "Our team subtitle"
+msgstr "我们的团队副标题"
+
+#: inc/customizer.php:1597
+msgid "The main content of this section is customizable in: Dashboard -> Appearance -> Widgets -> Testimonials section. There you must add the \"Zerif - Testimonial widget\""
+msgstr "这一区段的主要内容是自定义：主控面板 -> 外观 -> 微件 -> 证明书区段。在这里您必须添加 \"Zerif - 证明书区段\""
+
+#: inc/customizer.php:1550 inc/customizer.php:1608
+msgid "Hide testimonials section?"
+msgstr "想要隐藏证明书区段吗？"
+
+#: inc/customizer.php:1570 inc/customizer.php:1628 sections/testimonials.php:11
+msgid "Testimonials"
+msgstr "证明书"
+
+#: inc/customizer.php:1587 inc/customizer.php:1645
+msgid "Testimonials subtitle"
+msgstr "证明书副标题"
+
+#: inc/customizer.php:1656
+msgid "Latest News section"
+msgstr "最新消息区段"
+
+#: inc/customizer.php:1668
+msgid "Hide latest news section?"
+msgstr "想要隐藏最新消息区段吗？"
+
+#: inc/customizer.php:1680
+msgid "Latest News title"
+msgstr "最新消息标题"
+
+#: inc/customizer.php:1692
+msgid "Latest News subtitle"
+msgstr "最新消息副标题"
+
+#: inc/customizer.php:1705 inc/customizer.php:1798
+msgid "Ribbon sections"
+msgstr "功能区段"
+
+#: inc/customizer.php:1709
+msgid "BottomButton Ribbon"
+msgstr "底部按钮功能区"
+
+#: inc/customizer.php:1735 inc/customizer.php:1779 inc/customizer.php:1953
+msgid "Button label"
+msgstr "按钮标签"
+
+#: inc/customizer.php:1747 inc/customizer.php:1791
+msgid "Button link"
+msgstr "按钮链接"
+
+#: inc/customizer.php:1753
+msgid "RightButton Ribbon"
+msgstr "右端按钮功能区"
+
+#: inc/customizer.php:1811
+msgid "Ribbon section with bottom button - Text"
+msgstr "带有底部按钮的功能区段 - 内容"
+
+#: inc/customizer.php:1823
+msgid "Ribbon section with bottom button - Button label"
+msgstr "带有底部按钮的功能区段 - 按钮标签"
+
+#: inc/customizer.php:1835
+msgid "Ribbon section with bottom button - Button link"
+msgstr "带有底部按钮的功能区段 - 按钮链接"
+
+#: inc/customizer.php:1849
+msgid "Ribbon section with button in the right side - Text"
+msgstr "带有右端按钮的功能区段 - 内容"
+
+#: inc/customizer.php:1861
+msgid "Ribbon section with button in the right side - Button label"
+msgstr "带有右端按钮的功能区段 - 按钮标签"
+
+#: inc/customizer.php:1873
+msgid "Ribbon section with button in the right side - Button link"
+msgstr "带有右端按钮的功能区段 - 按钮链接"
+
+#: inc/customizer.php:1891
+msgid "Contact us section"
+msgstr "联系我们区段"
+
+#: inc/customizer.php:1904
+msgid "Hide contact us section?"
+msgstr "想要隐藏联系我们区段吗？"
+
+#: front-page.php:275 inc/customizer.php:1912
+msgid "Get in touch"
+msgstr "取得联系"
+
+#: inc/customizer.php:1917
+msgid "Contact us section title"
+msgstr "联系我们区段标题"
+
+#: inc/customizer.php:1929
+msgid "Contact us section subtitle"
+msgstr "联系我们区段副标题"
+
+#: inc/customizer.php:1940
+msgid "Email address"
+msgstr "电子邮箱地址"
+
+#: inc/customizer.php:991 inc/customizer.php:1229 sections/about_us.php:14
+msgid "About"
+msgstr "关于"
+
+#: inc/customizer.php:977 inc/customizer.php:1221
+msgid "Hide about us section?"
+msgstr "想要隐藏关于我们区段吗？"
+
+#: inc/customizer.php:551 inc/customizer.php:983
+msgid "Main content"
+msgstr "主要内容"
+
+#: inc/customizer.php:893 inc/customizer.php:940 sections/our_focus.php:22
+msgid "What makes this single-page WordPress theme unique."
+msgstr "使得这个单页面WordPress主题独一无二的原因。"
+
+#: inc/customizer.php:898 inc/customizer.php:945
+msgid "Our focus subtitle"
+msgstr "我们的关注点副标题"
+
+#: inc/customizer.php:964
+msgid "Settings"
+msgstr "设置"
+
+#: inc/customizer.php:602 inc/customizer.php:751
+msgid "Red button link"
+msgstr "红色按钮链接"
+
+#: inc/customizer.php:610 inc/customizer.php:759 sections/big_title.php:44
+msgid "What's inside"
+msgstr "里面是什么"
+
+#: inc/customizer.php:627 inc/customizer.php:776
+msgid "Green button link"
+msgstr "绿色按钮链接"
+
+#: inc/customizer.php:908
+msgid "The main content of this section is customizable in: Dashboard -> Appearance -> Widgets -> Our focus section. There you must add the \"Zerif - Our focus widget\""
+msgstr "这一区段的主要内容是自定义：主控面板 -> 外观 -> 微件 -> 我们的关注点区段。在这里您必须添加 \"Zerif - 我们的关注点微件\""
+
+#: inc/customizer.php:872 inc/customizer.php:919
+msgid "Hide our focus section?"
+msgstr "想要隐藏我们的关注点区段吗？"
+
+#: inc/customizer.php:880 inc/customizer.php:927 sections/our_focus.php:14
+msgid "FEATURES"
+msgstr "特色"
+
+#: inc/customizer.php:590 inc/customizer.php:739 inc/customizer.php:764
+msgid "Red button label"
+msgstr "红色按钮标签"
+
+#: inc/customizer.php:342
+msgid "Zerif theme general options"
+msgstr "Zerif 主题常规选项"
+
+#: inc/customizer.php:547 inc/customizer.php:701
+msgid "Big title section"
+msgstr "大标题区段"
+
+#: inc/customizer.php:564 inc/customizer.php:713
+msgid "Hide big title section?"
+msgstr "想要隐藏大标题区段吗？"
+
+#: inc/customizer.php:572 inc/customizer.php:721 sections/big_title.php:27
+msgid "ONE OF THE TOP 10 MOST POPULAR THEMES ON WORDPRESS.ORG"
+msgstr " WORDPRESS.ORG上最受欢迎的十个主题之一"
+
+#: inc/customizer.php:585 inc/customizer.php:734 sections/big_title.php:40
+msgid "Features"
+msgstr "特色"
+
+#: inc/customizer.php:320 inc/customizer.php:519
+msgid "Phone number section - icon"
+msgstr "电话号码区段 - 图标"
+
+#: inc/customizer.php:332 inc/customizer.php:531
+msgid "Phone number"
+msgstr "电话号码"
+
+#: inc/customizer.php:272 inc/customizer.php:472
+msgid "Address section - icon"
+msgstr "地址区段 - 图标"
+
+#: inc/customizer.php:284 inc/customizer.php:484
+msgid "Address"
+msgstr "地址"
+
+#: inc/customizer.php:296 inc/customizer.php:495
+msgid "Email section - icon"
+msgstr "电子邮箱区段 - 图标"
+
+#: inc/customizer.php:308 inc/customizer.php:507
+msgid "Email"
+msgstr "电子邮件"
+
+#: inc/customizer.php:117 inc/customizer.php:351
+msgid "Logo"
+msgstr "标识"
+
+#: inc/customizer.php:130 inc/customizer.php:364
+msgid "Disable preloader?"
+msgstr "禁用预加载？"
+
+#: inc/customizer.php:142 inc/customizer.php:376
+msgid "Disable smooth scroll?"
+msgstr "禁用平滑扩展？"
+
+#: inc/customizer.php:243 inc/customizer.php:451
+msgid "Dribbble link"
+msgstr "Dribbble链接"
+
+#: inc/customizer.php:38
+msgid "Check out the <a href=\"http://themeisle.com/themes/zerif-pro-one-page-wordpress-theme/\">PRO version</a> for full control over the frontpage SECTIONS ORDER and the COLOR SCHEME!"
+msgstr "查看 <a href=\"http://themeisle.com/themes/zerif-pro-one-page-wordpress-theme/\">专业版</a>完全控制前端页面的区段顺序和配色方案！"
+
+#: inc/customizer.php:50
+msgid "Check out the <a href=\"http://themeisle.com/themes/zerif-pro-one-page-wordpress-theme/\">PRO version</a> to add a google maps section !"
+msgstr "查看 <a href=\"http://themeisle.com/themes/zerif-pro-one-page-wordpress-theme/\">专业版</a>添加google地图区段！"
+
+#: inc/customizer.php:56
+msgid "Check out the <a href=\"http://themeisle.com/themes/zerif-pro-one-page-wordpress-theme/\">PRO version</a> to add a pricing section !"
+msgstr "查看 <a href=\"http://themeisle.com/themes/zerif-pro-one-page-wordpress-theme/\">专业版</a>添加价格区段！"
+
+#: inc/customizer.php:70
+msgid "Sections order and Colors"
+msgstr "区段顺序和配色"
+
+#: inc/customizer.php:90 inc/customizer.php:340
+msgid "General options"
+msgstr "常规选项"
+
+#: inc/customizer.php:94
+msgid "General"
+msgstr "常规"
+
+#: header.php:80
+msgid "Toggle navigation"
+msgstr "切换导航"
+
+#: inc/admin/welcome-screen/sections/child-themes.php:36
+#: inc/admin/welcome-screen/sections/child-themes.php:63
+#: inc/admin/welcome-screen/sections/child-themes.php:90
+#: inc/admin/welcome-screen/sections/child-themes.php:119
+#: inc/admin/welcome-screen/sections/child-themes.php:146
+msgid "Live Preview"
+msgstr "实时预览"
+
+#: functions.php:1129 inc/customizer.php:196 inc/customizer.php:411
+msgid "Facebook link"
+msgstr "Facebook链接"
+
+#: functions.php:1134 inc/customizer.php:208 inc/customizer.php:421
+msgid "Twitter link"
+msgstr "Twitter链接"
+
+#: functions.php:1138 inc/customizer.php:231 inc/customizer.php:441
+msgid "Behance link"
+msgstr "Behance链接"
+
+#: functions.php:1143
+msgid "Dribble link"
+msgstr "Dribble链接"
+
+#: functions.php:1147 inc/customizer.php:219 inc/customizer.php:431
+msgid "Linkedin link"
+msgstr "Linkedin链接"
+
+#: functions.php:1122
+msgid "Description"
+msgstr "图像描述"
+
+#: functions.php:1118
+msgid "Position"
+msgstr "位置"
+
+#: functions.php:825
+msgid "Author link"
+msgstr "作者链接"
+
+#: functions.php:829
+msgid "Author details"
+msgstr "作者信息"
+
+#: functions.php:1114
+msgid "Name"
+msgstr "姓名"
+
+#: functions.php:821
+msgid "Author"
+msgstr "作者"
+
+#: functions.php:690 functions.php:847 functions.php:946 functions.php:1167
+msgid "Upload Image"
+msgstr "上传图像"
+
+#: functions.php:681 functions.php:837 functions.php:937 functions.php:1154
+msgid "Image"
+msgstr "图像"
+
+#: functions.php:677 functions.php:933
+msgid "Link"
+msgstr "链接"
+
+#: functions.php:673 functions.php:833 inc/customizer.php:1033
+#: inc/customizer.php:1271 inc/customizer.php:1723 inc/customizer.php:1767
+msgid "Text"
+msgstr "文本"
+
+#: functions.php:174
+msgctxt "Homemade font: on or off"
+msgid "on"
+msgstr "on"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Open Sans, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:179
+msgctxt "Monserrat font: on or off"
+msgid "on"
+msgstr "on"
+
+#: class-tgm-plugin-activation.php:336 functions.php:321
+msgid "Something went wrong with the plugin API."
+msgstr "插件API发生错误。"
+
+#: functions.php:334
+msgid "All plugins installed and activated successfully. %s"
+msgstr "所有插件均已成功安装并激活。%s"
+
+#: functions.php:363
+msgid "Default title"
+msgstr "默认标题"
+
+#: functions.php:669 inc/customizer.php:577 inc/customizer.php:726
+#: inc/customizer.php:885 inc/customizer.php:932 inc/customizer.php:996
+#: inc/customizer.php:1234 inc/customizer.php:1459 inc/customizer.php:1505
+#: inc/customizer.php:1575 inc/customizer.php:1633
+msgid "Title"
+msgstr "标题"
+
+#: inc/customizer.php:855 inc/customizer.php:906
+msgid "Our focus section"
+msgstr "我们的关注点区段"
+
+#: inc/customizer.php:1533 inc/customizer.php:1537 inc/customizer.php:1595
+msgid "Testimonials section"
+msgstr "证明书区段"
+
+#: functions.php:143 inc/customizer.php:960 inc/customizer.php:1209
+msgid "About us section"
+msgstr "关于我们区段"
+
+#: inc/customizer.php:1429 inc/customizer.php:1479
+msgid "Our team section"
+msgstr "我们的团队区段"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Lora, translate this to 'off'. Do not translate into your own language.
+#: functions.php:173
+msgctxt "Lato font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:134
+msgid "Sidebar"
+msgstr "边栏"
+
+#: content-single.php:46
+msgid "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "本条目被标记%2$s 。书签的 <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+
+#: content-single.php:50
+msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "书签的  <a href=\"%3$s\" rel=\"bookmark\">permalink</a>"
+
+#: content-single.php:60
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "此项目被张贴在%1$s和标记%2$s 。书签的 <a href=\"%3$s\" rel=\"bookmark\">permalink</a>"
+
+#: content-single.php:64
+msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "此项目被张贴在%1$s 。书签的 <a href=\"%3$s\" rel=\"bookmark\">permalink</a>"
+
+#: footer.php:39 inc/customizer.php:280 inc/customizer.php:480
+msgid "Company address"
+msgstr "公司地址"
+
+#: footer.php:194
+msgid "powered by"
+msgstr "建立者"
+
+#: front-page.php:49
+msgid "* Please enter your name."
+msgstr "*请输入您的姓名"
+
+#: front-page.php:63
+msgid "* Please enter your email address."
+msgstr "*请输入您的电子邮箱地址"
+
+#: front-page.php:69
+msgid "* You entered an invalid email address."
+msgstr "*您输入的邮箱地址是无效的"
+
+#: front-page.php:83
+msgid "* Please enter a subject."
+msgstr "*请输入一个主题"
+
+#: front-page.php:97
+msgid "* Please enter a message."
+msgstr "*请输入一段信息"
+
+#: front-page.php:308
+msgid "Thanks, your email was sent successfully!"
+msgstr "谢谢，您的邮件已成功发送！"
+
+#: front-page.php:312
+msgid "Sorry, an error occured."
+msgstr "抱歉，发生错误。"
+
+#: functions.php:39
+msgid "Primary Menu"
+msgstr "主菜单"
+
+#: content-none.php:27
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "我们可能无法找到您需要的内容。或许搜索功能可以帮到您。"
+
+#: content-none.php:21
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "抱歉，没有符合您搜索条件的结果。请换其它关键词再试。"
+
+#: content-none.php:17
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "准备好发布第一篇文章了？<a href=\"%1$s\">从这里开始</a>。"
+
+#: content-none.php:10
+msgid "Nothing Found"
+msgstr "未找到"
+
+#: content-large.php:147 content-page-no-title.php:30 content-page.php:36
+#: content-single.php:84 content.php:125
+msgid "Edit"
+msgstr "编辑"
+
+#: content-large.php:143 content.php:121
+msgid "% Comments"
+msgstr "%条评论"
+
+#: content-large.php:143 content.php:121
+msgid "1 Comment"
+msgstr "一条评论"
+
+#: content-large.php:143 content.php:121
+msgid "Leave a comment"
+msgstr "留下评论"
+
+#: content-large.php:132 content.php:111
+msgid "Tagged %1$s"
+msgstr "标签：%1$s"
+
+#: content-large.php:114 content.php:93
+msgid "Posted in %1$s"
+msgstr "张贴在%1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: content-large.php:106 content-large.php:124 content-single.php:34
+#: content-single.php:38 content.php:85 content.php:103
+msgid ", "
+msgstr "、"
+
+#: content-large.php:73 content-page-no-title.php:20 content-page.php:26
+#: content-single.php:21 content.php:70
+msgid "Pages:"
+msgstr "页面："
+
+#: comments.php:79
+msgid "Comments are closed."
+msgstr "评论已关闭。"
+
+#: comments.php:39 comments.php:66
+msgid "Newer Comments &rarr;"
+msgstr "较新评论 &rarr;"
+
+#: comments.php:37 comments.php:64
+msgid "&larr; Older Comments"
+msgstr "&larr; 早期评论"
+
+#: comments.php:35 comments.php:62
+msgid "Comment navigation"
+msgstr "评论导航"
+
+#: class-tgm-plugin-activation.php:3377
+msgid "All installations have been completed."
+msgstr "所有安装均已完成。"
+
+#: class-tgm-plugin-activation.php:3378
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "正在安装插件 %1$s (%2$d/%3$d)"
+
+#: comments.php:23
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "《%2$s》有%s个想法"
+
+#: class-tgm-plugin-activation.php:3371
+msgid "All installations and activations have been completed."
+msgstr "所有安装和激活均已完成。"
+
+#: class-tgm-plugin-activation.php:3372
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "正在安装和激活插件%1$s (%2$d/%3$d)"
+
+#: class-tgm-plugin-activation.php:3375
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "安装过程即将开始。这个过程可能会持续一段时间，请保持耐心。"
+
+#: class-tgm-plugin-activation.php:3364
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "正在安装%1$s: <strong>%2$s</strong>时发生错误"
+
+#: class-tgm-plugin-activation.php:3365
+msgid "The installation of %1$s failed."
+msgstr "%1$s 安装失败"
+
+#: class-tgm-plugin-activation.php:3376
+msgid "%1$s installed successfully."
+msgstr "%1$s 安装成功"
+
+#: class-tgm-plugin-activation.php:3370 class-tgm-plugin-activation.php:3376
+msgid "Hide Details"
+msgstr "隐藏详情"
+
+#: class-tgm-plugin-activation.php:3028
+msgid "Plugin activation failed."
+msgstr "插件激活失败"
+
+#: class-tgm-plugin-activation.php:3369
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "安装和激活过程即将开始。这个过程可能会持续一段时间，请保持耐心。"
+
+#: class-tgm-plugin-activation.php:3370
+msgid "%1$s installed and activated successfully."
+msgstr "安装并激活%1$s成功。"
+
+#: class-tgm-plugin-activation.php:3370 class-tgm-plugin-activation.php:3376
+msgid "Show Details"
+msgstr "显示详情"
+
+#: class-tgm-plugin-activation.php:2681
+msgid "No plugins are available to be installed at this time."
+msgstr "当前无可安装插件。"
+
+#: class-tgm-plugin-activation.php:2814
+msgid "No plugins are available to be activated at this time."
+msgstr "当前无可激活插件。"
+
+#: class-tgm-plugin-activation.php:2443
+msgid "Status"
+msgstr "状态"
+
+#: class-tgm-plugin-activation.php:2438
+msgid "Type"
+msgstr "类型"
+
+#: class-tgm-plugin-activation.php:2437
+msgid "Source"
+msgstr "源"
+
+#: class-tgm-plugin-activation.php:2436
+msgid "Plugin"
+msgstr "插件"
+
+#: class-tgm-plugin-activation.php:2612
+msgid "Activate"
+msgstr "激活"
+
+#: class-tgm-plugin-activation.php:2170
+msgid "Recommended"
+msgstr "推荐"
+
+#: class-tgm-plugin-activation.php:2209
+msgid "Not Installed"
+msgstr "未安装"
+
+#: class-tgm-plugin-activation.php:2213
+msgid "Installed But Not Activated"
+msgstr "安装成功但未激活"
+
+#: class-tgm-plugin-activation.php:2603
+msgid "Install"
+msgstr "安装"
+
+#: functions.php:327
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] "抱歉，您不具备激活该插件%s的许可，请联系网站管理员帮助您激活插件。"
+
+#: class-tgm-plugin-activation.php:352 functions.php:328
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] "以下插件需要更新到最新的版本，以确保与这一主题的最大兼容性： %1$s。"
+
+#: functions.php:329
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] "抱歉，您不具备更新该插件%s 的许可。请联系网站管理员帮助您更新该插件。"
+
+#: class-tgm-plugin-activation.php:382 functions.php:330
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "开始安装插件"
+
+#: class-tgm-plugin-activation.php:392 functions.php:331
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "开始激活插件"
+
+#: class-tgm-plugin-activation.php:397 functions.php:332
+msgid "Return to Required Plugins Installer"
+msgstr "返回所需插件的安装页面。"
+
+#: class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr "返回主控页面"
+
+#: class-tgm-plugin-activation.php:399 class-tgm-plugin-activation.php:3029
+#: functions.php:333
+msgid "Plugin activated successfully."
+msgstr "插件激活成功。"
+
+#: class-tgm-plugin-activation.php:400 class-tgm-plugin-activation.php:2832
+msgid "The following plugin was activated successfully:"
+msgstr "以下插件已激活成功："
+
+#: class-tgm-plugin-activation.php:403
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "所有插件均被成功安装并激活。%1$s"
+
+#: class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr "关闭此通知"
+
+#: class-tgm-plugin-activation.php:828 class-tgm-plugin-activation.php:3438
+msgid "Return to the Dashboard"
+msgstr "返回主控页面"
+
+#: class-tgm-plugin-activation.php:2192
+msgid "Pre-Packaged"
+msgstr "预包装"
+
+#: class-tgm-plugin-activation.php:2186
+msgid "WordPress Repository"
+msgstr "WordPress 库"
+
+#: class-tgm-plugin-activation.php:2167
+msgid "Required"
+msgstr "必填"
+
+#: class-tgm-plugin-activation.php:337 functions.php:322
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "这一主题需要以下插件： %1$s。"
+
+#: class-tgm-plugin-activation.php:342 functions.php:323
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "这一主题推荐以下插件：%1$s"
+
+#: functions.php:324
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] "抱歉，您不具备安装该插件%s的许可。请联系网站管理员帮助您安装该插件。"
+
+#: class-tgm-plugin-activation.php:367 functions.php:325
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "以下必需的插件是当前处于未激活状态： %1$s。"
+
+#: class-tgm-plugin-activation.php:372 functions.php:326
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "以下推荐插件是当前处于未激活状态： %1$s。"
+
+#: class-tgm-plugin-activation.php:335 functions.php:320
+msgid "Installing Plugin: %s"
+msgstr "正在安装插件：%s"
+
+#: class-tgm-plugin-activation.php:333 functions.php:318
+msgid "Install Required Plugins"
+msgstr "安装需要插件"
+
+#: class-tgm-plugin-activation.php:334 functions.php:319
+msgid "Install Plugins"
+msgstr "安装插件"
+
+#: archive-download.php:91 archive.php:91 sidebar.php:19
+msgid "Archives"
+msgstr "归档"
+
+#: archive-download.php:87 archive.php:87
+msgid "Chats"
+msgstr "聊天"
+
+#: archive-download.php:83 archive.php:83
+msgid "Audios"
+msgstr "音频"
+
+#: archive-download.php:79 archive.php:79
+msgid "Statuses"
+msgstr "状态"
+
+#: archive-download.php:75 archive.php:75
+msgid "Links"
+msgstr "链接"
+
+#: archive-download.php:71 archive.php:71
+msgid "Quotes"
+msgstr "引用"
+
+#: archive-download.php:67 archive.php:67
+msgid "Videos"
+msgstr "视频"
+
+#: archive-download.php:63 archive.php:63
+msgid "Images"
+msgstr "图像"
+
+#: archive-download.php:59 archive.php:59
+msgid "Galleries"
+msgstr "画廊"
+
+#: archive-download.php:55 archive.php:55
+msgid "Asides"
+msgstr "旁白"
+
+#: archive-download.php:51 archive.php:51
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y年"
+
+#: archive-download.php:51 archive.php:51
+msgid "Year: %s"
+msgstr "年份：%s"
+
+#: archive-download.php:47 archive.php:47
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "Y年m月"
+
+#: archive-download.php:47 archive.php:47
+msgid "Month: %s"
+msgstr "月份：%s"
+
+#: archive-download.php:43 archive.php:43
+msgid "Day: %s"
+msgstr "日期：%s"
+
+#: archive-download.php:39 archive.php:39
+msgid "Author: %s"
+msgstr "作者：%s"
+
+#: 404.php:31
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr " 看起来这个位置没有内容，试试下面的链接或搜索一下或许有帮助。"
+
+#: 404.php:25
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "有点尴尬诶！该页无法显示。"
+
+#. Theme URI of the plugin/theme
+msgid "http://themeisle.com/themes/zerif-lite/"
+msgstr "http://themeisle.com/themes/zerif-lite/"
+
+#. Author of the plugin/theme
+msgid "ThemeIsle"
+msgstr "ThemeIsle"
+
+#. Author URI of the plugin/theme
+msgid "http://themeisle.com"
+msgstr "http://themeisle.com"

@@ -1,0 +1,569 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Project-Id-Version: BuddyBoss Wall v1.2.7\n"
+"POT-Creation-Date: 2016-07-26 17:27+0800\n"
+"PO-Revision-Date: 2016-09-29 16:01+0800\n"
+"Language-Team: BuddyBoss <support@buddyboss.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: buddyboss-wall.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: zh_CN\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: buddyboss-wall.php:81
+#, php-format
+msgid "Couldn't load main class at:<br/>%s"
+msgstr "装载类失败:<br/>%s"
+
+#: buddyboss-wall.php:87
+#, php-format
+msgid "<h1>Fatal error:</h1><hr/><pre>%s</pre>"
+msgstr "<h1>严重错误:</h1><hr/><pre>%s</pre>"
+
+#: buddyboss-wall.php:100
+msgid "BuddyBoss Wall needs BuddyPress activated!"
+msgstr "BuddyBoss Wall需要激活BuddyPress!"
+
+#: includes/admin.php:187
+msgid "General Settings"
+msgstr "基本设置"
+
+#: includes/admin.php:191
+msgid "Enable Wall Component"
+msgstr "启动涂鸦墙模块"
+
+#: includes/admin.php:192
+msgid "Available to all members"
+msgstr "适用于所有成员"
+
+#: includes/admin.php:193
+msgid "Activity post text"
+msgstr ""
+
+#: includes/admin.php:194
+msgid "Activity Like text"
+msgstr ""
+
+#: includes/admin.php:195
+msgid "Wall Privacy"
+msgstr "涂鸦墙隐私"
+
+#: includes/admin.php:196
+msgid "Wall Privacy Options"
+msgstr "涂鸦墙隐私选项"
+
+#: includes/admin.php:197
+msgid "Link Preview"
+msgstr "链接预览"
+
+#: includes/admin.php:198
+msgid "Default Profile Tab"
+msgstr "默认档案标签"
+
+#: includes/admin.php:202
+msgid "Support"
+msgstr "支持"
+
+#. Plugin Name of the plugin/theme
+#. Description of the plugin/theme
+#: includes/admin.php:273
+msgid "BuddyBoss Wall"
+msgstr ""
+
+#: includes/admin.php:279
+msgid "Settings updated."
+msgstr "设置更新成功。"
+
+#: includes/admin.php:288
+msgid "Save Changes"
+msgstr "保存变化"
+
+#: includes/admin.php:319
+msgid "Settings"
+msgstr "设置"
+
+#: includes/admin.php:354
+msgid ""
+"Make sure BuddyPress <strong>Activity Streams</strong> are enabled for the "
+"Wall to function. Go to <em>Settings &rarr; BuddyPress &rarr; Components</em>"
+msgstr ""
+
+#: includes/admin.php:405
+msgid "Enable Wall Component."
+msgstr "激活涂鸦墙组件。"
+
+#: includes/admin.php:428
+msgid "Allow Wall posting for all members (not just friends)."
+msgstr "允许所有人在你的墙上涂鸦（不仅仅是朋友）。"
+
+#: includes/admin.php:451
+msgid "Allow members to set privacy options when they post."
+msgstr "允许成员在发布活动的时候设置隐私选项。"
+
+#: includes/admin.php:467
+msgid "Allow link previews in activity posts."
+msgstr "允许在发布活动的时候预览链接。"
+
+#: includes/admin.php:483
+msgid "Disable the \"Everyone\" privacy option."
+msgstr "禁止“所有人”隐私项"
+
+#: includes/admin.php:502 includes/admin.php:556 includes/wall-hooks.php:81
+#: includes/wall-hooks.php:516 includes/wall-hooks.php:556
+msgid "You"
+msgstr "你"
+
+#: includes/admin.php:503 includes/admin.php:557
+msgid "Username"
+msgstr "用户名"
+
+#: includes/admin.php:510
+msgid "In your wall, show activity posted by 'You' or 'Username'."
+msgstr "在你的涂鸦墙上，针对发布的活动，显示‘你’或‘用户名’。"
+
+#: includes/admin.php:529 includes/wall-class.php:49
+#: includes/wall-class.php:402 includes/wall-class.php:509
+#: includes/wall-class.php:517
+msgid "Wall"
+msgstr "涂鸦墙"
+
+#: includes/admin.php:530
+msgid "News feed"
+msgstr ""
+
+#: includes/admin.php:537
+msgid "Select the default Wall tab on profiles."
+msgstr "在档案上选择默认的涂鸦墙标签。"
+
+#: includes/admin.php:564
+msgid "In your wall, show activity liked by 'You' or 'Username'."
+msgstr "在涂鸦墙上显示你赞过的活动。"
+
+#: includes/buddyboss-plugin-updater.php:84
+msgid ""
+"An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?"
+"\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+msgstr ""
+"未知的HTTP错误。</p> <p><a href=\"?\" onclick=\"document.location.reload(); "
+"return false;\">请重试</a>"
+
+#: includes/buddyboss-plugin-updater.php:88
+msgid "An unknown error occurred"
+msgstr "发生了未知错误"
+
+#: includes/class-buddyboss-wall-like-notification.php:83
+#: includes/wall-class.php:165 includes/wall-template.php:49
+msgid "person"
+msgstr "人"
+
+#: includes/class-buddyboss-wall-like-notification.php:84
+#: includes/wall-class.php:166 includes/wall-hooks.php:197
+#: includes/wall-template.php:50
+msgid "people"
+msgstr "人"
+
+#: includes/class-buddyboss-wall-like-notification.php:87
+#: includes/wall-class.php:168 includes/wall-template.php:53
+msgid "likes"
+msgstr "赞"
+
+#: includes/class-buddyboss-wall-like-notification.php:88
+#: includes/wall-class.php:167 includes/wall-template.php:54
+msgid "like"
+msgstr "赞"
+
+#: includes/class-buddyboss-wall-like-notification.php:110
+#, php-format
+msgid "%s %s %s %s."
+msgstr ""
+
+#: includes/class-buddyboss-wall-like-notification.php:136
+#, php-format
+msgid "You like %s."
+msgstr "你赞了 %s。"
+
+#: includes/class-buddyboss-wall-like-notification.php:168
+#, php-format
+msgid "You and %s %s %s."
+msgstr "你和 %s %s %s."
+
+#: includes/class-buddyboss-wall-like-notification.php:170
+#, php-format
+msgid "%s %s %s."
+msgstr ""
+
+#: includes/class-buddyboss-wall-like-notification.php:179
+#, php-format
+msgid "You, %s and %s %s %s."
+msgstr "你, %s 和 %s %s %s."
+
+#: includes/class-buddyboss-wall-like-notification.php:182
+#, php-format
+msgid "%s and %s %s %s."
+msgstr "%s 和 %s %s %s."
+
+#: includes/class-buddyboss-wall-like-notification.php:193
+#: includes/wall-template.php:222
+#, php-format
+msgid "%s other %s"
+msgstr "%s 其他 %s"
+
+#: includes/class-buddyboss-wall-like-notification.php:198
+#, php-format
+msgid "You, %s, %s and %s %s %s."
+msgstr "你, %s, %s and %s %s %s."
+
+#: includes/class-buddyboss-wall-like-notification.php:201
+#, php-format
+msgid "%s, %s and %s %s %s."
+msgstr "%s, %s 和 %s %s %s."
+
+#: includes/help-support.php:5
+msgid "Here is a video tutorial to get you started:"
+msgstr "你可以从这个视频教程开始："
+
+#: includes/help-support.php:13
+msgid "Need more help?"
+msgstr "需要更多帮助吗？"
+
+#: includes/help-support.php:16
+msgid "Frequently Asked Questions"
+msgstr "经常问到的问题"
+
+#: includes/help-support.php:17
+msgid "Support Forums"
+msgstr "支持论坛"
+
+#: includes/help-support.php:18
+msgid "How to Update"
+msgstr "如何更新"
+
+#: includes/main-class.php:232 includes/main-class.php:239
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: includes/main-class.php:682
+msgid ""
+"To use the <strong>BuddyBoss Wall</strong> plugin, please manually update "
+"your BuddyBoss theme to version 4.0 or above first. <a href=\"http://www."
+"buddyboss.com/upgrading-to-buddyboss-4-0/\">Read how &rarr;</a>"
+msgstr ""
+
+#: includes/main-class.php:683
+msgid "Disable Notice"
+msgstr "禁止通知"
+
+#: includes/main-class.php:696
+#, php-format
+msgid ""
+"Hey! BuddyBoss Wall requires activity component to be enabled. Please enable "
+"it in your <a href=\"%s\">BuddyPress Settings</a>."
+msgstr ""
+
+#: includes/wall-class.php:169 includes/wall-filters.php:18
+#: includes/wall-hooks.php:321 includes/wall-hooks.php:345
+msgid "Like"
+msgstr "赞"
+
+#: includes/wall-class.php:170 includes/wall-class.php:425
+#: includes/wall-class.php:533
+msgid "My Likes"
+msgstr "喜欢的涂鸦"
+
+#: includes/wall-class.php:171 includes/wall-filters.php:22
+#: includes/wall-hooks.php:319 includes/wall-hooks.php:347
+msgid "Unlike"
+msgstr "取消赞"
+
+#: includes/wall-class.php:261
+#, php-format
+msgid "What's new in %s, %s?"
+msgstr "在 %s, %s 有什么新东西?"
+
+#: includes/wall-class.php:263
+#, php-format
+msgid "Write something to %s"
+msgstr "在<strong>%s</strong>的涂鸦墙上留个言吧？"
+
+#: includes/wall-class.php:265
+#, php-format
+msgid "What's new, %s?"
+msgstr "在你的涂鸦墙上记录点新东西， %s？"
+
+#: includes/wall-class.php:313
+#, php-format
+msgid "You need to <a href=\"%s\" title=\"Log in\">log in</a>"
+msgstr "你需要 <a href=\"%s\" title=\"Log in\">登录</a>"
+
+#: includes/wall-class.php:313
+#, php-format
+msgid ""
+" or <a class=\"create-account\" href=\"%s\" title=\"Create an account"
+"\">create an account</a>"
+msgstr ""
+" or <a class=\"create-account\" href=\"%s\" title=\"Create an account\">创建"
+"客户</a>"
+
+#: includes/wall-class.php:313
+msgid " to post to this user's Wall."
+msgstr "在这个用户的墙上写两句"
+
+#: includes/wall-class.php:319
+#, php-format
+msgid "You and %s are not friends. Request friendship to post to their Wall."
+msgstr "你和 %s 不是好朋友。在他/她的墙上写东西的时候，你需要加他/她为好友。"
+
+#: includes/wall-class.php:326
+#, php-format
+msgid ""
+"You are mentioning %s in a new update, this user will be sent a notification "
+"of your message."
+msgstr ""
+"You are mentioning %s in a new update, this user will be sent a notification "
+"of your message."
+
+#: includes/wall-class.php:414 includes/wall-class.php:525
+msgid "News Feed"
+msgstr "新闻回馈"
+
+#: includes/wall-filters.php:26
+msgid "Like this"
+msgstr "赞"
+
+#: includes/wall-filters.php:30
+msgid "The activity I've liked."
+msgstr "我已经赞过了。"
+
+#: includes/wall-filters.php:34
+#, php-format
+msgid "My Likes <span>%s</span>"
+msgstr "我赞过的 <span>%s</span>"
+
+#: includes/wall-functions.php:395
+msgid "Read more"
+msgstr "阅读更多"
+
+#: includes/wall-hooks.php:101
+msgid "View Discussion"
+msgstr "查看讨论"
+
+#: includes/wall-hooks.php:197
+msgid "mentioned"
+msgstr "提到"
+
+#: includes/wall-hooks.php:206
+#, php-format
+msgid "%s wrote on %s Wall"
+msgstr "%s在%s的涂鸦墙上写了更新"
+
+#: includes/wall-hooks.php:215
+#, php-format
+msgid "%s mentioned %s in a public message"
+msgstr "%s 提到了%s "
+
+#: includes/wall-hooks.php:231
+#, php-format
+msgid "%s posted an update"
+msgstr "%s 发布更新"
+
+#: includes/wall-hooks.php:264
+msgid "Please enter some content to post."
+msgstr "请输入内容。"
+
+#: includes/wall-hooks.php:295
+msgid "There was a problem posting your update, please try again."
+msgstr "发布更新时，出现了问题，请重试。"
+
+#: includes/wall-hooks.php:481
+#, php-format
+msgid "@%s Mentions"
+msgstr "@%s 评价"
+
+#: includes/wall-hooks.php:484
+#, php-format
+msgid "You have %1$d new mentions"
+msgstr "你有 %1$d 新评价"
+
+#: includes/wall-hooks.php:487
+#, php-format
+msgid "%1$s mentioned you"
+msgstr "%1$s 提到了你"
+
+#: includes/wall-hooks.php:526 includes/wall-hooks.php:586
+#, php-format
+msgid "%s'"
+msgstr "%s"
+
+#: includes/wall-hooks.php:529 includes/wall-hooks.php:589
+#, php-format
+msgid "%s's"
+msgstr "%s"
+
+#: includes/wall-hooks.php:532
+#, php-format
+msgid "%s Wall"
+msgstr "%s的涂鸦墙"
+
+#: includes/wall-hooks.php:541 includes/wall-hooks.php:577
+msgid "your"
+msgstr "你的"
+
+#: includes/wall-hooks.php:569
+msgid "Deleted User"
+msgstr "删除的用户"
+
+#: includes/wall-hooks.php:595
+msgid "Deleted User's"
+msgstr "删除用户的"
+
+#: includes/wall-hooks.php:610
+msgid "Mark as Favorite"
+msgstr "收藏"
+
+#: includes/wall-hooks.php:610
+msgid "Favorite"
+msgstr "收藏"
+
+#: includes/wall-hooks.php:612
+msgid "Remove Favorite"
+msgstr "取消收藏"
+
+#: includes/wall-privacy.php:139
+msgid "Everyone"
+msgstr "所有人"
+
+#: includes/wall-privacy.php:142
+msgid "Logged In Users"
+msgstr "登录用户"
+
+#: includes/wall-privacy.php:145
+msgid "Only Me"
+msgstr "只有我"
+
+#: includes/wall-privacy.php:148
+msgid "My Friends"
+msgstr "我的朋友"
+
+#: includes/wall-privacy.php:151
+msgid "Group Members"
+msgstr "组内成员"
+
+#: includes/wall-privacy.php:371
+msgid "Who can see this"
+msgstr "谁可见"
+
+#: includes/wall-privacy.php:382
+msgid "Save"
+msgstr "存储"
+
+#: includes/wall-privacy.php:384
+msgid "Cancel"
+msgstr "取消"
+
+#: includes/wall-privacy.php:419 includes/wall-privacy.php:420
+msgid "Privacy"
+msgstr "隐私"
+
+#: includes/wall-privacy.php:478
+msgid "Privacy updated"
+msgstr "隐私更新"
+
+#: includes/wall-template.php:126
+#, php-format
+msgid "%s %s %s this."
+msgstr "%s %s %s 这个。"
+
+#: includes/wall-template.php:152
+msgid "You like this."
+msgstr "你喜欢这个。"
+
+#: includes/wall-template.php:156
+#, php-format
+msgid "<a href=\"%s\" title=\"%s\">%s</a> likes this"
+msgstr "<a href=\"%s\" title=\"%s\">%s</a> 喜欢这个"
+
+#: includes/wall-template.php:166
+msgid "Error getting likes."
+msgstr "错误"
+
+#: includes/wall-template.php:192
+#, php-format
+msgid "You and %s %s this."
+msgstr "你和 %s %s 这个."
+
+#: includes/wall-template.php:196
+#, php-format
+msgid "<a href=\"%s\" title=\"%s\">%s</a> and %s %s this."
+msgstr "<a href=\"%s\" title=\"%s\">%s</a> 和 %s %s 这个。"
+
+#: includes/wall-template.php:199
+#, php-format
+msgid "%s %s this."
+msgstr "%s %s 这个。"
+
+#: includes/wall-template.php:208
+#, php-format
+msgid "You, %s and %s %s this."
+msgstr "你， %s 和 %s %s 这个."
+
+#: includes/wall-template.php:211
+#, php-format
+msgid "%s and %s %s this."
+msgstr "%s 和 %s %s 这个。"
+
+#: includes/wall-template.php:227
+#, php-format
+msgid "You, %s, %s and %s %s this."
+msgstr "你， %s， %s 和 %s %s 这个。"
+
+#: includes/wall-template.php:230
+#, php-format
+msgid "%s, %s and %s %s this."
+msgstr "%s, %s 和 %s %s 这个。"
+
+#: includes/widgets.php:19
+msgid "(BuddyBoss Wall) Most Liked Activity"
+msgstr "(BuddyBoss Wall) 最受欢迎的活动动态"
+
+#: includes/widgets.php:21
+msgid "Display a list of most liked activities site-wide."
+msgstr "显示站内最受欢迎的活动动态。"
+
+#: includes/widgets.php:33
+msgid "Title"
+msgstr "题目"
+
+#: includes/widgets.php:40
+msgid "Max activity posts to show"
+msgstr "能显示的最大的活动动态"
+
+#: includes/widgets.php:47
+msgid "Max words per activity post"
+msgstr "每篇活动动态的最大字数"
+
+#: includes/widgets.php:126
+#, php-format
+msgid "%d Likes"
+msgstr "%d 赞"
+
+#. Plugin URI of the plugin/theme
+msgid "http://buddyboss.com/product/buddyboss-wall/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "BuddyBoss"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://buddyboss.com"
+msgstr ""

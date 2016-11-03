@@ -1,0 +1,482 @@
+/*
+ Theme Name:   ResponsiveBoat
+ Theme URI:    http://themeisle.com/themes/responsiveboat-theme/
+ Description:  ResponsiveBoat is a free responsive WordPress theme, with a friendly and colorful design. It comes with a full-screen layout, a full-width homepage header, elegant parallax effect, and nice animations. It can be used web agencies, digital studios, corporate, product showcase, personal and business portfolio. Overall, ResponsiveBoat looks very modern and interactive.
+ Author:       Themeisle
+ Author URI:   https://themeisle.com
+ Template:     zerif-lite
+ Version:      1.1.4
+ License:      GNU General Public License version 2
+ License URI:  license.txt
+ Text Domain:  responsiveboat
+ Tags:         black, gray, red, white, one-column, two-columns, right-sidebar, responsive-layout, custom-background, custom-menu, editor-style, featured-images, threaded-comments, translation-ready
+*/
+
+
+/*--------------------------------------------------------------
+General
+--------------------------------------------------------------*/
+.green-btn, .red-btn {
+	background: rgba(255, 255, 255, 0.15);
+	border: 1px solid #FFDD00 !important;
+}
+
+.green-btn:hover, .red-btn:hover {
+	background: #FFDD00;
+    border: 1px solid #FFDD00 !important;
+    color: #303030 !important;
+}
+
+.custom-button {
+    display: inline-block !important;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 13px 35px;
+    border-radius: 3px;
+    margin: 10px;
+    border: medium none;
+}
+.section-header h2 {
+    padding-bottom: 0px;
+    text-transform: uppercase;
+}
+.section-header h2:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 40px;
+    background: #FD0;
+    margin: 8px 0 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial .section-header h2:after {
+    background: #404040;
+}
+
+.section-header h6 {
+    color: #303030;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-header h6.white-text {
+	color: #ffffff;
+}
+
+p {
+    font-family: 'Lato', sans-serif !important;
+}
+
+/*--------------------------------------------------------------
+Header
+--------------------------------------------------------------*/
+
+.navbar {
+	background: rgba(0,0,0,0.8);
+}
+ul.nav > li.current_page_item > a:before {
+	 background:#FD0;
+}
+.navbar-inverse .navbar-nav > li > a {
+    font-size: 12px;
+    font-family: "Montserrat", "sans-serif";
+    text-transform: uppercase;
+    color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #fd0 !important;
+}
+.rb-site-title {
+    color: #FFDD00;
+    font-size: 20px;
+    line-height: 20px;
+}
+.rb-site-description {
+    color: #FFDD00;
+    font-size: 15px;
+    line-height: 10px;
+}
+.rb_logo {
+    padding-bottom: 190px;
+}
+.header-content-wrap {
+	padding: 10% 0px 290px;
+}
+.navbar-toggle.active {
+    background-color: #FD0 !important;
+}
+.navbar-inverse .navbar-toggle.active .icon-bar {
+    background-color: #000 !important;
+}
+.navbar-black-init {
+    background: rgba(0,0,0,0.2);
+}
+
+.navbar-black-init .rb-hidden-logo {
+    display:none;
+}
+.navbar-black-init nav {
+    width: 100%;
+}
+.navbar-black-init nav ul.nav {
+    width: 100%;
+    text-align: center;
+}
+.navbar-black-init nav ul.nav li {
+    float: none;
+    display: inline-block;
+}
+
+
+/*--------------------------------------------------------------
+Content
+--------------------------------------------------------------*/
+
+.about-us {
+    background: rgba(45, 45, 45, 0.95) none repeat scroll 0% 0% !important;
+    padding-bottom: 0px;
+}
+
+.focus-box .service-icon {
+    width: 220px;
+    height: 220px;
+    border-radius: 0;
+}
+
+.testimonial {
+    background: rgba(255, 221, 0, 0.7) none repeat scroll 0% 0% !important;
+}
+
+.contact-us {
+    background: rgba(80, 80, 80, 0.9) none repeat scroll 0% 0%;
+}
+
+.team-member .profile-pic {
+    border-radius: 0;
+    width: 255px;
+    height: 255px;
+}
+
+.team-member h5:before {
+    background: #FD0 !important;
+}
+
+.team-member:hover .details {
+    top: 0px;
+    background: #FD0 none repeat scroll 0% 0% !important;
+    color: #000;
+    opacity: 0.8;
+    min-height: 255px;
+    text-align: center;
+}
+
+.team-member .social-icons ul li a {
+    color: #404040;
+}
+.team-member .social-icons ul li a:hover {
+    color: #FD0;
+}
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
+    color: #5A5A5A ;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+}
+
+.focus-box .service-icon:hover {
+    border: 10px solid #FD0 !important;
+}
+
+.focus-box .service-icon .pixeden {
+    border-radius: 0;
+}
+
+.focus-box .red-border-bottom:before, .works .red-border-bottom:before, .listpost-content-wrap .entry-title a:after {
+    background: #FD0 !important;
+}
+
+.focus-box p {
+	color: #6E6E6E !important;
+    font-family: "Oxygen", sans-serif !important;
+}
+
+article.hentry {
+    border: 1px solid #DEDEDE;
+    padding: 15px;
+    background-color: #FFF !important;
+}
+
+.large-container {
+    background-color: #FFF !important;
+    border-radius: 4px;
+    margin: 35px 0px;
+    position: relative;
+    width: 97%;
+    margin-top: 0;
+}
+
+.listpost-content-wrap .entry-content p {
+    min-height: 90px;
+    margin-bottom: 0px;
+    font-family: "Oxygen", sans-serif !important;
+    margin-right: 10px;
+}
+
+.content-left-wrap {
+    padding-top: 60px;
+}
+
+.carousel-control.left {
+    margin-left: -35px;
+}
+
+.listpost-content-wrap-large {
+    position: absolute;
+    bottom: 0px;
+    background: rgba(255, 255, 255, 0.98) none repeat scroll 0% 0%;
+    min-height: 50px;
+    width: 100%;
+    padding: 20px 20px 0px;
+    border-top: 2px solid #FFF;
+    border: 1px solid #DEDEDE;
+}
+
+#client-feedbacks .feedback-box {
+    background: #404040;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #fff !important;
+}
+.feedback-box .message {
+    color: #fff;
+}
+.feedback-box .client-info .client-name {
+    color: #fff;
+}
+
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+#footer {
+    background: rgba(39, 39, 39, 0.95) none repeat scroll 0% 0%;
+}
+
+.entry-footer a {
+    color: #B36A6A !important;
+    font-style: italic;
+}
+
+/* Latest news */
+
+.rb-latest-news-container {
+    width: 100%;
+}
+
+.rb-latest-news {
+    width: 24.99%;
+    margin: 0;
+    display: inline-block;
+}
+
+.rb-latest-news-image {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+.rb-latest-news .rb-latest-news-image img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    -webkit-transition: all 1s ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 1s ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 1s ease-in;
+    -moz-transform: scale(1);
+    transition: all 1s ease-in;
+    transform: scale(1);   
+}
+.rb-latest-news:hover .rb-latest-news-image img {
+    -webkit-transition: all 1s ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 1s ease-in;
+    -ms-transform: scale(1.2);   
+    -moz-transition: all 1s ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 1s ease-in;
+    transform: scale(1.2);
+}
+.rb-latest-news-image:hover {
+    background: #FFDD00;
+}
+.latest-news {
+    padding-bottom: 0px;
+}
+
+.rb-latest-news-image-holder {
+    position: relative;
+}
+
+.rb-latest-news-image-holder .rb-latest-news-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #000;
+    font-family: "Montserrat", "sans-serif";
+    text-transform: uppercase;
+    z-index: 999;
+}
+
+.rb-latest-news-image-holder:hover .rb-latest-news-content {
+    background-color: rgba(255, 221,0, 0.7);
+    display: block;
+}
+
+.rb-latest-news-content-open .rb-latest-news-content {
+    display: block;
+}
+
+
+.rb-latest-news-content h3 {
+    font-size: 20px;
+    margin-bottom: 20%;
+}
+
+.rb-latest-news-content a.rb-latest-news-read-more {
+    font-size: 12px;
+    color: #000 !important;
+    border: 1px solid #000;
+    border-radius: 2px;
+    padding: 10px 20px;
+}
+
+.rb-latest-news-content-outer {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.rb-latest-news-content-outer .rb-latest-news-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.contact-us .g-recaptcha, .contact-us .zerif-g-recaptcha {
+    float: right;
+    padding-right: 15px;
+}
+
+.entry-title:before, .widget .widget-title:before {
+	background: #FD0;
+}
+.comment-form #submit, .comment-reply-link {
+	background: #313131;
+    border:1px solid #FFDD00 !important;
+    color: #fff !important; 
+}
+.comment-form #submit:hover, .comment-reply-link:hover {
+	background: #FFDD00;
+    border:1px solid #FFDD00 !important;
+    color: #000 !important; 
+}
+.rb-site-title {
+    color: #FD0;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+.rb-site-description {
+    color: #FD0;
+    font-size: 15px;
+    line-height: 15px;
+}
+pre {
+    font-size: 15px;
+}
+
+.large-container .entry-content p {
+    margin: 4px 0px 0px 0px;
+}
+
+/*--------------------------------------------------------------
+Responsive
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 1170px){
+    .rb-latest-news {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .rb-latest-news {
+        width: 50%;
+    }
+    .about-us p {
+        text-align: center;
+    }
+    .focus-box .service-icon {
+        width: 165px;
+        height: 165px;
+    }
+    .about-us .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    #main-nav, #main-nav.fixed {
+        background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
+    }
+    .dropdownmenu {
+        background: url(images/menu-icon.png) center center no-repeat #FD0;
+    }
+    .navbar a{
+        color: #fff !important;
+    }
+    .focus-box .service-icon {
+        width: 220px;
+        height: 220px;
+    }
+
+    .listpost-content-wrap-large {
+        position: relative;
+        float: left;
+    }
+
+    .large-container .list-post-top {
+        float: left;
+    }
+
+    .listpost-content-wrap-large:after {
+        content: "";
+        width: 100%;
+        clear: both;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .rb-latest-news {
+        width: 100%;
+        height: auto !important;
+    }
+
+}
+@media screen and  (max-width: 480px) {
+    .rb-site-description {
+        font-size: 3.5vw !important;
+    }
+
+}

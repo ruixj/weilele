@@ -1,0 +1,35 @@
+# Translation of ZBlackbeard in Chinese (China)
+# This file is distributed under the same license as the ZBlackbeard package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-04-06 11:15:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/1.1.0-alpha\n"
+"Project-Id-Version: ZBlackbeard\n"
+
+#. Theme Name of the plugin/theme
+msgid "ZBlackbeard"
+msgstr "ZBlackbeard"
+
+#. Description of the plugin/theme
+msgid "ZBlackbeard is a modern responsive WordPress Theme. It's perfect for web agencies, digital studios, corporate, product showcase, personal and business portfolio."
+msgstr "ZBlackbeard 是一个现代化且响应灵敏的WordPress主题，完美适用于网站代理、数字演播室、公司、产品展示、个人和商业投资组合。"
+
+#: 404.php:40
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "这儿似乎什么都没有，试试搜索？"
+
+#: 404.php:32
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "有点尴尬诶！该页无法显示。"
+
+#. Author of the plugin/theme
+msgid "Themeisle"
+msgstr "Themeisle"
+
+#. Author URI of the plugin/theme
+msgid "https://themeisle.com"
+msgstr "https://themeisle.com"

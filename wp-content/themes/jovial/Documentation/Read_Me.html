@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jovial Documentation and Usage</title>
+<link rel="stylesheet" type="text/css" media="all" href="css/normolize.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/onepagenav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#nav').onePageNav();
+});
+</script>
+</head>
+<body>
+<div class="main">
+
+	<aside>
+		<ul id="nav">
+			<li class="current"><a href="#intro">01. Introduction</a></li>
+			<li><a href="#start">02. Installation</a></li>
+			<li><a href="#homepage">03. Homepage Setup</a></li>
+			<li><a href="#add-post">04. Adding New Post & Pages</a></li>
+            <li><a href="#nav-setup">05. Navigation Setup</a></li>
+           
+            <li><a href="#theme-options">06. Theme Options</a></li>
+            <li><a href="#sidebars-widgets">07. Sidebars &amp; Widgets</a></li>
+            <li><a href="#credits">08. Copyright &amp; Credits</a></li>
+		</ul>
+	</aside><!-- aside -->
+    
+	
+    
+	<section id="intro">
+        <div class="thankyou">
+        	Thank you for downloading our theme!
+        </div>
+		<h1>Jovial</h1>
+		<h2>Documentation & Usage</h2>
+		<p>
+			<ul class="tech">
+				<li>Created: January 10, 2015</li>
+				<li>Version: 1.4.1</li>
+				<li>Created by: <a href="http://webloggerz.com" target="_blank">WebLoggerz</a></li>
+				<li>Demo URL: <a href="http://webloggerz-demos.com/jovial/" target="_blank">http://webloggerz-demos.com/jovial/</a></li>
+			</ul>
+		</p>
+	</section><!-- section -->
+    
+    
+	
+	<section id="start">
+		<h2>02. Installation</h2>
+        
+        <div class="block">
+            <h3>Theme Requirements</h3>
+            <p>In order to proceed with the theme installation, you need to make sure you have the latest version of WordPress (4.0.1) on your self-hosted site.</p>
+        </div>
+        
+        <div class="block">
+            <h3>Theme Installation</h3>
+            <p>
+                <ol>
+                    <li>Log into your WP Admin and browse for Appearance &rarr; Themes.</li>
+                    <li>Now go to the secondary tab: Install Themes and click the Upload link option.</li>
+                    <li>Follow the instructions by choosing the file "jovial.zip", located in the archive which you have downloaded and click "Install Now" button.</li>
+                    <li>Click Activate link, once the upload has finished, and you are ready for the next steps.</li>
+                </ol>
+            </p>
+        </div>
+		
+		<div class="block">
+            <h3>Media Settings - Important</h3>
+            <p>Please change your media settings to the one as described below.</p>
+			<p>Althugh these settings are not mandatory buy highly recommended in order for the post images to work properly.</p>
+			<p>It is important to upload images in these propotions only as this will save your bandwidth and disk space.</p>
+			<p>
+                <ol>
+                    <li>Thumbnail Size - 150 by 66</li>
+                    <li>Medium Size - 275 by 175</li>
+                    <li>Max width - 800 by 400</li>
+                </ol>
+            </p>
+			<img src="images/media-settings.png" />
+        </div>
+        
+        <div class="block">
+        	<h3>Recommended Plugins</h3>
+            <p>
+               <div class="msg">
+               	We recommend you to install these plugins although they are not compulsory.
+               </div>
+            </p>
+            <div class="note">
+                <p><a href="http://wordpress.org/plugins/w3-total-cache/" target="_blank">W3 Total Cache</a> - Easy Web Performance Optimization (WPO) using caching: browser, page, object, database, minify and content delivery network support.</p>
+                <p><a href="http://wordpress.org/plugins/wordpress-seo/" target="_blank">WordPress SEO by Yoast</a> - Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the WordPress SEO plugin by Yoast..</p>
+            </div> 
+        </div>
+        
+	</section><!-- section -->
+    
+    
+	
+	<section id="homepage">
+		<h2>03. Homepage Setup</h2>
+        <div class="block">
+            <h3>Prepare the page</h3>
+            <ol>
+            	<li>Go to: Pages &rarr; Add New.</li>
+                <li>Enter the title for this page: Homepage or Home, whatever you like.</li>
+            </ol>
+        </div>
+        <div class="block">
+            <h3>Front Page Displays</h3>
+            <p>Now you have to tell WordPress wich page is your site homepage.</p>
+            <img src="images/reading.png" />
+            <ol>
+            	<li>Go to: Settings &rarr; Reading. </li>
+                <li>In a "Front Page Displays" select "A static page (select below)"</li>
+                <li>In a "Front page:" dropdown select your "Homepage" page.</li>
+                <li>You are done! Now you have your Homepage.</li>
+            </ol>
+        </div>
+	</section><!-- section -->  
+	
+    
+	<section id="add-post">
+		<h2>04. Adding New Post & Pages</h2>
+        <div class="block">
+        	<p>To create a new post go to Posts &rarr; Add New.</p>
+			<p>Similarly, To start creating the pages go to Pages &rarr; Add New.</p>
+			
+			<p>Static page can be created with sidebar or full width (without the sidebar).</p>
+			<p>Locate "Page Attributes" box on the right side of the page.</p>
+			   <strong>1. Default</strong> - Leave the "Default Template" in "Template" dropdown to create page with sidebar.<br/>
+			   <strong>2. Full Width</strong> - Select the "Full Width" option to use the page as full width page.<br/>
+			   <strong>3. Author's List</strong> - Select the "Author's List Template" option to show complete list of guest contributers on the page. 
+			   This page is full width by default.
+			   
+			    <div class="msg">
+            	By default, the list will only display authors with role - <b>Contributers</b>.
+			   Please change your guest author's role to contributers incase you have assigned them some other role.
+        </div>
+		</div>
+		
+        
+        
+       
+	</section><!-- section -->
+    
+    
+    <section id="nav-setup">
+		<h2>05. Navigation Setup</h2>
+        <div class="block">
+        	<h3>Setting Up New Menus</h3>
+            <p>Follow the next steps to define menus for each of the theme's menu locations. In each menu, you can add as many items you need.</p>
+            <ul>
+            	<li>Go to Appearance &rarr; Menus and click - Create a New Menu.</li>
+                <li>Give it a name, add links and click "Save Menu" button.</li>
+                <li>Assign a Menu Location for your newly created menu, by selecting it for the preferred Theme Location.</li>
+            </ul>
+        </div>
+        <div class="block">
+        	<h3>Menu Locations</h3>
+            <p>The theme comes with 2 custom menu locations: </p>
+			 <ul>
+			 <li><strong>Main Menu</strong></li> 
+			 <li><strong>Footer Menu</strong></li>
+			 </ul>
+        </div>
+		 <div class="block">
+        	<h3>Main Menu "Mega Menu" Feature</h3>
+            <p>By default the theme supports Mega Menu feature in the main menu. You don't have to do anything extra to display anything in mega menu.</p>
+			<p>Only make sure that the child items of mega menu are in even ratio.</p>
+
+			<h3>Incase you don't want to display Mega Menu.</h3>
+     <p>Incase you don't want to display Mega Menu and wanted to use the ordinary style only;</p> 
+	 <p>Just add a CSS class "<b>simplemenu</b>" without quotes for the parent list item</p>
+	 <img src="images/simple-menu.png" />
+
+    </div>
+        
+	</section><!-- section -->
+    
+    
+    
+   
+    
+    
+        
+    <section id="theme-options">
+		<h2>06. Theme Options</h2>
+        <div class="block">
+        	<p>This theme uses inbuilt WordPress Customization functions for all customization purposes.<br/>
+			The best thing about this kind of panel is that you can view your changes on the right side as soon as you make them without hitting the save button.</p>
+			<img src="images/theme-options.png" />
+			<p>You can easily take control over your site, the panel allows you to:</p>
+			<ul>
+			<li><strong>Title & Tags</strong></li>
+			<li><strong>Logo & Favicon</strong></li>
+			<li><strong>Colors</strong></li>
+			<li><strong>Navigation</strong></li>
+			<li><strong>Copyright Notes</strong></li>
+			<li><strong>Social Links</strong></li>
+			<li><strong>Sidebar Position</strong></li>
+					
+			</ul>
+			<p>To access the Theme Options panel, go to Appearance &rarr; Customize.</p>
+        </div>
+        <div class="block">
+        	<h3>Changing The Site Title</h3>
+            <p>Go to the "Site Title & Tagline" tab and click the 'Save & Pubish' button.</p>
+			<img src="images/theme-title.png" />
+
+        </div>
+        <div class="block">
+        	<h3>Changing Logo & Favicon</h3>
+            <p>Go to the "Logo & Favicon" tab, Upload your logo and favicon and click the 'Save & Pubish' button.</p>
+   			<img src="images/theme-logo.png" />
+		</div>
+		<div class="block">
+        	<h3>Changing Site Colors</h3>
+            <p>Go to the "Colors" tab. Panel offers you different color selectors for differnt sections. Use accordingly. Click the 'Save & Pubish' button.</p>
+   			<img src="images/theme-colors.png" />
+		</div>
+		<div class="block">
+        	<h3>Changing Social Links</h3>
+            <p>Go to the "Social Links" tab. Enter your social profile links. Click the 'Save & Pubish' button.</p>
+   			<img src="images/theme-social.png" />
+		</div>
+    	<div class="block">
+        	<h3>Changing Sidebar Position</h3>
+            <p>Go to the "Sidebar Position" tab. You can choose to have your sidebar on either Left or Right. Click the 'Save & Pubish' button.</p>
+   			<img src="images/theme-sidebar.png" />
+		</div>
+		
+		
+	</section><!-- section -->
+    
+    
+    
+    <section id="sidebars-widgets">
+		<h2>07. Sidebars & Widgets</h2>
+        <div class="block">
+        	<h3>Sidebars</h3>
+        	<p>The theme comes with 1 Sidebar area:</p>
+            <ul>
+            	<li><strong>Primary</strong> - all posts, single post page, categories, archives and static pages</li>
+               
+            </ul>
+        </div>
+        
+	</section><!-- section -->
+    
+    
+    
+ 
+    
+    
+    <section id="credits">
+		<h2>08. Copyright &amp; Credits</h2>
+        <div class="block">
+        	<h3>Images used in demo</h3>
+            <p>
+            <strong>Goodfon</strong> - <a href="http://www.goodfon.com/" target="_blank">http://www.goodfon.com/</a><br />
+            </p>
+            <div class="msg">
+            	1. None of these images are included in demo-content.xml
+            </div>
+        </div>
+    </section><!-- section -->
+    
+    
+    
+    <div class="block copy">
+        Enjoy using jovial. &copy; 2014 <a href="http://webloggerz.com">WebLoggerz.com</a>.
+    </div>
+    
+	
+</div><!-- .main -->
+</body>
+</html>

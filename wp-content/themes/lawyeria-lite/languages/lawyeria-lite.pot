@@ -1,0 +1,605 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Lawyeria Lite\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-20 11:48+0200\n"
+"PO-Revision-Date: 2015-11-20 11:48+0200\n"
+"Last-Translator: \n"
+"Language-Team: themeisle <friends@themeisle.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: includes\n"
+
+#: archive.php:17
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:19
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:21
+#, php-format
+msgid "Yearly Archives: %s."
+msgstr ""
+
+#: archive.php:23
+msgid "Category: "
+msgstr ""
+
+#: archive.php:25
+msgid "Author: "
+msgstr ""
+
+#: archive.php:47
+#: index.php:32
+#: page-blog.php:42
+#: search.php:32
+#: single.php:27
+msgid "Posted by:"
+msgstr ""
+
+#: archive.php:47
+#: index.php:32
+#: page-blog.php:42
+#: search.php:32
+#: single.php:27
+msgid "In category:"
+msgstr ""
+
+#: archive.php:47
+#: index.php:32
+#: page-blog.php:42
+#: search.php:32
+#: single.php:27
+msgid "No responses"
+msgstr ""
+
+#: archive.php:47
+#: index.php:32
+#: page-blog.php:42
+#: search.php:32
+#: single.php:27
+msgid "One comment"
+msgstr ""
+
+#: archive.php:47
+#: index.php:32
+#: page-blog.php:42
+#: search.php:32
+#: single.php:27
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: archive.php:60
+#: index.php:45
+#: page-blog.php:54
+#: page-blog.php:55
+#: search.php:45
+msgid "Read More"
+msgstr ""
+
+#: archive.php:64
+#: attachment.php:27
+#: front-page.php:33
+#: index.php:49
+#: page-blog.php:59
+#: page.php:33
+#: search.php:49
+#: single.php:57
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:333
+#: functions.php:345
+msgid "Install Required Plugins"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:334
+#: functions.php:346
+msgid "Install Plugins"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:335
+#: functions.php:347
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:336
+#: functions.php:348
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:397
+#: functions.php:359
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:399
+#: class-tgm-plugin-activation.php:3029
+#: functions.php:360
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:400
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:402
+#, php-format
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2167
+msgid "Required"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2170
+msgid "Recommended"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2186
+msgid "WordPress Repository"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2189
+msgid "External Source"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2192
+msgid "Pre-Packaged"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2209
+msgid "Not Installed"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2213
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2215
+msgid "Active"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2221
+msgid "Required Update not Available"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2224
+msgid "Requires Update"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2227
+msgid "Update recommended"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2379
+msgid "Installed version:"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2387
+msgid "Minimum required version:"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2399
+msgid "Available version:"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2422
+#, php-format
+msgid "No plugins to install, update or activate. <a href=\"%1$s\">Return to the Dashboard</a>"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2436
+msgid "Plugin"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2437
+msgid "Source"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2438
+msgid "Type"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2442
+msgid "Version"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2443
+msgid "Status"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2603
+msgid "Install"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2609
+msgid "Update"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2612
+msgid "Activate"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2643
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2645
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2681
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2683
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3028
+msgid "Plugin activation failed."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3362
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3364
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3365
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3369
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3370
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3371
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3372
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3375
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3377
+msgid "All installations have been completed."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3378
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: comments.php:23
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:29
+#: comments.php:41
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:30
+#: comments.php:42
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:31
+#: comments.php:43
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:53
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:15
+msgid "The sidebar is not active."
+msgstr ""
+
+#: footer.php:19
+msgid "powered by"
+msgstr ""
+
+#: functions.php:27
+msgid "This menu will appear in header."
+msgstr ""
+
+#: functions.php:158
+msgid "General Sidebar"
+msgstr ""
+
+#: functions.php:159
+msgid "Use this sidebar to display widgets in your website, including posts and pages."
+msgstr ""
+
+#: functions.php:178
+msgid "Footer Sidebar"
+msgstr ""
+
+#: functions.php:179
+msgid "In this sidebar you cand add max. three widgets."
+msgstr ""
+
+#: functions.php:203
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:203
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:213
+#, php-format
+msgid "<span>%s</span>"
+msgstr ""
+
+#: functions.php:216
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:219
+msgid "Edit"
+msgstr ""
+
+#: functions.php:225
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:361
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: functions.php:387
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: header.php:66
+msgid "Open Menu"
+msgstr ""
+
+#: index.php:12
+msgid "Blog"
+msgstr ""
+
+#: single.php:41
+msgid "Pages:"
+msgstr ""
+
+#: includes/customizer.php:24
+msgid "ThemeIsle theme notes"
+msgstr ""
+
+#: includes/customizer.php:25
+msgid ""
+"Thank you for being part of this! We've spent almost 6 months building ThemeIsle without really knowing if anyone will ever use a theme or not, so we're very grateful that you've decided to work with us. Wanna <a href=\"http://themeisle.com/contact/\" target=\"_blank\">say hi</a>?\n"
+"\t\t<br/><br/> <a href=\"http://demo.themeisle.com/lawyeria-lite/\" target=\"_blank\"> View Theme Demo</a> | \n"
+"\t\t<a href=\"http://themeisle.com/forums/forum/lawyeria-lite\" target=\"_blank\">Get theme support</a><br/><br/><a href=\"http://themeisle.com/documentation-lawyeria-lite\" target=\"_blank\">Documentation</a><br><br><a href=\"https://themeisle.com/themes/lawyeria-attorney-lawyer-wordpress-theme/\" target=\"_blank\" style=\"color:red;\">Upgrade to PRO</a> "
+msgstr ""
+
+#: includes/customizer.php:41
+msgid "Unlimited colors"
+msgstr ""
+
+#: includes/customizer.php:42
+msgid " Check out the <a href=\"https://themeisle.com/themes/lawyeria-attorney-lawyer-wordpress-theme/\" target=\"_blank\" style=\"color:red;\">PRO version</a> <br>for full control over the color scheme !  "
+msgstr ""
+
+#: includes/customizer.php:59
+msgid "Header"
+msgstr ""
+
+#: includes/customizer.php:67
+msgid "Logo:"
+msgstr ""
+
+#: includes/customizer.php:75
+msgid "Contact us now"
+msgstr ""
+
+#: includes/customizer.php:77
+msgid "Contact Title:"
+msgstr ""
+
+#: includes/customizer.php:87
+msgid "Contact telephone:"
+msgstr ""
+
+#: includes/customizer.php:97
+msgid "Front Page"
+msgstr ""
+
+#: includes/customizer.php:103
+msgid "Lorem ipsum dolor sit amet, consectetur adipscing elit."
+msgstr ""
+
+#: includes/customizer.php:105
+msgid "Subheader Title:"
+msgstr ""
+
+#: includes/customizer.php:113
+msgid "Ut fermentum aliquam neque, sit amet molestie orci porttitor sit amet. Mauris venenatis et tortor ut ultrices. Nam a neque venenatis, tristique lacus id, congue augue. In id tellus lacus. In porttitor sagittis tellus nec iaculis. Nunc sem odio, placerat a diam vel, varius."
+msgstr ""
+
+#: includes/customizer.php:115
+msgid "Subheader Content:"
+msgstr ""
+
+#: includes/customizer.php:125
+msgid "Lorem Ipsum is simply dummy text of the printing and type setting industry."
+msgstr ""
+
+#: includes/customizer.php:127
+msgid "Quote:"
+msgstr ""
+
+#: includes/customizer.php:136
+msgid "Subheader Background:"
+msgstr ""
+
+#: includes/customizer.php:146
+msgid "Box (first) - Icon:"
+msgstr ""
+
+#: includes/customizer.php:154
+msgid "Lorem"
+msgstr ""
+
+#: includes/customizer.php:156
+msgid "Box (first) - Title:"
+msgstr ""
+
+#: includes/customizer.php:164
+#: includes/customizer.php:196
+#: includes/customizer.php:228
+msgid "Go to Appearance - Customize, to add content."
+msgstr ""
+
+#: includes/customizer.php:166
+msgid "Box (first) - Content:"
+msgstr ""
+
+#: includes/customizer.php:178
+msgid "Box (two) - Icon:"
+msgstr ""
+
+#: includes/customizer.php:186
+msgid "Ipsum"
+msgstr ""
+
+#: includes/customizer.php:188
+msgid "Box (two) - Title:"
+msgstr ""
+
+#: includes/customizer.php:198
+msgid "Box (two) - Content:"
+msgstr ""
+
+#: includes/customizer.php:210
+msgid "Box (three) - Icon:"
+msgstr ""
+
+#: includes/customizer.php:218
+msgid "Dolor"
+msgstr ""
+
+#: includes/customizer.php:220
+msgid "Box (three) - Title:"
+msgstr ""
+
+#: includes/customizer.php:230
+msgid "Box (three) - Content:"
+msgstr ""
+
+#: includes/customizer.php:242
+msgid "The Content - Image:"
+msgstr ""
+
+#: includes/customizer.php:250
+msgid "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis."
+msgstr ""
+
+#: includes/customizer.php:252
+msgid "The Content - Title:"
+msgstr ""
+
+#: includes/customizer.php:260
+msgid "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim."
+msgstr ""
+
+#: includes/customizer.php:262
+msgid "The Content - Content:"
+msgstr ""
+
+#: includes/customizer.php:275
+msgid "Frontpage widgets"
+msgstr ""
+
+#: includes/customizer.php:276
+msgid " Check out the <a href=\"https://themeisle.com/themes/lawyeria-attorney-lawyer-wordpress-theme/\" target=\"_blank\" style=\"color:red;\">PRO version</a> <br>for custom widgets like \"Practice Area\", \"Our Lawyers\" and \"Testimonials\"!  "
+msgstr ""
+
+#: includes/customizer.php:296
+msgid "404 Page"
+msgstr ""
+
+#: includes/customizer.php:302
+msgid "404 Error"
+msgstr ""
+
+#: includes/customizer.php:304
+msgid "404 - Title:"
+msgstr ""
+
+#: includes/customizer.php:312
+msgid "Oops, I screwed up and you discovered my fatal flaw. Well, we're not all perfect, but we try.  Can you try this again or maybe visit our <a title=\"themeIsle\" href=\""
+msgstr ""
+
+#: includes/customizer.php:314
+msgid "404 - Content"
+msgstr ""
+
+#: includes/customizer.php:376
+msgid "Documentation"
+msgstr ""
+
+#: includes/customizer.php:377
+msgid "View PRO version"
+msgstr ""
+
+#: includes/customizer.php:378
+msgid "Leave a review ( it will help us )"
+msgstr ""
+

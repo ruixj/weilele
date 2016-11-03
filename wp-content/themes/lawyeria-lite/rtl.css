@@ -1,0 +1,62 @@
+body {
+	direction: rtl;
+	text-align: right;
+}
+
+#subheader .subheader-color .header-form .full-input-text {
+	text-align: right;
+}
+
+#subheader .subheader-color .header-form .small-input-text {
+	text-align: right;
+}
+
+#subheader .subheader-color .header-form .wpcf7-textarea {
+	text-align: right;
+}
+
+#subheader .second-subheader h3 {
+	text-align: right;
+	direction: rtl;
+}
+
+#features .features-box .features-box-icon {
+	text-align: right;
+}
+
+#features .features-box h4 {
+	text-align: right;
+}
+
+#features .features-box p {
+	text-align: right;
+}
+
+nav li {
+	direction: rtl;
+	float: right;
+}
+
+#content .content-about .content-about-title {
+	text-align: right;
+}
+
+#content .content-testimonials .testimonials-title {
+	text-align: right;
+}
+
+#content .content-testimonials .list_carousel ul li .list_carousel_entry {
+	text-align: right;
+}
+
+#content .content-testimonials .list_carousel ul li .list_carousel_customer {
+	text-align: right;
+}
+
+#footer .footer-box .wpcf7-text {
+	text-align: right;
+}
+
+#footer .footer-box .wpcf7-textarea {
+	text-align: right;
+}

@@ -1,0 +1,451 @@
+# Copyright (C) 2016 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://www.buddyboss.com/contact/\n"
+"POT-Creation-Date: 2016-07-26 15:57+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-08-15 14:39+0800\n"
+"Language-Team: BuddyBoss <support@buddyboss.com>\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"Last-Translator: \n"
+"Language: zh_CN\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/recommend-posts.php:475
+msgid "0"
+msgstr "0"
+
+#: bp-user-blog.php:79
+msgid "Couldn't load main class at:<br/>%s"
+msgstr "Couldn't load main class at:<br/>%s"
+
+#: bp-user-blog.php:83 bp-user-blog.php:115
+msgid "<h1>Fatal error:</h1><hr/><pre>%s</pre>"
+msgstr "<h1>Fatal error:</h1><hr/><pre>%s</pre>"
+
+#: bp-user-blog.php:109
+msgid "Couldn't load SAP_Plugin_Check class at:<br/>%s"
+msgstr "Couldn't load SAP_Plugin_Check class at:<br/>%s"
+
+#: includes/admin.php:178
+msgid "General Settings"
+msgstr "普通设置"
+
+#: includes/admin.php:181
+msgid "Enable User Publishing"
+msgstr "允许用户发表"
+
+#: includes/admin.php:182
+msgid "Create New Post Page"
+msgstr "创建新的文章页"
+
+#: includes/admin.php:183
+msgid "Enable Bookmarks"
+msgstr "允许收藏"
+
+#: includes/admin.php:184
+msgid "Bookmarks Page"
+msgstr "收藏页"
+
+#: includes/admin.php:185
+msgid "Enable Recommend Posts"
+msgstr "允许评价文章"
+
+#: includes/admin.php:189
+msgid "Support"
+msgstr "支持"
+
+#: includes/admin.php:212
+msgid ""
+"Allow users to publish posts. If unchecked, they can only submit drafts for "
+"review."
+msgstr "允许用户发表文章。如果未选，用户的文章需要审核后发表。"
+
+#: includes/admin.php:227
+msgid "Allow users to bookmark posts."
+msgstr "允许用户收藏文章。"
+
+#: includes/admin.php:242
+msgid "Allow users to recommend posts."
+msgstr "允许用户评价文章。"
+
+#: includes/admin.php:252 includes/admin.php:268
+msgid "- None -"
+msgstr "无"
+
+#: includes/admin.php:255 includes/admin.php:271
+msgid "New Page"
+msgstr "建立新的页面"
+
+#: includes/admin.php:257 includes/admin.php:273
+#: templates/sap-post-create.php:53
+msgid "View"
+msgstr "查看"
+
+#: includes/admin.php:259 includes/admin.php:275
+msgid ""
+"You may need to reset your permalinks after changing this setting. Go to "
+"Settings > Permalinks."
+msgstr "改变这个后，你需要重新设置固定链接，你可以去“设置->固定链接”里查看。"
+
+#: includes/admin.php:327
+msgid "BuddyPress User Blog"
+msgstr "BuddyPress User Blog"
+
+#: includes/admin.php:332
+msgid "Settings updated."
+msgstr "设置已被更新"
+
+#: includes/admin.php:341
+msgid "Save Changes"
+msgstr "保存变化"
+
+#: includes/admin.php:372
+msgid "Settings"
+msgstr "设置"
+
+#: includes/bookmarks.php:18
+msgid "Sorry, there was a problem processing your request."
+msgstr "对不起，在执行您的请求时遇到了一些问题。"
+
+#: includes/bookmarks.php:164
+msgid "Bookmark this story to read later"
+msgstr "收藏该文章稍后阅读"
+
+#: includes/bookmarks.php:166
+msgid "Bookmark"
+msgstr "收藏"
+
+#: includes/buddyboss-plugin-updater.php:84
+msgid ""
+"An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?"
+"\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+msgstr "没有预计到的HTTP Error"
+
+#: includes/buddyboss-plugin-updater.php:88
+msgid "An unknown error occurred"
+msgstr "未知错误"
+
+#: includes/help-support.php:5
+msgid "Here are some video tutorials to get you started:"
+msgstr "帮助视频："
+
+#: includes/help-support.php:13
+msgid "Need more help?"
+msgstr "需要更多帮助？"
+
+#: includes/help-support.php:16
+msgid "Frequently Asked Questions"
+msgstr "最常问的问题"
+
+#: includes/help-support.php:17
+msgid "Support Forums"
+msgstr "支持论坛"
+
+#: includes/help-support.php:18
+msgid "How to Update"
+msgstr "如何更新"
+
+#: includes/main-class.php:197 includes/main-class.php:206
+msgid "Cheatin&#8217; huh?"
+msgstr "Cheatin&#8217; huh?"
+
+#: includes/recommend-posts.php:21 includes/recommend-posts.php:303
+msgid "Recommend this article"
+msgstr "推荐该文章"
+
+#: includes/recommend-posts.php:22 includes/recommend-posts.php:299
+msgid "Discourage recommendation"
+msgstr "取消推荐"
+
+#: includes/recommend-posts.php:38
+msgid "Not permitted"
+msgstr "不允许"
+
+#: includes/recommend-posts.php:182
+msgid "%1$s recommended the post %2$s"
+msgstr "%1$s 推荐了文章 %2$s"
+
+#: includes/recommend-posts.php:487
+msgid "You"
+msgstr "你"
+
+#: includes/recommend-posts.php:490
+msgid "You "
+msgstr "你"
+
+#: includes/recommend-posts.php:490
+msgid "and "
+msgstr "和"
+
+#: includes/recommend-posts.php:503
+msgid " other"
+msgid_plural " others"
+msgstr[0] "其他"
+
+#: includes/recommend-posts.php:515
+msgid " recommendation"
+msgid_plural " recommendations"
+msgstr[0] "赞"
+
+#: includes/recommend-posts.php:518
+msgid "Recommended"
+msgstr "推荐的"
+
+#: includes/recommend-posts.php:521
+msgid "Recommend"
+msgstr "推荐"
+
+#: includes/recommend-posts.php:539
+msgid "You Like:"
+msgstr "你喜爱的文章"
+
+#: includes/recommend-posts.php:568
+msgid "You do not like anything yet."
+msgstr "你还没有任何喜爱的文章。"
+
+#: includes/requirements-class.php:22 includes/requirements-class.php:40
+msgid "Please activate BuddyPress first"
+msgstr "请先激活BuddyPress"
+
+#: includes/sap-blog.php:72
+msgid "Add New Post"
+msgstr "我要投稿"
+
+#: includes/sap-blog.php:82
+msgid "Latest Stories"
+msgstr "最新文章"
+
+#: includes/sap-blog.php:84
+msgid "Most Recommended Stories"
+msgstr "文章推荐"
+
+#: includes/sap-blog.php:119 includes/sap-blog.php:148
+#: includes/sap-blog.php:158 templates/sap-post-create.php:93
+msgid "blog"
+msgstr ""
+
+#: includes/sap-blog.php:124
+msgid "Articles"
+msgstr "文章列表"
+
+#: includes/sap-blog.php:126 includes/sap-blog.php:204
+#: templates/sap-post-create.php:52
+msgid "Published"
+msgstr "已发表"
+
+#: includes/sap-blog.php:145 includes/sap-blog.php:212
+#: templates/sap-post-create.php:138 templates/sap-post-create.php:141
+msgid "In Review"
+msgstr "审核中"
+
+#: includes/sap-blog.php:146 includes/sap-blog.php:211
+msgid "pending"
+msgstr ""
+
+#: includes/sap-blog.php:155 includes/sap-blog.php:219
+msgid "Drafts"
+msgstr "草稿"
+
+#: includes/sap-blog.php:184
+msgid "Blog"
+msgstr "个人文章"
+
+#: includes/sap-blog.php:218
+msgid "drafts"
+msgstr "草稿"
+
+#: includes/sap-blog.php:226
+msgid "add-new"
+msgstr "我要投稿"
+
+#: includes/sap-blog.php:227
+msgid "Add New"
+msgstr "我要投稿"
+
+#: includes/sap-class.php:30
+msgid "SAP"
+msgstr "SAP"
+
+#: includes/sap-class.php:138
+msgid "Saving..."
+msgstr "存储中"
+
+#: includes/sap-class.php:139
+msgid "Your post has been submitted for review."
+msgstr "你的文章已提交，请等待审核。"
+
+#: includes/sap-class.php:140
+msgid "Failed"
+msgstr "失败"
+
+#: includes/sap-class.php:141
+msgid "Post title cannot be empty"
+msgstr "文章题目不可以为空"
+
+#: includes/sap-class.php:142
+msgid "Title"
+msgstr "文章题目"
+
+#: includes/sap-class.php:143
+msgid "Post content cannot be empty"
+msgstr "文章内容不可以为空"
+
+#: includes/sap-class.php:144
+msgid "Tell your story"
+msgstr "你的文章内容"
+
+#: includes/sap-class.php:159
+msgid "true"
+msgstr "真的"
+
+#: includes/sap-class.php:245
+msgid "Your story was approved and published"
+msgstr "恭喜，你的文章已被批准发布"
+
+#: includes/sap-functions.php:299
+msgid ""
+"<div class=\"sap-no-bookmarks-content\">\n"
+"\t\t\t\t\t<p>You haven&apos;t bookmarked any stories yet.</p>\n"
+"\t\t\t\t\t<p>Save stories to read later by using the <span class=\"fa bb-"
+"helper-icon fa-bookmark\"></span> bookmark button.</p>\n"
+"\t\t\t\t</div>"
+msgstr ""
+"<div class=\"sap-no-bookmarks-content\">\n"
+"\t\t\t\t\t<p>你还未收藏任何文章。</p>\n"
+"\t\t\t\t\t<p>点击 <span class=\"fa bb-helper-icon fa-bookmark\"></span> “收藏"
+"按钮”来收藏文章，以便日后阅读</p>\n"
+"\t\t\t\t</div>"
+
+#: includes/sap-functions.php:316
+msgid "Categories"
+msgstr "分类"
+
+#: includes/sap-functions.php:321
+msgid "Tags"
+msgstr "标签"
+
+#: includes/sap-functions.php:331
+msgid "Featured Image"
+msgstr "特色图片"
+
+#: includes/sap-functions.php:340
+msgid "Set Featured Image"
+msgstr "设置特色图片"
+
+#: includes/sap-functions.php:566
+msgid "Edit"
+msgstr "编辑"
+
+#. translators: used between list items, there is a space after the comma
+#: includes/sap-functions.php:656
+msgid ", "
+msgstr "，"
+
+#: includes/sap-functions.php:672
+msgid "Published in "
+msgstr "发表于"
+
+#: templates/profile-blog-list.php:4 templates/profile-blog-list.php:18
+msgid "Permanent Link to"
+msgstr "固定链接到"
+
+#: templates/profile-blog-list.php:21
+msgid "%1$s"
+msgstr "%1$s"
+
+#: templates/sap-blog-page.php:73
+msgid "Load More"
+msgstr "加载更多"
+
+#: templates/sap-blog-page.php:90
+msgid "Add your first."
+msgstr "增加第一个。"
+
+#: templates/sap-blog-page.php:93
+msgid "You have no drafts."
+msgstr "草稿箱是空的。"
+
+#: templates/sap-blog-page.php:95
+msgid "You have no posts in review."
+msgstr "没有在审核的文章。"
+
+#: templates/sap-blog-page.php:97
+msgid "You have not created any posts yet. %s"
+msgstr "你还没有创建文章。"
+
+#: templates/sap-blog-page.php:101
+msgid "There are no posts by this user at the moment. Please check back later!"
+msgstr "当前的用户还未发表任何文章，你可以之后再看看:)"
+
+#: templates/sap-bookmarks-shortcode.php:39 templates/sap-bookmarks.php:62
+msgid "Continue reading"
+msgstr "继续阅读"
+
+#: templates/sap-bookmarks-shortcode.php:40 templates/sap-bookmarks.php:63
+msgid "."
+msgstr "。"
+
+#: templates/sap-bookmarks.php:74
+msgid "Please login to view your bookmarks"
+msgstr "你需要登陆看你的收藏夹"
+
+#: templates/sap-post-create.php:49
+msgid "Revert to draft"
+msgstr "转为草稿"
+
+#: templates/sap-post-create.php:55 templates/sap-post-create.php:57
+#: templates/sap-post-create.php:72
+msgid "Preview"
+msgstr "预览"
+
+#: templates/sap-post-create.php:58 templates/sap-post-create.php:71
+msgid "Save"
+msgstr "保存"
+
+#: templates/sap-post-create.php:69
+msgid "Draft"
+msgstr "草稿"
+
+#: templates/sap-post-create.php:96
+msgid "Publish"
+msgstr "提交"
+
+#: templates/sap-post-create.php:98
+msgid "Submit for Review"
+msgstr "提交审核"
+
+#: templates/sap-post-create.php:112
+msgid "More Actions"
+msgstr "更多"
+
+#: templates/sap-post-create.php:131
+msgid "Update"
+msgstr "更新"
+
+#: templates/sap-post-create.php:133
+msgid "Publish post"
+msgstr "发布文章"
+
+#: templates/sap-post-create.php:137 templates/sap-post-create.php:140
+msgid "Submit post for review"
+msgstr "提交审核"
+
+#: templates/sap-post-create.php:146
+msgid "Show preview in new window"
+msgstr "在新窗口中显示预览"
+
+#: templates/sap-post-create.php:158 templates/sap-post-create.php:160
+msgid "Delete"
+msgstr "删除"

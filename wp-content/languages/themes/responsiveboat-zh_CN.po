@@ -1,0 +1,143 @@
+# Translation of ResponsiveBoat in Chinese (China)
+# This file is distributed under the same license as the ResponsiveBoat package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-04-06 11:15:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.1.0-alpha\n"
+"Project-Id-Version: ResponsiveBoat\n"
+
+#. Theme Name of the plugin/theme
+msgid "ResponsiveBoat"
+msgstr "ResponsiveBoat"
+
+#. Description of the plugin/theme
+msgid "ResponsiveBoat is a free responsive WordPress theme, with a friendly and colorful design. It comes with a full-screen layout, a full-width homepage header, elegant parallax effect, and nice animations. It can be used web agencies, digital studios, corporate, product showcase, personal and business portfolio. Overall, ResponsiveBoat looks very modern and interactive."
+msgstr "ResponsiveBoat是一个免费的、响应灵敏的WordPress主题，设计友好且色彩丰富。它有着全屏幕页面设计，全宽度主页标题，优美的视差效果和令人愉悦的动画制作。它可以用于网站代理、数字演播室、公司、产品展示、个人和商业投资组合。总体而言，ResponsiveBoat看起来非常现代化且具有交互性。"
+
+#: sections/latest_news.php:36
+msgid "LATEST NEWS"
+msgstr "最新消息"
+
+#: sections/latest_news.php:45
+msgid "Add a subtitle in Customizer, \"Latest news section\""
+msgstr "在个性化，“最新消息区段”添加一个副标题。"
+
+#: front-page.php:79
+msgid "* Please enter your name."
+msgstr "*请输入您的姓名"
+
+#: front-page.php:93
+msgid "* Please enter your email address."
+msgstr "*请输入您的电子邮箱地址"
+
+#: front-page.php:99
+msgid "* You entered an invalid email address."
+msgstr "*您输入的邮箱地址是无效的"
+
+#: front-page.php:113
+msgid "* Please enter a subject."
+msgstr "*请输入一个主题"
+
+#: front-page.php:127
+msgid "* Please enter a message."
+msgstr "*请输入一段信息"
+
+#: front-page.php:383
+msgid "Thanks, your email was sent successfully!"
+msgstr "谢谢，您的邮件已成功发送！"
+
+#: sections/big_title.php:79
+msgid "One button"
+msgstr "一个按钮"
+
+#: sections/big_title.php:82
+msgid "Another button"
+msgstr "另一个按钮"
+
+#: front-page.php:386
+msgid "Sorry, an error occured. The email could not be sent."
+msgstr "抱歉，发生错误。这封邮件无法送达。"
+
+#: sections/big_title.php:58
+msgid "To add a title here please go to Customizer, \"Big title section\""
+msgstr "如果您希望在这里添加标题，请前往个性化，“大标题区段”。"
+
+#: sections/testimonials.php:129
+msgid "Testimonials"
+msgstr "褒奖"
+
+#: sections/latest_news.php:131
+msgid "Latest news"
+msgstr "最新消息"
+
+#: sections/big_title.php:88
+msgid "What's inside"
+msgstr "里面是什么"
+
+#: sections/latest_news.php:88 sections/latest_news.php:178
+msgid "Read full article"
+msgstr "阅读全文"
+
+#: sections/big_title.php:85
+msgid "Features"
+msgstr "特色"
+
+#: sections/big_title.php:62
+msgid "ONE OF THE TOP 10 MOST POPULAR THEMES ON WORDPRESS.ORG"
+msgstr " WORDPRESS.ORG上最受欢迎的十个主题之一"
+
+#: functions.php:106
+msgid "Image"
+msgstr "图像"
+
+#: functions.php:98
+msgid "Text"
+msgstr "文本"
+
+#: functions.php:90
+msgid "Subtitle"
+msgstr "副标题"
+
+#: functions.php:96
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros. <br><br>Mauris vel nunc at ipsum fermentum pellentesque quis ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas non adipiscing massa. Sed ut fringilla sapien. Cras sollicitudin, lectus sed tincidunt cursus, magna lectus vehicula augue, a lobortis dui orci et est."
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec massa enim. Aliquam viverra at est ullamcorper sollicitudin. Proin a leo sit amet nunc malesuada imperdiet pharetra ut eros. <br><br>Mauris vel nunc at ipsum fermentum pellentesque quis ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas non adipiscing massa. Sed ut fringilla sapien. Cras sollicitudin, lectus sed tincidunt cursus, magna lectus vehicula augue, a lobortis dui orci et est.(仅用于填充版面的无意义文字)"
+
+#: functions.php:88 sections/about_you.php:15
+msgid "Use this section to showcase important details about you."
+msgstr "使用这个区段去展示关于您的重要信息。"
+
+#: functions.php:82
+msgid "Title"
+msgstr "标题"
+
+#: functions.php:42 functions.php:51
+msgid "Header Logo"
+msgstr "标题 Logo"
+
+#: functions.php:80 sections/about_you.php:8
+msgid "About you"
+msgstr "关于您"
+
+#: functions.php:73
+msgid "Hide about you section?"
+msgstr "需要隐藏“关于您”这个区段吗？"
+
+#: functions.php:63
+msgid "About you section"
+msgstr "关于您区段"
+
+#. Theme URI of the plugin/theme
+msgid "http://themeisle.com/themes/responsiveboat-theme/"
+msgstr "http://themeisle.com/themes/responsiveboat-theme/"
+
+#. Author of the plugin/theme
+msgid "Themeisle"
+msgstr "Themeisle"
+
+#. Author URI of the plugin/theme
+msgid "https://themeisle.com"
+msgstr "https://themeisle.com"

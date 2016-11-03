@@ -1,0 +1,319 @@
+/*
+ Theme Name:   Juridica
+ Description:  An easy to use, beautiful theme, with a large number of customizable options. Juridica is a stunning, responsive, multi purpose WordPress theme excellent for a Lawyer or attorney.
+ Author:       Themeisle
+ Author URI:   https://themeisle.com
+ Template:     lawyeria-lite
+ Version:      1.0.6
+ License:      GNU General Public License version 2
+ License URI:  license.txt
+ Text Domain:  juridica
+ Tags:          black, white, one-column, two-columns, right-sidebar, responsive-layout, custom-background, custom-menu, editor-style, featured-images, threaded-comments, translation-ready
+*/
+
+
+/*--------------------------------------------------------------
+General
+--------------------------------------------------------------*/
+
+
+
+/* HEADER */
+
+.wrap-elements{
+	background: none repeat scroll 0% 0% rgba(42, 42, 42, 0.94) !important;
+	box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.4);
+    position: absolute;
+	width: 100%;
+}
+
+
+.wide-header {
+    width: 100%;
+    margin: 0px;
+    background: none;
+    border-bottom: 1px solid #626262;
+}
+	
+
+#subheader .subheader-color {
+	width: 100%;
+	height: 600px !important;
+    background: none repeat scroll 0% 0% rgba(54, 54, 54, 0.8) !important;
+    
+	padding-bottom: 72px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4) inset;
+	-moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4) inset;
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4) inset;
+	-ms-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4) inset;
+}
+
+#subheader .subheader-color .full-header-content-no-sidebar {
+	width: 100%;
+	margin-top: 320px !important;
+}
+
+#subheader .subheader-color .full-header-content {
+    width: 515px;
+    margin-top: 320px;
+    float: left;
+}
+
+#subheader .subheader-color .header-form {
+    width: 294px;
+    background: none repeat scroll 0% 0% #FFF;
+    margin-top: 280px;
+    padding: 27px 30px;
+    border: 3px solid #F3F3F3;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+    float: right;
+}
+
+
+.wrapper h3{
+    color: #3B3126 !important;
+}
+
+
+.header-contact {
+    margin-top: 30px;
+    line-height: 20px;
+    color: #F9F9F9 !important;
+    text-align: right;
+    font-weight: 700;
+    float: right;
+    font-size: 17px;
+}
+
+.header-contact span a {
+    color: #cca876 !important;
+    text-decoration: none;
+}
+
+.header-left .logo img {
+    width: auto;
+    max-height: 100%;
+    margin-top: 3px;
+}
+
+
+nav ul {
+    list-style: outside none none;
+    float: right;
+    margin-left: -10px;
+}
+.wide-nav {
+    width: 100%;
+    height: 100px;
+    line-height: 90px;
+    background: none repeat scroll 0% 0% rgb(238, 238, 238) !important;
+}
+
+
+/* GENERAL */ 
+
+#features {
+    width: 100%;
+    background: #E0E0E0 !important;
+    padding: 60px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) inset;
+    float: left;
+}
+
+
+nav li a {
+    padding: 5px 10px;
+    display: block;
+    color: #F9F9F9 !important;
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+nav li a:hover {
+    color: #cca876 !important;
+    border: 1px solid #cca876;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  
+}
+
+nav ul.sub-menu , nav ul ul{
+	background: rgba(42, 42, 42, 0.94);
+}
+
+nav ul.sub-menu li a , nav ul ul li a {
+	border-top: 1px solid rgba(42, 42, 42, 0.94);
+	border-bottom: 1px solid rgba(42, 42, 42, 0.94);
+}
+
+nav ul.sub-menu li a:hover , nav ul ul li a:hover {
+	background: rgba(42, 42, 42, 0.94);
+	border-top: 1px solid #cca876;
+	border-bottom: 1px solid #cca876;
+}
+
+#subheader .subheader-color .full-header-content h3 {
+    width: 100%;
+    color: #FFF !important;
+    text-shadow: none;
+    line-height: 42px;
+    font-family: "Roboto Slab",sans-serif;
+    font-size: 36px;
+}
+
+
+#subheader .second-subheader h3 {
+    margin: 0px 155px;
+    line-height: 42px;
+    color: #cca876 !important;
+    font-family: "Roboto Slab",sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    font-weight: 500;
+}
+#sidebar-right .widget .searchform input#searchsubmit {
+    height: 30px;
+    background: none repeat scroll 0% 0% #cca876 !important;
+    margin: 10px 0px 0px;
+    padding: 5px 15px;
+    color: #FFF;
+    border: medium none;
+    display: block;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.widget.widget_testimonials-widget .prev {
+    width: 30px;
+    height: 30px;
+    background: url("images/posts-navigation-left-arrow.png") no-repeat scroll center center #cca876;
+    margin-top: -15px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    float: left;
+}
+.widget.widget_testimonials-widget .next {
+    width: 30px;
+    height: 30px;
+    background: url("images/posts-navigation-right-arrow.png") no-repeat scroll center center #cca876;
+    margin-top: -15px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    float: right;
+}
+.widget.widget_testimonials-widget {
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+}
+#content .content-article p {
+    margin-top: 25px;
+    line-height: 24px;
+    color: #394753;
+    font-family: "Roboto Slab",sans-serif;
+    text-align: justify;
+}
+
+.widget.widget_practiceareas-widget ul li a {
+    color: rgb(204, 168, 118) !important;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.widget.widget_practiceareas-widget ul li {
+    width: 233px;
+    list-style: inside url("images/lists-dot.png") disc;
+    margin-bottom: 9px;
+    float: left;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.widget.widget_practiceareas-widget h4, .widget.widget_ourlawyers-widget h4 {
+  
+  color: #929292 !important;
+   
+}
+
+#comments-template .comment-respond .comment-form #contact_submit {
+
+    background: #1b78b8 !important;
+    border: 2px solid #196da8;
+    box-shadow: none;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    display: block;
+
+}
+
+
+/* FOOTER */
+
+#footer .footer-box .searchform input#searchsubmit {
+    height: 30px;
+    background: none repeat scroll 0% 0% #605F5B !important;
+    margin: 10px 0px 0px;
+    padding: 5px 15px;
+    color: #FFF;
+    border: medium none;
+    display: block;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+#footer {
+    width: 100%;
+    background: url("images/dark.png") !important;
+    padding: 60px 0px;
+    float: left;
+}
+
+
+#footer .footer-box .searchform .screen-reader-text {
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    color: #cca876 !important;
+    font-weight: bold;
+
+}
+#footer .footer-box .footer-box-title {
+    width: 100%;
+    color: #FFF;
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #cca876 !important;
+}
+#footer .footer-box .searchform input#searchsubmit:hover {
+    background: #cca876 !important;
+
+}      
+.widget-our-lawyers p {
+    margin-top: 35px;
+}
+#footer .footer-box .wpcf7-submit{
+    background: #cca876 !important;
+    border: 2px solid #af9065 !important;
+}
+
+#footer .footer-box .wpcf7-submit:hover{
+    background: #af9065 !important;
+   
+}
+
+#footer .footer-box .footer-socials a.social-button {
+    line-height: 19px;
+    color: #FFF !important;
+    text-align: center;
+    font-size: 10px;
+    background: #cca876 !important;
+}
+
