@@ -10,11 +10,7 @@ get_header();
 ?>
 
 <div id="primary" class="site-content">
-
 	<div id="content" role="main">
-
- 
-
 		<?php
 		if ( is_user_logged_in() ) {
 

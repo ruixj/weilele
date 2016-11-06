@@ -13,7 +13,8 @@
 function bbm_total_photos_count() {
 	global $wpdb, $bp;
 
-	$photos_user_id = isset( $bp->displayed_user->id ) ? $bp->displayed_user->id : '';
+	//$photos_user_id = isset( $bp->displayed_user->id ) ? $bp->displayed_user->id : '';
+	$photos_user_id = bp_is_user() ? bp_displayed_user_id() : bp_loggedin_user_id();
 	$new_sql        = "SELECT COUNT(id) FROM {$wpdb->prefix}buddyboss_media WHERE media_author = %d AND activity_id NOT IN ( SELECT id FROM {$wpdb->base_prefix}bp_activity WHERE is_spam = 1 )";
 	$sql            = $wpdb->prepare( $new_sql, $photos_user_id );
 

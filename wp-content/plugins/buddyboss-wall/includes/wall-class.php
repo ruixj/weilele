@@ -804,6 +804,162 @@ class BuddyBoss_Wall_BP_Component extends BP_Component
 		return $activity_list;
 	}
 
+	
+		/**
+	 * GET FEED ACTIVITES
+	 */
+	public function get_following_activities( $page = 0, $per_page = 20 )
+	{
+		global $bp, $wpdb, $buddyboss_ajax_qs;
+
+		$min = ( $page > 0 ) ? ( $page - 1 ) * $per_page : 0;
+		$max = ( $page + 1 ) * $per_page;
+		//$per_page = bp_get_activity_per_page();
+		//buddyboss_wall_log( "per page: $per_page" );
+
+		if ( isset( $bp->loggedin_user ) && isset( $bp->loggedin_user->id )
+				 && intval( $bp->displayed_user->id ) === intval( $bp->loggedin_user->id ) )
+		{
+			$myprofile = true;
+		}
+		else {
+			$myprofile = false;
+		}
+
+		$wpdb->show_errors = $this->option( 'DEBUG' );
+
+		$user_id = $bp->displayed_user->id;
+
+		$user_name = $bp->displayed_user->userdata->user_login;
+
+		$filter = $bp->displayed_user->domain;
+
+		buddyboss_wall_log( "Looking at $user_id" );
+
+		// Get friend's user IDs
+		if ( function_exists( 'friends_get_friend_user_ids' ) )
+		{
+			$user_ids = friends_get_friend_user_ids( $user_id, false, false );
+		}
+		else {
+			$user_ids = array();
+		}
+
+		// Get user's groups
+		if ( function_exists( 'groups_get_user_groups' ) )
+		{
+			$groups = groups_get_user_groups( $user_id, false, false );
+			
+			if ( empty( $groups['groups'] ) )
+			{
+				$group_ids = array();
+			}
+			else {
+				$group_ids = $groups['groups'];
+			}
+		}
+		else {
+			$group_ids = array();
+		}
+
+		$user_list  = implode( ',', $user_ids );
+		$group_list = implode( ',', $group_ids );
+
+		$groups_object = isset( $bp->groups->id ) ?  $bp->groups->id : '0';
+
+		// @todo: We should check if both friend's component and groups component is 
+		// active, then check if we have IDs for either and generate a query based
+		// on that information. For now we'll force ID 0 so an empty query doesn't
+		// generate an error
+		if ( empty( $user_list ) )
+		{
+			$user_list = 0;
+		}
+
+		if ( empty( $group_list ) )
+		{
+			$group_list = 0;
+		}
+
+		// buddyboss_wall_log( $friend_id_list );
+		$table = bp_core_get_table_prefix() . 'bp_activity';
+		$table2 = bp_core_get_table_prefix() . 'bp_activity_meta';
+
+		// Gets friend's updates. If friend's component isn't enabled this returns nothing.
+		$where = "WHERE ( $table.user_id IN ($user_list) AND $table.type != 'activity_comment' AND $table.type != 'last_activity'  AND $table.hide_sitewide != 1 )";
+
+		// Get's updates from user's groups
+		$group_modifier = "OR ( $table.item_id IN ($group_list) AND $table.component = '$groups_object' ) ";
+
+		// If we have a filter enabled, let's handle that
+		$ajax_qs = ! empty( $buddyboss_ajax_qs )
+						 ? wp_parse_args( $buddyboss_ajax_qs )
+						 : false;
+
+		if ( is_array( $ajax_qs ) && isset( $ajax_qs['action'] ) )
+		{
+			// Clear group modifier
+			$group_modifier = '';
+
+			$filter_qs = $ajax_qs['action'];
+
+			// Check for commas and adjust
+			if ( strpos( $filter_qs, ',' ) )
+			{
+				$filters = explode( ',', $filter_qs );
+			}
+			else {
+				$filters = (array)$filter_qs;
+			}
+
+			// Clean each filter
+			$filters_clean = array();
+
+			foreach( $filters as $filter )
+			{
+				$filters_clean[] = esc_sql( $filter );
+			}
+
+			$filter_sql = "AND ( $table.type='" . implode( "' OR $table.type='", $filters_clean ) . "' )";
+
+			$where = "WHERE ( $table.user_id IN ($user_list) $filter_sql )";
+		}
+
+		// Filter where SQL
+		$where_filtered = apply_filters( 'buddyboss_wall_query_feed_activity_ids_where', $where );
+
+		// Filter modifier SQL
+		$group_filtered = apply_filters( 'buddyboss_wall_query_feed_activity_ids_groups', $group_modifier );
+
+		// Build Query
+		$query_sql = "SELECT DISTINCT $table.id FROM $table LEFT JOIN $table2 ON $table.id = $table2.activity_id
+		$where_filtered
+		$group_filtered
+		ORDER BY date_recorded DESC LIMIT $min, 40";
+
+		// Filter full query SQL
+		$query_filtered = apply_filters( 'buddyboss_wall_query_feed_activity_ids_full', $query_sql );
+
+		// Run query
+		$activities = $wpdb->get_results( $query_filtered, ARRAY_A );
+
+		buddyboss_wall_log($query_filtered);
+		buddyboss_wall_log($activities);
+
+		if ( empty( $activities ) ) return null;
+
+		$tmp = array();
+
+		foreach ($activities as $activity )
+		{
+			$tmp[] = $activity["id"];
+		}
+
+		$activity_list = implode( ",", $tmp );
+
+		return $activity_list;
+	}
+
 	/**
 	 * Retrieve likes for current activity (within activity loop)
 	 *

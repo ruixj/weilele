@@ -116,17 +116,15 @@ if ( ! class_exists( 'BuddyBoss_SAP_Blog' ) ):
 			$sap_post_count = $post_count_query->found_posts;
 			wp_reset_postdata();
 
-			bp_core_new_nav_item( array(
-				'name' => __( '个人文章 <span class="count">'.$sap_post_count.'</span>', 'bp-user-blog' ),
-				'slug' => 'blog',
-				'screen_function' => 'sap_user_blog_page',
-				'position' => 20,
-				'default_subnav_slug' => 'blog'
-			) );
-			
-
-			
- 
+			bp_core_new_nav_item( 
+				array(
+					'name' => __( '个人文章 <span class="count">'.$sap_post_count.'</span>', 'bp-user-blog' ),
+					'slug' => 'blog',
+					'screen_function' => 'sap_user_blog_page',
+					'position' => 20,
+					'default_subnav_slug' => 'blog'
+				) 
+			);
         
             //parent::setup_nav($this->main_nav, $this->sub_nav);			
 			
@@ -175,14 +173,16 @@ if ( ! class_exists( 'BuddyBoss_SAP_Blog' ) ):
 					) ); 
 				}
 				
-				bp_core_new_subnav_item( array(
-					'name' => __( 'Drafts', 'bp-user-blog' ),
-					'slug' => 'drafts',
-					'parent_url' => $blog_link,
-					'parent_slug' => __( 'blog', 'bp-user-blog' ),
-					'screen_function' => 'sap_user_blog_page',
-					'position' => 30,
-				) );	
+				bp_core_new_subnav_item( 
+					array(
+						'name' => __( 'Drafts', 'bp-user-blog' ),
+						'slug' => 'drafts',
+						'parent_url' => $blog_link,
+						'parent_slug' => __( 'blog', 'bp-user-blog' ),
+						'screen_function' => 'sap_user_blog_page',
+						'position' => 30,
+					) 
+				);	
 				// bp_core_new_subnav_item( 
 				   // array(
 					// 'name' => __( '我的收藏', 'bp-user-blog' ),
