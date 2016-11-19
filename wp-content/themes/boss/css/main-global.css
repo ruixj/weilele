@@ -3485,10 +3485,13 @@ article.format-aside p:last-child {
     border-bottom: 1px solid rgba(0,0,0,0.11);  
 }
 
-.post-image-front{
-	/*flex: 0 0 30%;*/
-    width:  8rem;
-    /*height: 8rem;*/
+.post-image-front{ 
+    /*flex: 0 0 20%;
+	height: 6rem;*/
+	
+ 
+	width:  5rem;
+	 
     margin-right: .24rem;
     position: relative;
     background-color: #f6f6f6;
@@ -3496,6 +3499,7 @@ article.format-aside p:last-child {
 
 .post-content-front
 {
+	height: 5rem;
     width: 0;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -6506,7 +6510,7 @@ div#sitewide-notice div#message p #close-notice:after {
 
 .network-profile #item-header,
 .group-single #item-header {
-    min-height: 320px;
+    min-height: 140px;
     position: relative;
 }
 
@@ -6591,7 +6595,7 @@ div#sitewide-notice div#message p #close-notice:after {
 .bb-cover-photo {
     width: 100%;
     background: #3c7a90;
-    height: 320px;
+    height: 140px;
     position: absolute;
 }
 
@@ -6704,7 +6708,7 @@ div#sitewide-notice div#message p #close-notice:after {
 }
 
 #buddypress #item-header-cover > .table-cell {
-    height: 320px;
+    height: 140px;
 }
 
 .single-member-more-actions {
@@ -7519,7 +7523,7 @@ body.activity:not(.bp-user) #activity-filter-select .buddyboss-select label,
 
 #item-header-content {
     float: left;
-    margin-top: 14px;
+    /*margin-top: 14px;*/
 }
 
 #item-header-content h1 {
@@ -7544,8 +7548,8 @@ body.activity:not(.bp-user) #activity-filter-select .buddyboss-select label,
 
 #item-header-content .basic {
     border-bottom: 1px solid rgba(255,255,255,0.3);
-    padding-bottom: 14px;
-    margin-bottom: 18px;
+    /*padding-bottom: 14px;
+    margin-bottom: 18px;*/
     -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);

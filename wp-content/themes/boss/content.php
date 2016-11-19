@@ -27,19 +27,20 @@
 		<div class="post-wrap-front">
 		    <!--thumbnail--->
  
-			
-		    <div class="post-image-front">
-				<a class="entry-post-thumbnail-front" href="<?php the_permalink(); ?>">
-					<?php
-					if ( function_exists( 'has_post_thumbnail' ) && has_post_thumbnail(   ) ) {
-						the_post_thumbnail( 'thumbnail', array( 'class' => 'avatar' ) );
-					} else {
-						echo get_avatar( get_the_author_meta( 'user_email' ), '150' );
-					}
-					?>
-				</a>
-			</div>
-			
+			<?php
+		    if ( function_exists( 'has_post_thumbnail' ) && has_post_thumbnail(   ) ) 
+			{
+		    ?>
+				<div class="post-image-front">
+					<a class="entry-post-thumbnail-front" href="<?php the_permalink(); ?>">
+						<?php
+							the_post_thumbnail( 'thumbnail', array( 'class' => 'avatar' ) );
+						?>
+					</a>
+				</div>
+			<?php 
+			}
+			?>
 			<div class="post-content-front">
 				<!---entry-title --> 
 				<header class="post-title-front">
@@ -55,7 +56,7 @@
  
 					<footer class="entry-meta-front table">
 					    <div class="entry-meta-front mobile">
-							<?php buddyboss_entry_metawll(); ?>
+							<?php buddyboss_entry_metawll(true,false); ?>
 						</div>
 						
 						<div class="entry-meta table-cell desktop ">

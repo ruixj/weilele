@@ -1969,7 +1969,7 @@ if ( !function_exists( 'boss_generate_option_css' ) ) {
 			?>
 
 			.page-cover > .table-cell {
-			height: <?php echo $blog_img_height; ?>px;
+			height: <?php //echo $blog_img_height; ?>px;
 			}
 
 		<?php } ?>

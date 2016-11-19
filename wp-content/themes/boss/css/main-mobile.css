@@ -192,9 +192,16 @@ div.mobile:not(.nojq) {
 .whitespace {
     display: none;
 }
+
+.entry-meta-front .mobile
+{
+	font-size: 1.1rem;
+}
+
 .entry-meta-front .mobile a 
 {
 	margin-right:10px;
+    color: #9c8b8b;
 }
 .boxed .page-full-width .activity-header.page-header + .entry-content,
 .boxed .activity-header.page-header + .entry-content,
@@ -983,7 +990,7 @@ body.left-menu-open.error404 .search-wrap {
 1.0.8 - Cover
 --------------------------------------------------------------*/
 .page-cover > .table-cell {
-    height: 222px;
+    height: 140px;
 }
 
 /*--------------------------------------------------------------
