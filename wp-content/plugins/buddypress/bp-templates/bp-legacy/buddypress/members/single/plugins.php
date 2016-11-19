@@ -18,20 +18,21 @@
 
 		<?php if ( ! bp_is_current_component_core() ) : ?>
 
-		<div class="item-list-tabs no-ajax" id="subnav">
-			<ul>
-				<?php bp_get_options_nav(); ?>
+			<div class="item-list-tabs no-ajax" id="subnav">
+				<ul>
+					<?php //bp_get_options_nav(); ?>
 
-				<?php
+					<?php
 
-				/**
-				 * Fires inside the member plugin template nav <ul> tag.
-				 *
-				 * @since 1.2.2
-				 */
-				do_action( 'bp_member_plugin_options_nav' ); ?>
-			</ul>
-		</div><!-- .item-list-tabs -->
+					/**
+					 * Fires inside the member plugin template nav <ul> tag.
+					 *
+					 * @since 1.2.2
+					 */
+					//do_action( 'bp_member_plugin_options_nav' ); 
+					?>
+				</ul>
+			</div><!-- .item-list-tabs -->
 
 		<?php endif; ?>
 

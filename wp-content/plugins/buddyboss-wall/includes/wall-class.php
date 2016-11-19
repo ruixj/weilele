@@ -398,14 +398,14 @@ class BuddyBoss_Wall_BP_Component extends BP_Component
 		$profile_link = $domain . $bp->activity->slug . '/';
 
 		// RENAME PERSONAL/WALL TAB
-		bp_core_new_subnav_item( array(
-			'name'            => __( 'Wall', 'buddyboss-wall' ),
-			'slug'            => 'just-me',
-			'parent_url'      => $wall_profile_link,
-			'parent_slug'     => $bp->activity->slug,
-			'screen_function' => 'bp_activity_screen_my_activity' ,
-			'position'        => 10
-		) );
+		// bp_core_new_subnav_item( array(
+			// 'name'            => __( 'Wall', 'buddyboss-wall' ),
+			// 'slug'            => 'just-me',
+			// 'parent_url'      => $wall_profile_link,
+			// 'parent_slug'     => $bp->activity->slug,
+			// 'screen_function' => 'bp_activity_screen_my_activity' ,
+			// 'position'        => 10
+		// ) );
 
 		// ADD NEWS FEED TAB
 		if ( bp_is_my_profile() || bp_core_can_edit_settings() )
@@ -421,14 +421,14 @@ class BuddyBoss_Wall_BP_Component extends BP_Component
 		}
 
 		// RENAME FAVORITES TAB
-		bp_core_new_subnav_item( array(
-			'name'            => __( 'My Likes', 'buddyboss-wall' ),
-			'slug'            => 'favorites',
-			'parent_url'      => $profile_link,
-			'parent_slug'     => $bp->activity->slug,
-			'screen_function' => 'bp_activity_screen_favorites',
-			'position'        => 12
-		) );
+		// bp_core_new_subnav_item( array(
+			// 'name'            => __( 'My Likes', 'buddyboss-wall' ),
+			// 'slug'            => 'favorites',
+			// 'parent_url'      => $profile_link,
+			// 'parent_slug'     => $bp->activity->slug,
+			// 'screen_function' => 'bp_activity_screen_favorites',
+			// 'position'        => 12
+		// ) );
 	}
 
 	/**

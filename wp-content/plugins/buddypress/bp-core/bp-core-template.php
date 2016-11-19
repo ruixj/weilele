@@ -102,7 +102,7 @@ function bp_get_options_nav( $parent_slug = '' ) {
 		 * @param array  $subnav_item   Submenu array item being displayed.
 		 * @param string $selected_item Current action.
 		 */
-		echo apply_filters( 'bp_get_options_nav_' . $subnav_item->css_id, '<li id="' . esc_attr( $subnav_item->css_id . '-' . $list_type . '-li' ) . '" ' . $selected . '><a id="' . esc_attr( $subnav_item->css_id ) . '" href="' . esc_url( $subnav_item->link ) . '">' . $subnav_item->name . '</a></li>', $subnav_item, $selected_item );
+		echo apply_filters( 'bp_get_options_nav_' . $subnav_item->css_id, '<li id="' . esc_attr( $subnav_item->css_id . '-' . $list_type . '-li' ) . '" '  . '><a id="' . esc_attr( $subnav_item->css_id ) . '" '. $selected.' href="' . esc_url( $subnav_item->link ) . '">' . $subnav_item->name . '</a></li>', $subnav_item, $selected_item );
 	}
 }
 

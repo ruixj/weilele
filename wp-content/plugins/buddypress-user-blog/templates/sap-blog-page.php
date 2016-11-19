@@ -29,7 +29,7 @@ $query_args = array(
     'author'            => bp_displayed_user_id(),
     'post_type'         => 'post',
     'post_status'       => $post_status,
-    'posts_per_page'    => -1,
+    //'posts_per_page'    => 4,
     'paged'             => $paged
 );
 

@@ -212,7 +212,7 @@ function bp_friend_search_form() {
 function bp_member_add_friend_button() {
 	bp_add_friend_button( bp_get_member_user_id() );
 }
-add_action( 'bp_directory_members_actions', 'bp_member_add_friend_button' );
+//add_action( 'bp_directory_members_actions', 'bp_member_add_friend_button' );
 
 /**
  * Output the friend count for the current member in the loop.

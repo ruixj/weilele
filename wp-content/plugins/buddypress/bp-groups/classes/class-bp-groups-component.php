@@ -526,7 +526,7 @@ class BP_Groups_Component extends BP_Component {
 
 			// Add the "Home" subnav item, as this will always be present.
 			$sub_nav[] = array(
-				'name'            =>  _x( 'Home', 'Group screen navigation title', 'buddypress' ),
+				'name'            =>  _x( '动态', 'Group screen navigation title', 'buddypress' ),
 				'slug'            => 'home',
 				'parent_url'      => $group_link,
 				'parent_slug'     => $this->current_group->slug,
@@ -545,14 +545,14 @@ class BP_Groups_Component extends BP_Component {
 				 ! groups_check_user_has_invite( bp_loggedin_user_id(), $this->current_group->id )
 				) {
 
-				$sub_nav[] = array(
-					'name'            => _x( 'Request Membership','Group screen nav', 'buddypress' ),
-					'slug'            => 'request-membership',
-					'parent_url'      => $group_link,
-					'parent_slug'     => $this->current_group->slug,
-					'screen_function' => 'groups_screen_group_request_membership',
-					'position'        => 30
-				);
+				// $sub_nav[] = array(
+					// 'name'            => _x( 'Request Membership','Group screen nav', 'buddypress' ),
+					// 'slug'            => 'request-membership',
+					// 'parent_url'      => $group_link,
+					// 'parent_slug'     => $this->current_group->slug,
+					// 'screen_function' => 'groups_screen_group_request_membership',
+					// 'position'        => 30
+				// );
 			}
 
 			// Forums are enabled and turned on.
@@ -604,17 +604,17 @@ class BP_Groups_Component extends BP_Component {
 			}
 
 			if ( bp_is_active( 'friends' ) && bp_groups_user_can_send_invites() ) {
-				$sub_nav[] = array(
-					'name'            => _x( 'Send Invites', 'My Group screen nav', 'buddypress' ),
-					'slug'            => 'send-invites',
-					'parent_url'      => $group_link,
-					'parent_slug'     => $this->current_group->slug,
-					'screen_function' => 'groups_screen_group_invite',
-					'item_css_id'     => 'invite',
-					'position'        => 70,
-					'user_has_access' => $this->current_group->user_has_access,
-					'no_access_url'   => $group_link,
-				);
+				// $sub_nav[] = array(
+					// 'name'            => _x( 'Send Invites', 'My Group screen nav', 'buddypress' ),
+					// 'slug'            => 'send-invites',
+					// 'parent_url'      => $group_link,
+					// 'parent_slug'     => $this->current_group->slug,
+					// 'screen_function' => 'groups_screen_group_invite',
+					// 'item_css_id'     => 'invite',
+					// 'position'        => 70,
+					// 'user_has_access' => $this->current_group->user_has_access,
+					// 'no_access_url'   => $group_link,
+				// );
 			}
 
 			// If the user is a group admin, then show the group admin nav item.

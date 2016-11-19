@@ -4,9 +4,28 @@
  */
 ?>
 <!DOCTYPE html>
-<html class="pixel-ratio-1" lang="zh-cmn-Hans">
+<html <?php language_attributes(); ?>>
 
-<?php wp_head(); ?>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="msapplication-tap-highlight" content="no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<!-- BuddyPress and bbPress Stylesheets are called in wp_head, if plugins are activated -->
+	<?php wp_head(); ?>
+</head>
+
+<?php
+	global $rtl;
+	$logo	 = ( boss_get_option( 'logo_switch' ) && boss_get_option( 'boss_logo', 'id' ) ) ? '1' : '0';
+	$inputs	 = ( boss_get_option( 'boss_inputs' ) ) ? '1' : '0';
+	$boxed	 =   boss_get_option( 'boss_layout_style' );
+
+	$header_style = boss_get_option('boss_header');
+?>
  
 <body class="gray addinfo" ontouchstart="">
 		<div class="container">

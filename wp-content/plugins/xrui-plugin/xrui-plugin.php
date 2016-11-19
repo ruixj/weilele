@@ -108,16 +108,42 @@ function xrui_plugin_remove()
 	// //echo $mylink->link_id; // prints "10" 
 }
 
-add_action('plugins_loaded','navigation_init');	
+// Directory
+if ( ! defined( 'XRUI_PLUGIN_DIR' ) ) {
+  define( 'XRUI_PLUGIN_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
+}
+
+// Url
+if ( ! defined( 'XRUI_PLUGIN_URL' ) ) {
+  $plugin_url = plugin_dir_url( __FILE__ );
+
+  // If we're using https, update the protocol. Workaround for WP13941, WP15928, WP19037.
+  if ( is_ssl() )
+    $plugin_url = str_replace( 'http://', 'https://', $plugin_url );
+
+  define( 'XRUI_PLUGIN_URL', $plugin_url );
+}
+
+function xrui_plugin_css()
+{
+   // add custom.css
+   $assets			 = XRUI_PLUGIN_URL. 'assets';
+   wp_enqueue_style ( 'weilelecustom',  $assets . '/css/custom.css', array(), '1.0', 'all' ); 	
+   wp_enqueue_script( 'weilelepostjs',  $assets . '/js/posts.js', array( 'jquery' ), '1.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'xrui_plugin_css' );
+
+
 function navigation_init()
 {
-    // Setup WP Toolbar menus.
+   // Setup WP Toolbar menus.
    add_action( 'bp_setup_admin_bar',  'bookmark_setup_admin_bar', 60 );	
    add_action( 'bp_setup_nav', 'bookmark_setup_bookmark_nav', 100 );
    add_action( 'bp_setup_nav', 'member_setup_search_nav', 100 );
    add_action( 'bp_setup_nav', 'xrui_setup_me_nav', 100 );
-   
 }
+add_action('plugins_loaded','navigation_init');	
+
 
 function bookmark_setup_admin_bar()
 {
@@ -161,14 +187,14 @@ function bookmark_setup_bookmark_nav()
 	$displayed_user_id = bp_displayed_user_id();
 	$user_domain = ( ! empty( $displayed_user_id ) ) ? bp_displayed_user_domain() : bp_loggedin_user_domain();
 
-	$blog_link = trailingslashit( $user_domain . __( 'blog', 'bp-user-blog' ) );	
+	$blog_link = trailingslashit( $user_domain . __( 'blog', 'bp-user-blog' ) ) ;	
 	if ( is_user_logged_in() && bp_displayed_user_id() == get_current_user_id() ) {	
 		bp_core_new_subnav_item( 
 		array(
-			'name' => __( '我的收藏', 'bp-user-blog' ),
-			'slug' => 'bookmarks',
-			'parent_url' => $blog_link,
-			'parent_slug' =>   __( 'blog', 'bp-user-blog' ),
+			'name'            => __( '我的收藏', 'bp-user-blog' ),
+			'slug'            => 'bookmarks',
+			'parent_url'      => $blog_link,
+			'parent_slug'     =>   __( 'blog', 'bp-user-blog' ),
 			'screen_function' => 'sap_user_bookmark_page',
 			'position' => 50,
 		   )
@@ -232,7 +258,7 @@ function member_setup_search_nav()
 		$user_domain = bp_loggedin_user_domain();
  
 		 
-		$slug         = bp_get_friends_slug();
+		$slug         = bp_get_friends_slug();//bp_get_activity_slug();
 		$friends_link = trailingslashit( $user_domain . $slug );	
 		bp_core_new_subnav_item( array( 
 			'name' => __( '添加朋友', 'buddypress' ), 
@@ -333,15 +359,18 @@ function redirect_after_login_per_role()
 	
 }
 
-
-
-
 function bp_xrui_redirect_to_profile( $redirect_to_calculated, $redirect_url_specified, $user ){
 	if( empty( $redirect_to_calculated ) )
 		$redirect_to_calculated = $redirect_url_specified;
  
 	if( !is_wp_error($user) && !is_super_admin( $user->ID ) )
-		return bp_core_get_user_domain( $user->ID );//bp默认的用户中心首页
+	{
+		
+		$user_domain       = bp_core_get_user_domain( $user->ID );
+		$wall_profile_link = trailingslashit( $user_domain . buddypress()->activity->slug ).'following' ;
+		return $wall_profile_link;//bp默认的用户中心首页
+	}
+		
 	else
 		return $redirect_to_calculated;  
      	
@@ -537,9 +566,9 @@ remove_action( 'template_redirect','wp_shortlink_header', 11, 0 );	//删除短�
 
 remove_action( 'wp_head','print_emoji_detection_script',7);
 
-add_action( 'init', 'stop_heartbeat', 1 );
+//add_action( 'init', 'stop_heartbeat', 1 );
 function stop_heartbeat() {
-wp_deregister_script('heartbeat');
+   wp_deregister_script('heartbeat');
 }
 
 // add_filter( 'get_avatar_url' , 'my_custom_url' , 1 , 3 );
@@ -674,22 +703,40 @@ function sp_get_community_info($guid){
 }
 function save_community( ){
 	
-	$current_user = wp_get_current_user();
-	$location_id = $_POST[ 'location_id' ];
-	$resp['status_code'] = 0;
-	$resp['redirect_url'] =   bp_core_get_user_domain( $current_user->ID ); // home_url('/');
+	$current_user          = wp_get_current_user();
+	$location_id           = $_POST[ 'location_id' ];
+	$resp['status_code']   = 0;
+	$user_domain           = bp_core_get_user_domain( $current_user->ID );
+	$wall_profile_link     = trailingslashit( $user_domain . buddypress()->activity->slug ).'following' ;
+	$resp['redirect_url']  = $wall_profile_link; // home_url('/');
 	//save to wp_community
 	global $wpdb;
     $table_name = $wpdb->prefix .'community';   
-
+	$new_group_id = 0;
 
 	$communityres = $wpdb->get_results( 
 						$wpdb->prepare("SELECT * FROM {$wpdb->prefix}community WHERE uid=%s", $location_id) );
 	if($communityres)
-	{
-	    
-			
-	    update_user_meta($current_user->ID, 'community',$communityres['id'] );
+	{	
+	    update_user_meta($current_user->ID, 'community',$communityres[0]->id );
+	    //join the group
+		//function bp_core_get_userid( $username = '' ) 
+		$groups     = groups_get_groups( 
+						   array(
+							'per_page'           => 1,
+							'page'               => 1,
+							'user_id'            => bp_loggedin_user_id()
+						   ) 
+					  );
+		if ($groups['total'] > 0)
+		{
+			$groupslist  =  $groups['groups'];
+			//$groupslist[0]
+			//left the previous community
+			groups_leave_group($groupslist[0]->id,$current_user->ID);
+		}
+		$new_group_id = groups_get_id(sanitize_title( esc_attr($communityres[0]->name )));
+		groups_join_group( $new_group_id, $current_user->ID );
 	}
 	else
 	{
@@ -699,11 +746,11 @@ function save_community( ){
 		{
 			$cinfo = $communityinfojson['result'];
 			$data_array = array(  
-				'uid' =>$location_id,
+				'uid'          =>$location_id,
 				'date_created' =>bp_core_current_time(),
-				'name'=>$cinfo['name'],
-				'description'=>'',
-				'address'=>$cinfo['address']
+				'name'         =>$cinfo['name'],
+				'description'  =>'',
+				'address'      =>$cinfo['address']
 			); 
 			
 			$format = array(  
@@ -718,7 +765,42 @@ function save_community( ){
 			if($result)
 			{
 				$current_user = wp_get_current_user();
-				update_user_meta($current_user->ID, 'community',$wpdb->insert_id );		
+				update_user_meta($current_user->ID, 'community',$wpdb->insert_id );	
+                //create a group for the community
+				//join the group
+				
+
+				if (  $new_group_id = groups_create_group( 
+				                                         array( 'group_id'     => $new_group_id, 
+				                                                'name'         => $cinfo['name'], 
+															    'description'  => $cinfo['address'], 
+															    'slug'         => sanitize_title( esc_attr($cinfo['name']) ) , 
+															    'date_created' => bp_core_current_time(), 
+															    'status'       => 'public' ,
+																'creator_id'   => bp_core_get_userid("Admin")
+															  ) 
+													    ) 
+				) 
+				{
+					
+					$groups     = groups_get_groups( 
+									   array(
+										'per_page'           => 1,
+										'page'               => 1,
+										'user_id'            => bp_loggedin_user_id()
+									   ) 
+								  );
+					if ($groups['total'] > 0)
+					{
+						$groupslist  =  $groups['groups'];
+						//$groupslist[0]
+						//left the previous community
+						groups_leave_group($groupslist[0]->id,$current_user->ID);
+					}
+					
+					groups_join_group( $new_group_id, $current_user->ID );
+				}				
+				
 			}	
 			else
 			{
@@ -738,25 +820,10 @@ function save_community( ){
 
 
 add_action( 'wp_ajax_sp_get_current_nearby',  'sp_get_current_nearby'   );
-add_action( 'wp_ajax_sp_get_location_info',  'sp_get_location_info'   );
-add_action( 'wp_ajax_save_community',  'save_community'   );
+add_action( 'wp_ajax_sp_get_location_info',   'sp_get_location_info'   );
+add_action( 'wp_ajax_save_community',         'save_community'   );
 
 
-// Directory
-if ( ! defined( 'XRUI_PLUGIN_DIR' ) ) {
-  define( 'XRUI_PLUGIN_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
-}
-
-// Url
-if ( ! defined( 'XRUI_PLUGIN_URL' ) ) {
-  $plugin_url = plugin_dir_url( __FILE__ );
-
-  // If we're using https, update the protocol. Workaround for WP13941, WP15928, WP19037.
-  if ( is_ssl() )
-    $plugin_url = str_replace( 'http://', 'https://', $plugin_url );
-
-  define( 'XRUI_PLUGIN_URL', $plugin_url );
-}
  
 function baidumap_js() {
 	echo '<script type="text/javascript"> window.BMap_loadScriptTime = (new Date).getTime();</script>';
@@ -799,30 +866,29 @@ function communityselscripts() {
 	    {	
 		    $url = home_url('/communitysel');
 			wp_redirect($url);
-				
+			exit;	
 		}	
 	    if($wp->request == 'communitysel')
 		{
+			$assets			 = XRUI_PLUGIN_URL. 'assets';
+			
+			wp_enqueue_style( 'weui1',        $assets . '/vendor/jquery-weui/dist/lib/weui.min.css', array(), '1.1', 'all' );
+			wp_enqueue_style( 'jquery-weui',  $assets . '/vendor/jquery-weui/dist/css/jquery-weui.min.css', array(), '1.1', 'all' );
+			wp_enqueue_style( 'jquery-weui4', $assets . '/css/app.css', array(), '1.1', 'all' );
+			
+			wp_enqueue_script( 'jquery-weui2', $assets . '/vendor/jquery-weui/dist/js/jquery-weui.min.js', array( 'jquery' ), '1.0', true );
+			wp_enqueue_script( 'jquery-weui1', $assets . '/vendor/jquery-weui/dist/js/swiper.min.js', array( 'jquery' ), '1.0', true );
+			wp_enqueue_script( 'jquery-weui3', $assets . '/vendor/jquery-weui/dist/lib/fastclick.js', array( 'jquery' ), '1.0', true );
+			
+			
+			
+			//wp_enqueue_script( 'jquery-weui5', $assets . '/js/convertor.js', array('jquery'), '1.0', false );
+			wp_enqueue_script( 'jquery-weui6', $assets . '/js/api.js', array('jquery' ), '1.0', true );
+			add_action( 'wp_head',   'baidumap_js'  );
+			
 
-				$assets			 = XRUI_PLUGIN_URL. 'assets';
-				
-				wp_enqueue_style( 'weui1',        $assets . '/vendor/jquery-weui/dist/lib/weui.min.css', array(), '1.1', 'all' );
-				wp_enqueue_style( 'jquery-weui',  $assets . '/vendor/jquery-weui/dist/css/jquery-weui.min.css', array(), '1.1', 'all' );
-				wp_enqueue_style( 'jquery-weui4', $assets . '/css/app.css', array(), '1.1', 'all' );
-				
-				wp_enqueue_script( 'jquery-weui2', $assets . '/vendor/jquery-weui/dist/js/jquery-weui.min.js', array( 'jquery' ), '1.0', true );
-				wp_enqueue_script( 'jquery-weui1', $assets . '/vendor/jquery-weui/dist/js/swiper.min.js', array( 'jquery' ), '1.0', true );
-				wp_enqueue_script( 'jquery-weui3', $assets . '/vendor/jquery-weui/dist/lib/fastclick.js', array( 'jquery' ), '1.0', true );
-				
-				
-				
-				//wp_enqueue_script( 'jquery-weui5', $assets . '/js/convertor.js', array('jquery'), '1.0', false );
-				wp_enqueue_script( 'jquery-weui6', $assets . '/js/api.js', array('jquery' ), '1.0', true );
-				add_action( 'wp_head',   'baidumap_js'  );
-				
-
-				// exit;
-				//loadCustomTemplate(TEMPLATEPATH.'/community.php');
+			// exit;
+			//loadCustomTemplate(TEMPLATEPATH.'/community.php');
 		 
 		}
 	    if($wp->request == 'me')
@@ -834,7 +900,7 @@ function communityselscripts() {
 }
  //add_action('template_redirect', 'templateRedirect');
  //add_action( 'wp_enqueue_scripts', 'communityselscripts' );
- add_action( 'template_redirect', 'communityselscripts' );
+ add_action( 'template_redirect', 'communityselscripts' ,1);
 //add_action('init', 'templateRedirect');
 
 
@@ -852,38 +918,35 @@ function xrui_load_template_multiple_times( $template ) {
 
 function xrui_bp_follower_display()
 {
-		global $bp;
+	global $bp;
 
-		// Need to change the user ID, so if we're not on a member page, $counts variable is still calculated
-		$user_id = bp_is_user() ? bp_displayed_user_id() : bp_loggedin_user_id();
-		$counts  = bp_follow_total_follow_counts( array( 'user_id' => $user_id ) );
+	// Need to change the user ID, so if we're not on a member page, $counts variable is still calculated
+	$user_id = bp_is_user() ? bp_displayed_user_id() : bp_loggedin_user_id();
+	$counts  = bp_follow_total_follow_counts( array( 'user_id' => $user_id ) );
 
-		// BuddyBar compatibility
-		$domain = bp_displayed_user_domain() ? bp_displayed_user_domain() : bp_loggedin_user_domain();
+	// BuddyBar compatibility
+	$domain = bp_displayed_user_domain() ? bp_displayed_user_domain() : bp_loggedin_user_domain();
 
-		/** FOLLOWERS NAV ************************************************/
-		$slug         = bp_get_friends_slug();
-		$friends_link = trailingslashit( $domain . $slug );	
-		$following_link = $friends_link.$bp->follow->following->slug;
-		$follower_link = $friends_link.$bp->follow->followers->slug;
-		
-	
+	/** FOLLOWERS NAV ************************************************/
+	$slug         = bp_get_friends_slug();
+	$friends_link = trailingslashit( $domain . $slug );	
+	$following_link = $friends_link.$bp->follow->following->slug;
+	$follower_link = $friends_link.$bp->follow->followers->slug;
 ?>
-
-                  <a class="box-col line-separate" href=<?php echo $following_link; ?> >
-                     <div class="mct-a txt-s">
-                     <?php echo $counts['following']; ?>
-					 </div>
-                     <div class="mct-a txt-s txt-bottom">
-                     关注</div>
-                  </a>
-				  
-				  <a class="box-col line-separate" href=<?php echo $follower_link; ?>  >
-                     <div class="mct-a txt-s">
-                     <?php echo $counts['followers']; ?></div>
-                     <div class="mct-a txt-s txt-bottom">
-                     粉丝</div>
-                  </a>
+	  <a class="box-col line-separate" href=<?php echo $following_link; ?> >
+		 <div class="mct-a txt-s">
+		 <?php echo $counts['following']; ?>
+		 </div>
+		 <div class="mct-a txt-s txt-bottom">
+		 关注</div>
+	  </a>
+	  
+	  <a class="box-col line-separate" href=<?php echo $follower_link; ?>  >
+		 <div class="mct-a txt-s">
+		 <?php echo $counts['followers']; ?></div>
+		 <div class="mct-a txt-s txt-bottom">
+		 粉丝</div>
+	  </a>
 <?php		  
 }
 
@@ -927,7 +990,7 @@ function xrui_bp_user_screen()
 	} else {
 		$blogname = __( 'Published', 'bp-user-blog' );
 	}	
-	$bookmarks_link =trailingslashit( $user_domain . 'bookmarks' ); 
+	$bookmarks_link =trailingslashit( $blog_link . 'bookmarks' ); 
 	
 	$photos_cnt = bbm_total_photos_count();
 	$buddyboss_media_link = trailingslashit( $user_domain . buddyboss_media_default_component_slug() ); 
@@ -1150,7 +1213,7 @@ function xrui_bp_user_screen()
             </div-->
          </div>
       </div>
-      <div class="card11 card-combine" data-node="group" id="boxId_1478094959183_40">
+      <div class="card11 card-combine" data-node="group"  >
          <div data-node="cardList" class="card-list">
             <div class="card card4 line-around" id="boxId_1478094959183_41">
                <a href="<?php echo $profile_link;?>" class="layout-box" data-act-type="hover">
@@ -1168,14 +1231,146 @@ function xrui_bp_user_screen()
                   </span>
                </a>
             </div>
+			
+            <div class="card card4 line-around" >
+               <a href="<?php echo wp_logout_url(); ?>" class="layout-box" data-act-type="hover">
+                  <i class="iconimg iconimg-s">
+                     <img width="23" height="23" src="http://u1.sinaimg.cn/upload/h5/img/440/cards/icon/gear_2x.png" alt="">
+                  </i>
+                  <div class="box-col txt-cut">
+                  <span class="mct-a ">
+                     <?php _e( 'Logout', 'boss' ); ?>
+				  </span>
+                  </div>
+                  <span data-node="arrow" class="plus plus-s">
+                     <i class="icon-font icon-font-arrow-right txt-s">
+                     </i>
+                  </span>
+               </a>
+            </div>			
          </div>
       </div>
+	  
+	  
+ 	  
    </div>
 </div>
 
 <?php	
 }
 
+
+function xrui_show_display_user_nav2(){
+	if(bp_displayed_user_id() 
+	   && (bp_displayed_user_id() != get_current_user_id())
+	)
+	{
+?>
+		<style>
+			#mainMenuBar {
+				width: 100%;
+				background-color: white;
+				z-index: 100;
+			}
+			#mainMenuBar ul {
+				margin: 0 auto;
+				text-align: center;
+				position: relative;
+				padding: 20px;
+				border-bottom: 1px solid black;
+			}
+			#mainMenuBar li {
+				display: inline-block;
+				color: black;
+				margin-left: 30px;
+				font-size: 1.2em;
+				font-family: "proxima-nova";
+				font-weight: 100;
+			}
+			.stick {
+				position: fixed;
+				top: 70;
+			}
+		</style>
+		<script style='text/javascript'>
+		  $( function() {
+			  // Cache selectors for faster performance.
+			  var $window            = $(window),
+				  $mainMenuBar       = $('#mainMenuBar'),
+				  $mainMenuBarAnchor = $('#mainMenuBarAnchor');
+		   
+			  // Run this on scroll events.
+			  //scroll()
+			  //当用户滚动指定的元素时，会发生scroll事件。
+			  //scroll事件适用于所有可滚动的元素和window对象（浏览器窗口）
+			  //scroll()方法触发scroll事件，或规定当发生scroll事件时运行的函数
+			  $window.scroll(function() {
+				  //scrollTop()方法返回或设置匹配元素的滚动条的垂直位置
+				  var window_top = $window.scrollTop();
+				//javascript用offsetTop();jquery用offset().top;
+				  var div_top = $mainMenuBarAnchor.offset().top;
+				  if (window_top + 70 > div_top ) {
+					  // Make the div sticky.
+					  $mainMenuBar.addClass('stick');
+					  $mainMenuBarAnchor.height($mainMenuBar.height());
+				  }
+				  else {
+					  // Unstick the div.
+					  $mainMenuBar.removeClass('stick');
+					  $mainMenuBarAnchor.height(0);
+				  }
+				});
+		  });
+		</script>				
+		<div id="mainMenuBarAnchor"></div>				
+		<div  id= "mainMenuBar">
+			<ul id="nav-bar">
+				<?php
+					global $bp;
+					$disuser_domain        = bp_displayed_user_domain();
+					$activity_slug         = bp_get_activity_slug();
+					//$blog_slug             = bp_get_blogs_slug();
+					$disuser_activity_link = trailingslashit( $disuser_domain . $activity_slug ) . 'just-me/';
+					$disuser_blog_link     = trailingslashit( $disuser_domain . __( 'blog', 'bp-user-blog' ) );
+					$buddyboss_media_link  = trailingslashit( $disuser_domain . buddyboss_media_default_component_slug() ); 
+					//bp_is_current_component();'profile' == bp_current_action() 
+					$activityclass = "";
+					$photoclass    = "";
+					$blogclass    = "";
+					
+					
+					if (bp_is_current_component( $activity_slug )    )
+					//if(bp_is_current_component($bp->activity->slug))
+					{
+						$activityclass = "selected";
+					}
+					else if( bp_is_current_component( buddyboss_media_component_slug() ) /*&& bp_is_current_action('photos')*/ )
+					{
+						$photoclass    = "selected";
+					}
+					else if($bp->current_action == 'blog' )
+					{
+						$blogclass     = "selected";
+					}
+				?>
+					<li>
+						<a id='activity' href="<?php echo $disuser_activity_link ; ?>" class="<?php echo $activityclass;?>">活动</a>
+					</li>	
+					<li>
+						<a id='blog' href="<?php echo $disuser_blog_link  ; ?>" class="<?php echo $blogclass;?>" >文章</a>
+					</li>
+					<li>
+						<a id='photo' href="<?php echo $buddyboss_media_link  ; ?>" class="<?php echo $photoclass;?>">相册</a>
+					</li>
+
+			</ul>
+		</div>
+ 
+     
+<?php
+		}
+
+}
 
 function xrui_setup_me_nav()
 {
@@ -1217,9 +1412,237 @@ function xrui_load_template( $template ) {
 	}
 }
 
-function xrui_displayuser_nav()
+
+function xrui_displayfooter_nav()
+{
+?>  
+    <div class="bottom-bar">
+	   <div class="func-wrap wll-footer">
+		    <ul class="m-bar">
+<?php
+	if( is_user_logged_in()) {  
+		global $bp;
+	 
+	 
+		if (( bp_loggedin_user_id() && !bp_displayed_user_id())  || bp_is_my_profile())
+		{
+			// Need to change the user ID, so if we're not on a member page, $counts variable is still calculated
+			$user_id = /*bp_is_user() ? bp_displayed_user_id() :*/ bp_loggedin_user_id();
+
+			// BuddyBar compatibility
+			$user_domain  = /*bp_displayed_user_domain() ? bp_displayed_user_domain() :*/ bp_loggedin_user_domain();	
+			$me_link      = trailingslashit( $user_domain . 'me' );	
+			$blog_link    = trailingslashit( $user_domain . __( 'blog', 'bp-user-blog' ) );
+			$friends_link = trailingslashit( $user_domain . bp_get_friends_slug() );
+			$find_link    = trailingslashit( $friends_link . 'membersearch');
+			
+			$create_new_post_page = buddyboss_sap()->option('create-new-post');
+			$create_post_link     = trailingslashit(get_permalink( $create_new_post_page ));
+			
+			//Keeping addnew post same if network activated
+			if (is_multisite()) {
+				if (!function_exists('is_plugin_active_for_network'))
+					require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
+				if (is_plugin_active_for_network(basename(constant('BP_PLUGIN_DIR')) . '/bp-loader.php') 
+					&& is_plugin_active_for_network(basename(constant('BUDDYBOSS_SAP_PLUGIN_DIR')) . '/bp-user-blog.php') ) {
+					$create_post_link = trailingslashit(get_blog_permalink( 1,$create_new_post_page ));
+				}
+			}	
+
+			$slug       = bp_get_groups_slug();
+			
+			$group_link = trailingslashit( $user_domain . $slug );	
+			$groups     = groups_get_groups( 
+							   array(
+								'per_page'           => 1,
+								'page'               => 1,
+								'user_id'            => bp_loggedin_user_id()
+							   ) 
+						  );
+			if ($groups['total'] > 0)
+			{
+				$groupslist  =  $groups['groups'];
+				$group_link  =  bp_get_group_permalink($groupslist[0]);
+			}
+			$wall_profile_link = trailingslashit( $user_domain . $bp->activity->slug ).'following';	
+			
+			$homeclass        = "";
+			$communityclass   = "";
+			$activityclass    = "";
+			$blogclass        = "";
+			$selfclass        = "";
+			$component = bp_current_component();
+			
+		    if(is_page($create_new_post_page))
+			{
+				$blogclass        = "selected" ;
+			}
+			else if(is_home()
+   				    || is_page('channels') 
+				    || is_single()
+					|| is_category())
+			{
+				$homeclass        =  "selected" ;
+			}
+			else if( bp_is_groups_component())
+			{
+				$communityclass   =  "selected";
+			} 
+			else if( (bp_is_activity_component() && bp_is_current_action('following')) || 
+		             (bp_is_friends_component() && bp_is_current_action('membersearch')) 
+		           )
+			{
+				$activityclass    = "selected";
+			}
+
+			else
+			{
+				$selfclass        = "selected";
+			}
+			
+		?>			
+			<li>
+				<a id='homeinfo' href="<?php echo esc_url( home_url() ); ?>" class="<?php echo $homeclass;?>">资讯</a>
+			</li>
+			
+			<li>
+				<a id='community' href="<?php echo $group_link; ?>" class="<?php echo $communityclass;?>" >社区</a>
+			</li>
+			
+			<li>
+				<a id='activity' href="<?php echo $wall_profile_link; ?>" class="<?php echo $activityclass;?>" >圈子</a>
+			</li>
+			
+
+			<li>
+				<a id='article' href="<?php echo $create_post_link; ?>" class="<?php echo $blogclass;?>">投稿</a>
+			</li>
+			
+			<li>
+				<a id='selfinfo' href="<?php echo $me_link; ?>" class="<?php echo $selfclass;?>">我的</a>
+			</li>            
+<?php
+		}
+		else if(bp_displayed_user_id() 
+				&& (bp_displayed_user_id() != get_current_user_id())
+			)
+		{
+				
+			$me_link      = trailingslashit( bp_loggedin_user_domain() . 'me' );	
+			$disuser_link = bp_displayed_user_domain();
+?>
+			<li>
+				 <?php echo bp_core_get_user_displayname( bp_displayed_user_id() );?>主页 
+			</li>
+			<li>
+				<a id='selfinfo' href="<?php echo $me_link  ; ?>">我的主页</a>
+			</li>			
+    <?php
+		}
+	}
+	else
+	{
+		
+		 
+?>
+			<li>
+				<a id='homeinfo' href="<?php echo esc_url( home_url() ); ?>">资讯</a>
+			</li>
+			
+				<?php if (is_weixin()):?>
+			<li>
+					<a href="<?php echo  'javascript:void(0)'; ?>" onclick="login_button_click('wechat','<?php echo home_url();?>')" class="login-link screen-reader-shortcut"><?php _e( 'Login', 'boss' ); ?></a>
+			</li>
+				<?php else: ?>
+				
+				  <?php if ( buddyboss_is_bp_active() && bp_get_signup_allowed() ) : ?>
+			<li>
+					<a href="<?php echo bp_get_signup_page(); ?>" class="register-link screen-reader-shortcut"><?php _e( 'Register', 'boss' ); ?>
+					</a>
+			</li>
+				  <?php endif; ?>	
+			<li>						  
+					<a href="<?php echo wp_login_url();  ?>"   class="login-link screen-reader-shortcut"><?php _e( 'Login', 'boss' ); ?></a>
+			</li>
+				<?php endif?>
+								
+<?php 
+	}
+?>		   
+            </ul>	
+	    </div>
+    </div>	
+<?php
+}
+
+function xrui_display_headernav()
 {
 
+    if(!is_weixin() && (is_single() || is_page() || is_author() || is_category()) )
+	{
+?>
+		<li>
+		   <a href="javascript:history.go(-1)" class="icon-back">返回</a>
+		</li>
+	
+<?php 
+	} 
+?>	
+
+	<!--li>
+		<a href="#scroll-to" >到页首</a>
+	</li-->
+	
+<?php 
+	if(is_home() || is_page('channels'))
+	{
+		$homeclass    = is_home()?"selected":"";
+		$channelclass = is_home()?"":"selected";
+?>
+	<li>
+		<a href="<?php echo home_url('/'); ?>" class="<?php echo $homeclass; ?>" >综合</a>
+	</li>
+	<li>
+		<a href="<?php echo home_url('/channels'); ?>" class="<?php echo $channelclass ; ?>" >频道系列</a>
+	</li>	
+<?php
+	}
+	if( is_user_logged_in()) {  
+		$user_id = /*bp_is_user() ? bp_displayed_user_id() :*/ bp_loggedin_user_id();
+
+		// BuddyBar compatibility
+		$user_domain  = /*bp_displayed_user_domain() ? bp_displayed_user_domain() :*/ bp_loggedin_user_domain();	
+		$me_link      = trailingslashit( $user_domain . 'me' );	
+		$blog_link    = trailingslashit( $user_domain . __( 'blog', 'bp-user-blog' ) );
+		$friends_link = trailingslashit( $user_domain . bp_get_friends_slug() );
+		$find_link    = trailingslashit( $friends_link . 'membersearch');	
+	
+		if(bp_is_groups_component() ){
+?>
+			<?php bp_get_options_nav(); ?>
+
+			<?php do_action( 'bp_group_options_nav' ); ?>
+<?php						
+		}
+		if( (bp_is_activity_component() && bp_is_current_action('following')) || 
+		    (bp_is_friends_component() && bp_is_current_action('membersearch')) 
+		)
+		{
+			$findclass = "";
+			if(bp_is_friends_component() && bp_is_current_action('membersearch'))
+			{
+				$findclass = "selected";
+			}
+?>	
+			<?php bp_get_options_nav(bp_get_activity_slug()); ?>
+			<li>
+				<a id='find' href="<?php echo $find_link ; ?>" class="<?php echo $findclass;?>">发现朋友</a>
+			</li>
+<?php						
+		}	
+	}
+?>
+<?php	
 }
 
 // Bookmarks Shortcode
@@ -1231,4 +1654,22 @@ if ( !function_exists( 'xrui_community_sel' ) ) {
 
 	add_shortcode( 'communitysel', 'xrui_community_sel' );
 }
+if(!function_exists( 'xrui_include_me' ))
+{
+	
+	function xrui_include_me($ids, $userid) {
+		$ids = empty( $ids ) ? 0 : $ids; 
+		if($ids == 0)
+		{
+			$ids = $userid;
+		}
+		else
+		{
+			$ids = $userid.','. $ids;
+		}
+		return $ids;
+	}	
+	add_filter( 'bp_get_following_ids','xrui_include_me', 10, 2 );
+}
+
 ?>

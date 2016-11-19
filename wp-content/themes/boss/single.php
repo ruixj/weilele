@@ -105,7 +105,7 @@ get_header(); ?>
         <header class="page-cover table" <?php echo $style; ?>>
             <div class="table-cell page-header">
                 <div class="cover-content">
-                    <h1 class="post-title main-title"><?php the_title(); ?></h1>
+                    <!--h1 class="post-title main-title"><?php //the_title(); ?></h1-->
                     <div class="table">
                         <div class="table-cell entry-meta">
                             <?php buddyboss_entry_meta(); ?>

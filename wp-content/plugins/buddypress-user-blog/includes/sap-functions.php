@@ -528,6 +528,7 @@ if ( !function_exists( 'sap_posts_ajax_pagination' ) ) {
 				'orderby'		 => 'meta_value_num',
 				'order'			 => 'DESC',
 				'paged'			 => $paged,
+				//'posts_per_page' => 10
 			);
 		} else {
 			$query_args = array(
@@ -535,6 +536,7 @@ if ( !function_exists( 'sap_posts_ajax_pagination' ) ) {
 				'post_type'		 => 'post',
 				'post_status'	 => 'publish',
 				'paged'			 => $paged,
+				//'posts_per_page' => 1
 			);
 		}
 

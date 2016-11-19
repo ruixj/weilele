@@ -64,7 +64,7 @@
 					<div class="action">
 					    <div class="action-wrap">
 
-                            <?php bp_add_friend_button( bp_get_group_member_id(), bp_get_group_member_is_friend() ); ?>
+                            <?php //bp_add_friend_button( bp_get_group_member_id(), bp_get_group_member_is_friend() ); ?>
 
                             <?php do_action( 'bp_group_members_list_item_action' ); ?>
 

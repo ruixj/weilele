@@ -63,7 +63,7 @@
 
 		<?php do_action( 'buddyboss_after_header' ); ?>
 		<?php get_template_part( 'template-parts/header-mobile2' ); ?>
-		
+
 		<!-- #panels closed in footer-->
 		<div id="panels" class="<?php echo (boss_get_option( 'boss_adminbar' )) ? 'with-adminbar' : ''; ?>" style="position:relative;  margin-bottom: 40px;">
 
@@ -74,6 +74,7 @@
             <!-- middle panel -->
 			<div id="right-panel">
 				<div id="right-panel-inner">
+				
 					<div id="main-wrap"> <!-- Wrap for Mobile content -->
 						<div id="inner-wrap"> <!-- Inner Wrap for Mobile content -->
 
@@ -81,3 +82,20 @@
 
 							<div id="page" class="hfeed site">
 								<div id="main" class="wrapper">
+										<?php if(is_front_page() || is_category()) { ?>
+											<div class="channel-sub-nav">
+												<?php
+												 
+													// echo wp_nav_menu(
+														// array( 'theme_location' => 'left-panel-menu',
+																// 'menu_class'      => 'nav navbar-nav',
+																// 'container'       => false,
+																// 'depth'			 => 1,
+																// 'echo'			 => false,
+																// 'walker'		 => new BuddybossWalker
+														// )
+													// );
+											 
+												?>
+											</div>
+										<?php } ?>

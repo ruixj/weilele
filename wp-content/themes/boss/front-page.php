@@ -21,39 +21,44 @@ get_header();
 
 <?php if ( is_active_sidebar( 'home-right' ) ) : ?>
 	<div class="page-right-sidebar">
-	<?php else : ?>
-		<div class="page-full-width">
-		<?php endif; ?>
+<?php else : ?>
+	<div class="page-full-width">
+<?php endif; ?>
 
-		<div id="primary" class="site-content">
+	<div id="primary" class="site-content">
 
-			<div id="content" role="main">
+		<div id="content" role="main">
 
-				<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php if ( is_home() ): ?>
-						<?php get_template_part( 'content' ); ?>
-					<?php else: ?>
-						<?php get_template_part( 'content', 'page' ); ?>
-					<?php endif; ?>
+				<?php if ( is_home() ): ?>
+					<?php get_template_part( 'content' ); ?>
+				<?php else: ?>
+					<?php get_template_part( 'content', 'page' ); ?>
+				<?php endif; ?>
 
-					<?php comments_template( '', true ); ?>
+				<?php comments_template( '', true ); ?>
 
-				<?php endwhile; // end of the loop. ?>
+			<?php endwhile; // end of the loop. ?>
 
-                <div class="pagination-below">
-					<?php buddyboss_pagination(); ?>
-                </div>
+			<!--div class="pagination-below">
+				<?php //buddyboss_pagination(); ?>
+			</div-->
+			
 
-			</div><!-- #content -->
-		</div><!-- #primary -->
+			
+		</div><!-- #content -->
+		<div class="post-read-more">  
+			<?php next_posts_link('更多+','');//下一页的链接 ?>  
+		</div> 
+	</div><!-- #primary -->
 
-		<?php
-		if ( is_active_sidebar( 'home-right' ) ) :
-			get_sidebar( 'home-right' );
-		endif;
-		?>
+	<?php
+	if ( is_active_sidebar( 'home-right' ) ) :
+		get_sidebar( 'home-right' );
+	endif;
+	?>
 
-	</div><!-- .page-left-sidebar -->
+</div><!-- .page-left-sidebar -->
 
-	<?php get_footer(); ?>
+<?php get_footer(); ?>

@@ -838,6 +838,48 @@ if ( !function_exists( 'buddyboss_entry_meta' ) ) :
 
 endif;
 
+if ( !function_exists( 'buddyboss_entry_metawll' ) ) :
+
+	/**
+	 * Prints HTML with meta information for current post: categories, tags, permalink, author, and date.
+	 *
+	 * Create your own buddyboss_entry_meta() to override in a child theme.
+	 *
+	 * @since Boss 1.0.0
+	 */
+	function buddyboss_entry_metawll( $show_channel = true, $show_date = true, $show_comment_info = true ) {
+		// Translators: used between list items, there is a space after the comma.
+		
+		$categories_list = get_the_category_list( __( ', ', 'boss' ) );
+		if($show_channel)
+		{
+			echo $categories_list;
+		}
+		// Translators: used between list items, there is a space after the comma.
+		$tag_list = get_the_tag_list( '', __( ', ', 'boss' ) );
+
+		$date = sprintf( '<a href="%1$s" title="%2$s" rel="bookmark" class="post-date fa fa-clock-o"><time class="entry-date" datetime="%3$s">%4$s</time></a>', esc_url( get_permalink() ), esc_attr( get_the_time() ), esc_attr( get_the_date( 'c' ) ), esc_html( get_the_date() )
+		);
+
+ 
+
+		if ( $show_date ) {
+			echo $date;
+		}
+        $show_comment_info = false;
+		if ( $show_comment_info ) {
+			if ( comments_open() ) :
+				?>
+				<!-- reply link -->
+				 
+					<?php comments_popup_link( '<span class="leave-reply">' . __( '0 comments', 'boss' ) . '</span>', __( '1 comment', 'boss' ), __( '% comments', 'boss' ) ); ?>
+				 
+				<?php
+			endif; // comments_open()
+		}
+	}
+
+endif;
 /**
  * Extends the default WordPress body classes.
  *
@@ -2081,6 +2123,200 @@ class BuddybossWalker extends Walker {
 		$item_output = $args->before;
 		$item_output .= '<a' . $attributes . ' ' . $archor_classes . '>';
 		/** This filter is documented in wp-includes/post-template.php */
+		 
+		$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
+		$item_output .= '</a>';
+		$item_output .= $args->after;
+
+		/**
+		 * Filter a menu item's starting output.
+		 *
+		 * The menu item's starting output only includes $args->before, the opening <a>,
+		 * the menu item's title, the closing </a>, and $args->after. Currently, there is
+		 * no filter for modifying the opening and closing <li> for a menu item.
+		 *
+		 * @since Boss 1.0.0
+		 *
+		 * @see wp_nav_menu()
+		 *
+		 * @param string $item_output The menu item's starting HTML output.
+		 * @param object $item        Menu item data object.
+		 * @param int    $depth       Depth of menu item. Used for padding.
+		 * @param array  $args        An array of wp_nav_menu() arguments.
+		 */
+		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+	}
+
+	/**
+	 * Ends the element output, if needed.
+	 *
+	 * @see Walker::end_el()
+	 *
+	 * @since Boss 1.0.0
+	 *
+	 * @param string $output Passed by reference. Used to append additional content.
+	 * @param object $item   Page data object. Not used.
+	 * @param int    $depth  Depth of page. Not Used.
+	 * @param array  $args   An array of arguments. @see wp_nav_menu()
+	 */
+	public function end_el( &$output, $item, $depth = 0, $args = array() ) {
+		$output .= "</li>\n";
+	}
+
+}
+class BuddybossWalkerlele extends Walker {
+
+	/**
+	 * What the class handles.
+	 *
+	 * @see Walker::$tree_type
+	 * @since Boss 1.0.0
+	 * @var string
+	 */
+	public $tree_type = array( 'post_type', 'taxonomy', 'custom' );
+
+	/**
+	 * Database fields to use.
+	 *
+	 * @see Walker::$db_fields
+	 * @since Boss 1.0.0
+	 * @todo Decouple this.
+	 * @var array
+	 */
+	public $db_fields = array( 'parent' => 'menu_item_parent', 'id' => 'db_id' );
+
+	/**
+	 * Starts the list before the elements are added.
+	 *
+	 * @see Walker::start_lvl()
+	 *
+	 * @since Boss 1.0.0
+	 *
+	 * @param string $output Passed by reference. Used to append additional content.
+	 * @param int    $depth  Depth of menu item. Used for padding.
+	 * @param array  $args   An array of arguments. @see wp_nav_menu()
+	 */
+	public function start_lvl( &$output, $depth = 0, $args = array() ) {
+		$indent = str_repeat( "\t", $depth );
+		$output .= "\n$indent<div class='sub-menu-wrap'><ul class=\"sub-menu\">\n";
+	}
+
+	/**
+	 * Ends the list of after the elements are added.
+	 *
+	 * @see Walker::end_lvl()
+	 *
+	 * @since Boss 1.0.0
+	 *
+	 * @param string $output Passed by reference. Used to append additional content.
+	 * @param int    $depth  Depth of menu item. Used for padding.
+	 * @param array  $args   An array of arguments. @see wp_nav_menu()
+	 */
+	public function end_lvl( &$output, $depth = 0, $args = array() ) {
+		$indent = str_repeat( "\t", $depth );
+		$output .= "$indent</ul></div>\n";
+	}
+
+	/**
+	 * Start the element output.
+	 *
+	 * @see Walker::start_el()
+	 *
+	 * @since Boss 1.0.0
+	 *
+	 * @param string $output Passed by reference. Used to append additional content.
+	 * @param object $item   Menu item data object.
+	 * @param int    $depth  Depth of menu item. Used for padding.
+	 * @param array  $args   An array of arguments. @see wp_nav_menu()
+	 * @param int    $id     Current item ID.
+	 */
+	public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+
+		$icon_class = 'fa-file';
+
+		foreach ( $item->classes as $key => $value ) {
+			if ( substr( $value, 0, 3 ) === 'fa-' ) {
+				$icon_class = $value;
+			}
+			if ( substr( $value, 0, 2 ) === 'fa' ) {
+				unset( $item->classes[ $key ] );
+			}
+		}
+
+		$classes	 = empty( $item->classes ) ? array() : (array) $item->classes;
+		$classes[]	 = 'menu-item-' . $item->ID;
+
+		/**
+		 * Filter the CSS class(es) applied to a menu item's <li>.
+		 *
+		 * @since Boss 1.0.0
+		 *
+		 * @see wp_nav_menu()
+		 *
+		 * @param array  $classes The CSS classes that are applied to the menu item's <li>.
+		 * @param object $item    The current menu item.
+		 * @param array  $args    An array of wp_nav_menu() arguments.
+		 */
+		$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
+		$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
+
+		/**
+		 * Filter the ID applied to a menu item's <li>.
+		 *
+		 * @since Boss 1.0.0
+		 *
+		 * @see wp_nav_menu()
+		 *
+		 * @param string $menu_id The ID that is applied to the menu item's <li>.
+		 * @param object $item    The current menu item.
+		 * @param array  $args    An array of wp_nav_menu() arguments.
+		 */
+		$id	 = apply_filters( 'nav_menu_item_id', 'menu-item-' . $item->ID, $item, $args );
+		$id	 = $id ? ' id="' . esc_attr( $id ) . '"' : '';
+
+		$output .= $indent . '<li' . $id . $class_names . '>';
+
+		$atts				 = array();
+		$atts[ 'title' ]	 = !empty( $item->attr_title ) ? $item->attr_title : '';
+		$atts[ 'target' ]	 = !empty( $item->target ) ? $item->target : '';
+		$atts[ 'rel' ]		 = !empty( $item->xfn ) ? $item->xfn : '';
+		$atts[ 'href' ]		 = !empty( $item->url ) ? $item->url : '';
+
+		/**
+		 * Filter the HTML attributes applied to a menu item's <a>.
+		 *
+		 * @since Boss 1.0.0
+		 *
+		 * @see wp_nav_menu()
+		 *
+		 * @param array $atts {
+		 *     The HTML attributes applied to the menu item's <a>, empty strings are ignored.
+		 *
+		 *     @type string $title  Title attribute.
+		 *     @type string $target Target attribute.
+		 *     @type string $rel    The rel attribute.
+		 *     @type string $href   The href attribute.
+		 * }
+		 * @param object $item The current menu item.
+		 * @param array  $args An array of wp_nav_menu() arguments.
+		 */
+		$archor_classes = ($item->menu_item_parent === '0') ? 'class="' . esc_attr( $icon_class ) . '"' : '';
+
+		$atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args );
+
+		$attributes = '';
+		foreach ( $atts as $attr => $value ) {
+			if ( !empty( $value ) ) {
+				$value = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
+				$attributes .= ' ' . $attr . '="' . $value . '"';
+			}
+		}
+
+		$item_output = $args->before;
+		$item_output .= '<a' . $attributes . ' ' . $archor_classes . '>';
+		/** This filter is documented in wp-includes/post-template.php */
+		$item_output .= '<span> <img> </img> </span>';
 		$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
 		$item_output .= '</a>';
 		$item_output .= $args->after;

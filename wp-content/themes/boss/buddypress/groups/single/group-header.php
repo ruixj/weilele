@@ -38,10 +38,10 @@ if ( boss_get_option( 'boss_layout_style' ) != 'boxed' && boss_get_option('boss_
 		</div>
 
 
-		<div id="item-header-avatar-mobile">
-			<a href="<?php bp_group_permalink(); ?>" title="<?php bp_group_name(); ?>">
+		<!--div id="item-header-avatar-mobile">
+			<a href="<?php //bp_group_permalink(); ?>" title="<?php //bp_group_name(); ?>">
 
-				<?php bp_group_avatar(); ?>
+				<?php //bp_group_avatar(); ?>
 
 			</a>
 		</div><!-- #item-header-avatar -->
@@ -106,10 +106,10 @@ if ( boss_get_option( 'boss_layout_style' ) != 'boxed' && boss_get_option('boss_
 					echo 'primary-btn';
 				}
 				?>">
-						 <?php
-						 bp_group_join_button();
-						 ?>
-				</div>
+				  <?php
+					 //bp_group_join_button();
+				  ?>
+			   </div>
 
 				<?php
 				if ( !empty( $action_output ) ): //only show if output exists

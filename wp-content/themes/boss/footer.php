@@ -10,6 +10,7 @@
  * @since Boss 1.0.0
  */
 ?>
+
 </div><!-- #main .wrapper -->
 
 </div><!-- #page -->
@@ -17,6 +18,8 @@
 </div> <!-- #inner-wrap -->
 
 </div><!-- #main-wrap (Wrap For Mobile) -->
+
+
 
 <footer id="colophon" role="contentinfo">
 
@@ -39,12 +42,22 @@
 
 </div><!-- #panels -->
 
-<div class="u-func f-cf" id="edit_div" style="display:;">
-   <div class="func-wrap right-2icon f-cf">
-      <div class="tools f-cf">
-      </div>
-   </div>
+<div id="toheader">
+	<a href="#scroll-to" class="to-top fa scroll"></a>
 </div>
+
+<!--div class="bottom-bar">
+
+	   <div class="func-wrap wll-footer">
+		  
+		    <ul class="m-bar">
+			  
+			 </ul>	
+		 
+	   </div>
+	   
+</div-->
+<?php xrui_displayfooter_nav(); ?>
 
 <?php wp_footer(); ?>
 

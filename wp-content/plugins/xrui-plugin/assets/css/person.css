@@ -9,8 +9,8 @@ a,img{
  
  
 .container{
-padding:.4375rem 0;
- margin-top: 60px;
+   padding:.4375rem 0;
+   /*margin-top: 60px;*/
 }
 .container .card11{
 margin:0 0 .5625rem 0

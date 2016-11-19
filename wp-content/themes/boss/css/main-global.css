@@ -301,7 +301,7 @@ html {
 }
 
 body, p {
-    line-height: 1.4;
+    line-height: 1.4rem;
 }
 
 a {
@@ -412,6 +412,30 @@ div.mobile:not(.nojq) {
     box-sizing: border-box;
 }
 
+/*--------------------*
+to the header of the page
+*/
+#toheader
+{
+    position: fixed;
+    bottom: 20%;
+    right: 10px;
+    z-index: 99999;
+}
+#toheader >a
+{
+    width: 42px;
+    height: 42px;
+    background: url(../images/wll-icon.png) -164px -48px repeat-x;
+	background-size: 244px 233px;
+    opacity: 0.6;
+    text-align: center;
+    color: #fff;
+    line-height: 42px;
+	border: 1px solid #bfbfbf;
+    border-radius: 50%;
+	
+}
 
 /*--------------------------------------------------------------
 2.3 - Small headers
@@ -434,7 +458,7 @@ div#register-page .security-question-section h4,
 .comments-title ,
 .widgettitle {
     font-size: 36px;
-    margin-bottom: 24px;
+    margin-bottom: 10px; 
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -447,7 +471,8 @@ div#register-page .security-question-section h4,
 .entry-title a,
 .entry-title {
     color: #3d3d3d;
-    font-size: 30px;
+    font-size: 1.6rem;
+    line-height: 1.6;
 }
 
 .entry-title {
@@ -512,6 +537,7 @@ archive-header {
     -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
 }
+
 
 
 /*--------------------------------------------------------------
@@ -1490,7 +1516,7 @@ body.blog .pagination-below {
 }
 
 .site {
-    min-height: 736px;
+    min-height: 530px;
 }
 
 /*--------------------------------------------------------------
@@ -2803,8 +2829,8 @@ div.footer-inner ul.social-icons li span:before {
 .entry-summary,
 .mu_register,
 footer.entry-meta {
-    line-height: 1.7;
-	font-size: 20px;
+    /*line-height: 1.7;*/
+	font-size: 1.2rem;
 }
 
 .entry-content h1,
@@ -3420,7 +3446,10 @@ article.format-aside p:last-child {
 .entry-actions a:hover {
     color: rgba(0,0,0,0.42);
 }
-
+.entry-meta .comments-link
+{
+	margin-right: 15px
+}
 .entry-meta .comments-link:hover ,
 .entry-meta .comments-link a:hover ,
 .entry-meta .post-date:hover {
@@ -3442,8 +3471,52 @@ article.format-aside p:last-child {
 .post.no-results.not-found,
 .post-wrap {
     padding: 40px 65px 50px 70px;
+	 
 }
 
+.post-wrap-front {
+    padding: .2rem 0;
+    margin: 0 .3rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flexbox;
+    display: flex;
+    /*border-top: 1px solid rgba(0,0,0,0.11); */
+    border-bottom: 1px solid rgba(0,0,0,0.11);  
+}
+
+.post-image-front{
+	/*flex: 0 0 30%;*/
+    width:  8rem;
+    /*height: 8rem;*/
+    margin-right: .24rem;
+    position: relative;
+    background-color: #f6f6f6;
+}
+
+.post-content-front
+{
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: justify;
+    display: -webkit-box;	
+}
+.post-title-front {
+    font-size: 1.2rem;
+    color:     #000;
+    /*max-height:  4rem;*/
+    line-height: 1.2 rem;
+    /*font-weight: normal;
+    font-weight: 590;*/
+    text-align: justify;
+ 
+ 
+}
 .boxed .post-wrap {
     padding-left: 0;
 }
@@ -3587,15 +3660,15 @@ article.format-quote .entry-content blockquote {
 --------------------------------------------------------------*/
 
 .comments-title {
-    margin-bottom: 48px;
+    margin-bottom: 20px; 
     font-size: 19px;
     line-height: 1.5;
     font-weight: 600;
 }
 
 .comments-area ol.children {
-    margin-top: 38px;
-    padding-top: 40px;
+    margin-top: 19px;
+    padding-top: 20px;
     border-top: 1px solid rgba(0,0,0,0.11);
 }
 
@@ -3609,8 +3682,8 @@ article.format-quote .entry-content blockquote {
 }
 
 .commentlist > li.comment {
-    margin-bottom: 40px;
-    padding-bottom: 38px;
+     margin-bottom: 20px;
+    padding-bottom: 19px; 
     border-bottom: 1px solid rgba(0,0,0,0.11);
 }
 
@@ -6239,7 +6312,7 @@ div#sitewide-notice div#message p #close-notice:after {
 #buddypress table.wp-profile-fields tr td,
 #buddypress table.profile-fields tr td,
 #buddypress table.profile-fields tr th {
-    padding: 7px 12px !important;
+    padding: 16px 12px !important;
 }
 
 #buddypress table tr td.label {
@@ -6524,7 +6597,7 @@ div#sitewide-notice div#message p #close-notice:after {
 
 .bb-cover-photo .holder {
     width: 100%;
-    height: 100%;
+    height: 140px;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
@@ -7131,7 +7204,11 @@ body.activity:not(.bp-user) #activity-filter-select .buddyboss-select label,
 }
 
 #primary #members-group-list #members-list li .item {
-    width: auto;
+    width: 50%;
+	padding-right:8%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
 }
 
 #primary #friend-list li .item > div,
@@ -7225,8 +7302,9 @@ body.activity:not(.bp-user) #activity-filter-select .buddyboss-select label,
 }
 
 #primary .item-list li .item-meta span:not(.count) {
-    font-style: italic;
+    font-style: normal;
     color: rgba(0,0,0,.4);
+	font-size:12px;
 }
 
 #primary #friend-list li .item-meta span:not(.count),
@@ -7268,7 +7346,8 @@ body.activity:not(.bp-user) #activity-filter-select .buddyboss-select label,
     display: inline-block;
     margin-bottom: 5px;
     margin-top: 5px;
-    margin-left: 30px;
+    /*margin-left: 30px;*/
+    width: 100%;
 }
 
 #buddypress .dir-list #pag-top {

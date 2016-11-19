@@ -53,25 +53,26 @@ global $class, $rtmedia_query;
 
                    <div id="content" role="main"> <!-- moved from top -->
 	                   
-                        <div class="below-cover-photo">
+                        <!--div class="below-cover-photo">
                         
                             <div id="group-description">
-                                <?php bp_group_description(); ?>
+                                <?php// bp_group_description(); ?>
                             </div>
 
                         </div>
-                        
-                       <div id="item-nav"> <!-- movwed inside #primary-->
+                        <!-- movwed inside #primary-->
+                       <!--div id="item-nav"> 
                             <div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
                                     <ul>
 
-                                        <?php bp_get_options_nav(); ?>
+                                        <?php //bp_get_options_nav(); ?>
 
-                                        <?php do_action( 'bp_group_options_nav' ); ?>
+                                        <?php //do_action( 'bp_group_options_nav' ); ?>
 
                                     </ul>
                             </div>
-                        </div><!-- #item-nav -->
+                        </div>
+						<!-- #item-nav -->
                         
                         <div id="item-body">
 

@@ -162,25 +162,25 @@ class BP_Friends_Component extends BP_Component {
 		);
 
 		// Add the subnav items to the friends nav item.
-		$sub_nav[] = array(
-			'name'            => _x( 'Friendships', 'Friends screen sub nav', 'buddypress' ),
-			'slug'            => 'my-friends',
-			'parent_url'      => $friends_link,
-			'parent_slug'     => $slug,
-			'screen_function' => 'friends_screen_my_friends',
-			'position'        => 10,
-			'item_css_id'     => 'my-friends'
-		);
+		// $sub_nav[] = array(
+			// 'name'            => _x( 'Friendships', 'Friends screen sub nav', 'buddypress' ),
+			// 'slug'            => 'my-friends',
+			// 'parent_url'      => $friends_link,
+			// 'parent_slug'     => $slug,
+			// 'screen_function' => 'friends_screen_my_friends',
+			// 'position'        => 10,
+			// 'item_css_id'     => 'my-friends'
+		// );
 
-		$sub_nav[] = array(
-			'name'            => _x( 'Requests', 'Friends screen sub nav', 'buddypress' ),
-			'slug'            => 'requests',
-			'parent_url'      => $friends_link,
-			'parent_slug'     => $slug,
-			'screen_function' => 'friends_screen_requests',
-			'position'        => 20,
-			'user_has_access' => $access
-		);
+		// $sub_nav[] = array(
+			// 'name'            => _x( 'Requests', 'Friends screen sub nav', 'buddypress' ),
+			// 'slug'            => 'requests',
+			// 'parent_url'      => $friends_link,
+			// 'parent_slug'     => $slug,
+			// 'screen_function' => 'friends_screen_requests',
+			// 'position'        => 20,
+			// 'user_has_access' => $access
+		// );
 
 		parent::setup_nav( $main_nav, $sub_nav );
 	}

@@ -14,7 +14,19 @@
 
     <div class="<?php echo ( boss_get_option( 'boss_layout_style' ) == 'boxed' && is_active_sidebar( 'profile' ) && bp_is_user() ) ? 'right-sidebar' : 'full-width'; ?>">
         <div id="item-main-content">
-            <?php xrui_show_display_user_nav2(); ?>
+            <?php if(!bp_is_current_component('events') || ( bp_is_current_component('events') && 'profile' == bp_current_action() ) ): //show if not Events Manager page or My Profile of Events ?>
+            <div id="item-nav">
+                <div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
+                    <ul id="nav-bar-filter">
+
+                        <?php bp_get_displayed_user_nav(); ?>
+
+                        <?php //do_action( 'bp_member_options_nav' ); ?>
+
+                    </ul>
+                </div>
+            </div><!-- #item-nav -->
+            <?php endif; ?>
 
             <?php if(bp_current_component() != 'shop')
                 echo '<div id="item-body" role="main">';

@@ -172,14 +172,14 @@ class BP_Activity_Component extends BP_Component {
 		);
 
 		// Add the subnav items to the activity nav item if we are using a theme that supports this.
-		$sub_nav[] = array(
-			'name'            => _x( 'Personal', 'Profile activity screen sub nav', 'buddypress' ),
-			'slug'            => 'just-me',
-			'parent_url'      => $activity_link,
-			'parent_slug'     => $slug,
-			'screen_function' => 'bp_activity_screen_my_activity',
-			'position'        => 10
-		);
+		// $sub_nav[] = array(
+			// 'name'            => _x( 'Personal', 'Profile activity screen sub nav', 'buddypress' ),
+			// 'slug'            => 'just-me',
+			// 'parent_url'      => $activity_link,
+			// 'parent_slug'     => $slug,
+			// 'screen_function' => 'bp_activity_screen_my_activity',
+			// 'position'        => 10
+		// );
 
 		// Check @mentions.
 		if ( bp_activity_do_mentions() ) {
@@ -195,17 +195,17 @@ class BP_Activity_Component extends BP_Component {
 		}
 
 		// Favorite activity items.
-		if ( bp_activity_can_favorite() ) {
-			$sub_nav[] = array(
-				'name'            => _x( 'Favorites', 'Profile activity screen sub nav', 'buddypress' ),
-				'slug'            => 'favorites',
-				'parent_url'      => $activity_link,
-				'parent_slug'     => $slug,
-				'screen_function' => 'bp_activity_screen_favorites',
-				'position'        => 30,
-				'item_css_id'     => 'activity-favs'
-			);
-		}
+		// if ( bp_activity_can_favorite() ) {
+			// $sub_nav[] = array(
+				// 'name'            => _x( 'Favorites', 'Profile activity screen sub nav', 'buddypress' ),
+				// 'slug'            => 'favorites',
+				// 'parent_url'      => $activity_link,
+				// 'parent_slug'     => $slug,
+				// 'screen_function' => 'bp_activity_screen_favorites',
+				// 'position'        => 30,
+				// 'item_css_id'     => 'activity-favs'
+			// );
+		// }
 
 		// Additional menu if friends is active.
 		if ( bp_is_active( 'friends' ) ) {

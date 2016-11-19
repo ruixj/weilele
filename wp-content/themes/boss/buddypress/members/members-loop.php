@@ -61,7 +61,7 @@
 
 				<div class="item-meta">
 					<div class="activity">
-						<?php bp_member_last_active(); ?>
+						<?php //bp_member_last_active(); ?>
 					</div>
 					
 					<?php if($showing == "friends"): ?>
@@ -80,9 +80,10 @@
 
 				<div class="item-desc">
 					<p>
-						<?php if ( bp_get_member_latest_update() ) : ?>
-							<?php bp_member_latest_update( array( 'view_link' => true ) ); ?>
-						<?php endif; ?>
+						<?php 
+						    if ( bp_get_member_latest_update() )  
+							    bp_member_latest_update( array( 'view_link' => true ) ); 
+					    ?>
 					</p>
 				</div>
 

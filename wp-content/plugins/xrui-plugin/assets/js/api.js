@@ -127,6 +127,7 @@ function searchAndLocate() {
 						}
 						$("#location_result").html(html);
 						$("#villages").html(default_html);
+						$.hideLoading();
 					}
 				} );				
  

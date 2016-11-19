@@ -119,8 +119,9 @@
 	<?php do_action( 'bp_before_directory_activity_list' ); ?>
 
 	<div class="activity" role="main">
-        <?php echo "<p> test</p>"; ?>
+        <?php echo "<p> test</>";
 		<?php bp_get_template_part( 'activity/activity-loop' ); ?>
+
 	</div><!-- .activity -->
 
 	<?php do_action( 'bp_after_directory_activity_list' ); ?>
